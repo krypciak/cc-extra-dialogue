@@ -11,12 +11,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Clone CCExtraDialogue
+      - name: Clone cc-extra-dialogue
         uses: actions/checkout@v2
+
       - name: Clone cc-eventscript-parser
         uses: actions/checkout@v2
         with:
-          repository: EL20202/cc-eventscript-parser
+          repository: Paradragon/cc-eventscript-parser
           token: ${{ secrets.PAT }}
           path: parser
 
@@ -33,15 +34,16 @@ jobs:
 
       - name: Create CCED archives
         run: |
-          zip -q -r cc_extra_dialogue.ccmod assets patches js prestart.js ccmod.json package.json icon.png
-          tar -czf cc_extra_dialogue.tar.gz --transform 's,^,cc_extra_dialogue/,' assets patches js prestart.js ccmod.json package.json icon.png
+          zip -q -r cc-extra-dialogue.ccmod assets patches js prestart.js ccmod.json package.json icon.png
+          tar -czf cc-extra-dialogue.tar.gz --transform 's,^,cc-extra-dialogue/,' assets patches js prestart.js ccmod.json package.json icon.png
 
       - name: Get version
         id: get_version
         run: echo ::set-output name=VERSION::${GITHUB_REF#refs/tags/}
+        
       - name: Create release
         run: |
-          gh release create ${{ steps.get_version.outputs.VERSION }} -d -t "CCED ${{ steps.get_version.outputs.VERSION }}" -n "$(cat .github/workflows/release_body_template.md)" ${{ env.FILES }}
+          gh release create ${{ steps.get_version.outputs.VERSION }} -d -t "CCED ${{ steps.get_version.outputs.VERSION }}" ${{ env.FILES }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FILES: cc_extra_dialogue.ccmod cc_extra_dialogue.tar.gz
+          FILES: cc-extra-dialogue.ccmod cc-extra-dialogue.tar.gz
