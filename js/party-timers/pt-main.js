@@ -1,7 +1,7 @@
 
 // Todo: Break down into separate files
 
-var printDebugLog = true;
+var printDebugLog = false;
 
 function logDebug(message) {
     if (printDebugLog) {
