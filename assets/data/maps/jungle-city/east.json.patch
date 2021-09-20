@@ -1,0 +1,19 @@
+[{
+    "type": "ENTER",
+    "index": ["entities",69,"settings"]
+},{
+    "type": "SET_KEY",
+    "index": "map",
+    "content": "jungle-city.interior.cced-hub"
+},{
+    "type": "SET_KEY",
+    "index": "marker",
+    "content": "door-entrance"
+},{
+    "type": "SET_KEY",
+    "index": "condition",
+    "content": "cced.hub.unlocked"
+},{
+    "type": "EXIT",
+    "count": 3
+}]
