@@ -1,4 +1,4 @@
-![CCExtraDialogue](docs/images/title.png)
+![CrossCode Extra Dialogue Banner](docs/images/title.png)
 
 This mod adds more lore-friendly dialogues for party members, that previously had none. 
 
@@ -9,9 +9,9 @@ New interactions increase amount of post-combat party banter by **at least 4 tim
 ## Installation
 This mod requires [CCLoader](https://github.com/CCDirectLink/CCLoader) which you can either install manually or use the [CCLoader installer](https://github.com/CCDirectLink/ccloader-installer).
 
-Once CCLoader is installed, [download a release](https://github.com/keanuplayz/CCExtraDialogue/releases) of CCExtraDialogue and put it into `CrossCode/assets/mods`.
+Once CCLoader is installed, [download a release](https://github.com/Paradragon/cc-extra-dialogue/releases) and put it into `CrossCode/assets/mods`.
 
-[![Download latest release](docs/images/download_release.png)](https://github.com/keanuplayz/CCExtraDialogue/releases)
+[![Download latest release](docs/images/download_release.png)](https://github.com/Paradragon/cc-extra-dialogue/releases)
 
 
 # Extended Party Dialogue
@@ -56,6 +56,3 @@ This mod should have no conflicts and is safe to use with any other mod, big or 
 
 ## Uninstall
 *CrossCode Extra Dialogue* can be safely disabled or uninstalled at any point without detrimental effects on your save file.
-
-## Contacts
-If you have questions or want to report an issue, join our [Discord server]().
