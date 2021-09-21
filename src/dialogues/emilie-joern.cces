@@ -148,7 +148,7 @@ condition: party.alive.Emilie && party.alive.Joern && plot.line >= 18700 && cced
 Message 1
 Emilie > DEFAULT: Any plans for this weekend?
 Joern > DEFAULT: Going to prepare \c[3]seared ahi tuna steak\c[0].
-Emilie > ASTONISHED: Ohhh~ What's an ahi tuna?
+Emilie > ASTONISHED: Ohhh~.\. What's an ahi tuna?
 Joern > DEFAULT: A certain kind of tuna.\. It's covered in spices and served with wasabi dipping.
 Emilie > CURIOUS: Like a sushi?
 Joern > TOWARD: Sushi is a dish with specially prepared rice, usually dressed with seafood. 
@@ -157,7 +157,7 @@ Lea > NOD: [nods]
 
 Message 2
 Emilie > AWAY: Why is it seared though?
-Joern > DEFAULT: Its prepared on a hot surface before being eaten.
+Joern > DEFAULT: It's prepared on a hot surface before being eaten.
 Emilie > SUSPICIOUS: So...\. it's a grilled fish steak?
 Joern > DEFAULT: A bit more complicated.
 Emilie > CURIOUS: How so?

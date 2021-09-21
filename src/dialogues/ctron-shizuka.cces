@@ -16,9 +16,9 @@ if cced.shizuka.lea-similarity-mentions == 1
     Shizuka > FUNNY_SMILE: Yeah, I get that a lot.
 endif
 if cced.shizuka.lea-similarity-mentions == 2
-    Shizuka > INNOCENT: Okaaay...
+    Shizuka > DOWN: Uhm... I guess?
 endif
-If cced.shizuka.lea-similarity-mentions >= 3
+if cced.shizuka.lea-similarity-mentions >= 3
     Shizuka > EX2_ANNOYED: ...
     Lea > SMILE: ...
 endif
