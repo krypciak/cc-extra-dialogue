@@ -1,40 +1,108 @@
 
-# by el2020
-== cced-joern-shizuka.battle-over-1 ==
+# by Paradragon
+== cced-joern-shizuka-battle-over-1 ==
+
 condition: party.alive.Joern && party.alive.Shizuka && plot.line >= 40000
 
-Event 1
-Joern > SMILE: That was a fun battle. #to-do - workshop this line.
-Shizuka > INNOCENT: Uhmm... Yeah, it was.
-Joern > TOWARD: You two really do fight the same. #to-do - and this one
-Lea > SURPRISED_TOWARD: ...?
-Shizuka > FUNNY_SMILE: I mean...\. it makes sense.
-Shizuka > SMUG: She is my copy, after all.
-Lea > NOD: [nods]
-
-
-Event 2:
-Shizuka > TOWARD: I'm curious... what did you mean by "we fight the same"?
-Joern > SURPRISED: Hmm?
-Shizuka > CONFLICTED: Like... How do Lea and I fight the same way?
-Joern > SMILE: You both have the same general "movements" in combat. #to-do - this line probably needs to be reworked
-Joern > UP: Along with that, you two can be a little... aggressive.
+Message 1
+Joern > DEFAULT: I thought this game can't get more violent.
+Joern > SARCASTIC: Now there is two of you.
 if newgame.sergey-hax
-    Shizuka > SARCASTIC: By "aggressive", I assume you mean \c[1]one-shotting pretty much every enemy?
     Lea > INSANE_DOWN: \c[1]...!
-    Shizuka > SARCASTIC: ...because if you're referring to \c[1]that\c[0], it only applies to one of us.
-    Joern > SARCASTIC: No, not that...
-    Shizuka > FUNNY_SMILE: Even with your \c[1]insane damage\c[0], I guess I can see some similarities.
+    Shizuka > DEFAULT: You are overestimating my power... 
+    Lea > INSANE: \c[1]Lea!!
+    Shizuka > FUNNY_SMILE: Wish I had this damage bug too.
 else
-    Shizuka > CONCERNED: Well... I guess I see what you mean.
-    Shizuka > DENYING: Remember our duel, Lea?
-    Lea > PAIN_EYE_CLOSED: ...
-    Lea > NOD: [nods]
-    Shizuka > SMUG: You used my some of my favorite tricks against me! # probably workshop this one.
-    if plot.shizuka.cupGot
-        Shizuka > EVIL_GRIN: I can't wait for a rematch, Lea.
-    endif
+    Lea > EX2_SMUG: ...
+    Shizuka > SMUG: Why thank you!
+    Shizuka > FUNNY_SMILE: Murdering thousands of hedgehags was my job after all.
+    Joern > AWWW: Poor hedgehags.
 endif
-Shizuka > DEFAULT: Maybe you and I really are more alike than I realize...
+
+Message 2
+Joern > DEFAULT: Looks like you two share a fighting style.
+Joern > TOWARD: Your moves are almost identical.
+# Also occurs in party with C'Tron, Luke and Lukas
+if !cced.shizuka.lea-similarity-mentions
+    Shizuka > EVIL_GRIN: Makes sense.
+endif
+if cced.shizuka.lea-similarity-mentions == 1
+    Shizuka > FUNNY_SMILE: Yeah, I get that a lot.
+endif
+if cced.shizuka.lea-similarity-mentions == 2
+    Shizuka > DOWN: Uhm... I guess?
+endif
+if cced.shizuka.lea-similarity-mentions >= 3
+    Shizuka > EX2_ANNOYED: ...
+    Lea > SMILE: ...
+endif
+Shizuka > BRIGHT: Lea is my copy, after all.
+Joern > SMILE: Your avatars also look similar to each other.
+Joern > TOWARD: What's up with the horns though?
+Lea > ANNOYED: ...
+Shizuka > FUNNY_SMILE: It's a long story...
+
+set cced.shizuka.lea-similarity-mentions + 1
+
+Message 3
+Joern > TOWARD: Does it bother you?\. The copy part?
+Lea > SURPRISED_TOWARD: ...?
+Shizuka > DEFAULT: No. It's nice to have one more of yourself in a party.
+Shizuka > BRIGHT: And...\. because of other things too.
+Joern > SMILE: I'm glad that you two got along.
+Shizuka > EVIL_GRIN: Could it be any other way?
+if cced.shizuka.sakai-sisterhood
+    Shizuka > BRIGHT: We are sisters, after all.
+endif
+Lea > PROUD: ...!
+
+Message 4
+Joern > DEFAULT: How is your brother doing?
+Shizuka > DENYING: Working day and night on the next thing that springs to his mind.
+Shizuka > SARCASTIC: Soooo~.\. He is fine, I guess.
+Joern > TOWARD: You don't get to spend a lot of time with him, do you?
+Shizuka > DEFAULT: Satoshi can do whatever he wants with his time.
+Shizuka > EVIL_GRIN: As long as he remains happy, it's fine by me.
+Shizuka > BRIGHT: Thanks for asking.
+Joern > SMILE: You're welcome.
+
+Message 5
+Joern > TOWARD: Are we grinding for something?
+if newgame.sergey-hax
+    Lea > INSANE: \c[1]...!!
+else
+    Lea > THINKING: ...?
+endif
+Shizuka > FUNNY_SMILE: Pretty sure it's pure destruction for the purpose of it.
+Shizuka > BRIGHT: An effective way to relief stress, mind you.
+Joern > DEFAULT: What about meditation?
+Shizuka > SMUG: Sure. But where is fun in that?
+Joern > SARCASTIC: You little devils.
+if newgame.sergey-hax
+    Lea > INSANE_DOWN: \c[1]...!
+else
+    Lea > SMILE: ...
+endif
+
+Message 6
+Shizuka > SARCASTIC: On a serious note... what else can we do instead of grinding?
+Shizuka > DENYING: CrossWords story is over and most quests are finished.
+Joern > DEFAULT: I've heard that \c[3]Team Cups\c[0] in arena can be fun.
+
+if plot.shizuka.cupGot
+    Shizuka > INNOCENT: Oh yeah, arena!\. About that rematch of ours...
+    if newgame.sergey-hax
+        Lea > INSANE_DOWN: \c[1]Hi?!
+        Shizuka > SARCASTIC: On a second thought... Forget about it.
+    else
+        Shizuka > BADASS: Can't wait for another round!
+        Lea > DETERMINED: ...!
+    endif
+    Joern > SARCASTIC: Spheromancers and their obsession with duels...
+else
+    Shizuka > DENYING: I'm not much of a team player to be honest.
+    Shizuka > DEFAULT: But we can try that, if you want to.
+    Lea > NOD: [nods]
+endif
 
 set cced.joern-shizuka.battle-over-1.finished true
