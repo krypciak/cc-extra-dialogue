@@ -2,14 +2,14 @@
 
 This mod adds more lore-friendly dialogues for party members, that previously had none. 
 
-New interactions increase amount of post-combat party banter by **at least 4 times**, when compared to original game + DLC.
+New interactions increase amount of post-combat party conversations by **at least 4 times**, when compared to original game + DLC.
 
 *Note: 'A New Home' DLC is NOT required, although majority of new content is only available in post-game.*
 
 ## Installation
 This mod requires [CCLoader](https://github.com/CCDirectLink/CCLoader) which you can either install manually or use the [CCLoader installer](https://github.com/CCDirectLink/ccloader-installer).
 
-Once CCLoader is installed, [download a release](https://github.com/Paradragon/cc-extra-dialogue/releases) and put it into `CrossCode/assets/mods`.
+Once CCLoader is installed, [download a .ccmod release](https://github.com/Paradragon/cc-extra-dialogue/releases) and put it into `CrossCode/assets/mods` folder.
 
 [![Download latest release](docs/images/download_release.png)](https://github.com/Paradragon/cc-extra-dialogue/releases)
 
@@ -26,13 +26,13 @@ We paid extra attention to keeping new dialogues lore-friendly and true to chara
 Just like in the original game, new dialogues play out after finishing combat.
 
 # Additional features
-## Reactive Banter
-![Reactive banter](docs/images/reactive_banter.png)
+## Reactive Dialogue
+![Reactive dialogue](docs/images/reactive_dialogue.png)
 
 Party dialogue may have subtle changes based on which other dialogues have already played out, how certain past events have unfolded, active NG+ modifiers and even your personal stats, like current level.
 
-## Extended Miscellaneous Banter
-![Miscellaneous banter](docs/images/miscellaneous.png)
+## Extended Miscellaneous Comments
+![Miscellaneous dialogue](docs/images/miscellaneous.png)
 
 We added a few extra lines for miscellaneous events to characters, that had the least amount of them.
 
