@@ -9,7 +9,7 @@ New interactions increase amount of post-combat party conversations by **at leas
 ## Installation
 This mod requires [CCLoader](https://github.com/CCDirectLink/CCLoader) which you can either install manually or use the [CCLoader installer](https://github.com/CCDirectLink/ccloader-installer).
 
-Once CCLoader is installed, [download a .ccmod release](https://github.com/Paradragon/cc-extra-dialogue/releases) and put it into `CrossCode/assets/mods` folder.
+Once CCLoader is installed, [download cc-extra-dialogue.ccmod](https://github.com/Paradragon/cc-extra-dialogue/releases) and put it into `CrossCode/assets/mods` folder.
 
 [![Download latest release](docs/images/download_release.png)](https://github.com/Paradragon/cc-extra-dialogue/releases)
 
