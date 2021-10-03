@@ -57,7 +57,7 @@ Emilie > EMBARRASSED: Fine. Triblader is a pass.
 Message 6
 Emilie > DETERMINED: How about a \c[3]Quadroguard\c[0]? 
 Emilie > WATCH_OUT_BADASS: Protecting your friends is quite noble.
-Apollo > DEFAULT: The Quadroguards put their lives on the line to shield their team from harm.
+Apollo > DEFAULT: The Quadroguards put their lives on the line to shield teammates from harm.
 Apollo > LECTURING: A truly honorable class, that almost rivals the Spheromancer.
 Emilie > SMILE: Oui! A Quadroguard in our party sounds good. Right, Lea?
 Lea > SURPRISED_TOWARD: ...?
@@ -78,8 +78,8 @@ Emilie > DETERMINED: Your conclusion on Quadroguards, grasshead?
 Apollo > DEFAULT: I may have considered picking this class. 
 Apollo > CONTENT: It would be an honor to protect Spheromancer Lea.
 if newgame.sergey-hax
-    Lea > INSANE_DOWN: Hi?
     Apollo > SUSPICIOUS: Not that she really needs any protection...
+    Lea > INSANE_DOWN: Hi~
 else
     Lea > SCARED: ...!
 endif

@@ -5,9 +5,9 @@
 condition: party.alive.Schneider && party.size == 2 && cced.apollo-lukas.battle-over-2.finished
 
 Message 1
-Lukas > DEFAULT: It was \c[3]5-3\c[0] by the way.
+Lukas > DEFAULT: It was \c[3]5-4\c[0] by the way.
 Lea > SURPRISED_TOWARD: What?
-Lukas > DEFAULT: The duel with grasshead.\. Was loosing terribly, but then figured out a strat.
+Lukas > DEFAULT: The duel with Apollo.\. Was loosing terribly, but then figured out a strat.
 Lukas > EYES_CLOSED: Trick is to stay back and patiently wait for him to throw some art that winds him.
 if plot.apollo.leaWins >= 3
     Lukas > SKEPTICAL: But you probably know that already...

@@ -34,7 +34,8 @@ Message 1
 Joern > AWWW: Seeing all these ruins is so sad.
 Joern > AWWW: Long ago, Every one of them had a family.
 C'tron > DEFAULT: Shadows of civilization long forgotten.
-C'tron > DOWN: Every concrete jungle will eventually be abandoned, doomed to break down under the elements.
+C'tron > DOWN: Every concrete jungle will eventually be abandoned...
+C'tron > DEFAULT: Doomed to break down under the elements.
 Joern > AWWW: You are heartless, Tronny.
 
 set cced.ctron-joern.tourism.locations + 1
@@ -162,7 +163,7 @@ Lea > ASTONISHED: ...!
 Joern > DEFAULT: Ever wondered, how would it feel to live for a thousand years?
 C'tron > EMBARRASSED: As a tree, you won't feel anything at all.
 C'tron > WORRIED: And human will probably end up desensitised to everything in a few centuries.
-if plot.line > 40000
+if plot.line >= 40000
     Joern > DEFAULT: What about evotars? 
     Lea > SURPRISED_TOWARD: ...?
     C'tron > EXHAUSTED: Let's not think about this for now, ok?
@@ -187,16 +188,16 @@ Joern > SMILE: Relax and enjoy the atmosphere, Tronny.
 Message 2
 C'tron > DOWN: Almost entirety of this planet is water, yet we never see any storms or waves.
 Joern > DEFAULT: Large waves would be quite disastrous for areas, like Rookie Harbor.
-C'tron > WORRIED: Yes. And to have no tides, Raritan Gem must be tidally locked with its parental gas giant
-C'tron > EXHAUSTED: It can't be both tidally locked and have synchronous rotation!
-C'tron > BLANK: Unless... gas giant has synchronous rotation too.
+C'tron > WORRIED: Raritan Gem must have synchronous rotation with the gas giant...
+C'tron > EXHAUSTED: But then it may orbit into the giant's dark side...
+C'tron > BLANK: Unless...
 Lea > EXHAUSTED: ...
 C'tron > EXHAUSTED: No, what a nonsense. The water and illumination are just not real.
 
 Message 3
-C'tron > BLANK: There are also hundreds of instanced rooms for every player...
-C'tron > CRAZY_PANIC: No way they hollowed out the entire continent for them. It's just too much terraforming.
-C'tron > PANIC: That means only one thing...
+C'tron > WORRIED: There are also hundreds of instanced rooms for every player...
+C'tron > DEFAULT: No way they hollowed out the entire continent for them. It's just too much terraforming.
+C'tron > BLANK: That means only one thing...
 Joern > DEFAULT: Tronny.
 C'tron > CRAZY_PANIC: Not only water and light are fake! 
 C'tron > CRAZY_PANIC2: \c[1]The entire planet must be simulated!!\c[0]
@@ -206,7 +207,7 @@ Lea > SLEEPING: ...
 
 Message 3
 C'tron > EXHAUSTED: Okay, maybe that was a bit too crazy.
-C'tron > THOUGHTFUL: Raritan Gem is a real planet. There are ships with maintenance crew after all.
+C'tron > THOUGHTFUL: Raritan Gem is real. There are ships with maintenance crew after all.
 C'tron > WORRIED: But illumination... it's clearly artificial...\. like every other special effect.
 Joern > TOWARD: What if planet is also artificial? 
 Joern > SARCASTIC: Like, all metal on the inside?
@@ -222,7 +223,7 @@ set cced.ctron-joern.tourism.sapphire true
 condition: party.alive.Glasses && party.alive.Joern && area.beach.isCurrent
 
 Message 1
-Joern > SMILE: This beach area is quite pretty. Now you two go on vacation too!
+Joern > SMILE: This beach area is quite pretty. Now you can go on vacation too!
 Lea > SMILE: ...
 C'tron > SMILE: I guess. Something is better than nothing, right?
 Joern > TOWARD: It's also way more clean than ones I've been too.

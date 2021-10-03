@@ -25,7 +25,7 @@ Lukas > LAUGH: Well, it's good that everything turned out as it is, right?
 Emilie > DETERMINED: Oui! And since we're all equally leveled, we can kick ass together!
 if newgame.sergey-hax
     Lea > INSANE: ...!!
-    Emilie > SUSPICIOUS: Right...\. watch \c[3]you\c[0] kick ass...
+    Emilie > SUSPICIOUS: Right...\. watch \c[1]you\c[0] kick ass...
 else
     if player.level <= 10
         Lea > SURPRISED_TOWARD: Hi?
@@ -69,10 +69,14 @@ Emilie > AWAY: How is your job, Lukas?
 Lukas > SKEPTICAL: Project scope increased, but deadlines are left unchanged.
 Lukas > DEFAULT: Meanwhile, most of the department has no clue what they are doing.
 Lukas > LAUGH: You know, business as usual.
+
+Message 7
 Emilie > CURIOUS: I wonder if Lea will also get a job.
 Lea > SURPRISED_AWAY: How?
 Lukas > WONDERING: I'm sure Instatainment will find something for you to do.
-Lukas > WINK: Play-testing new content?
+
+Message 8
+Lukas > WINK: Lea may perform play-testing of new content.
 Emilie > CURIOUS: Like an early access?
 Lea > EXCITED: ...!
 Lukas > WINK: Knowing Instatainment, it's gonna be one hell of a \c[3]Long Early Access\c[0].

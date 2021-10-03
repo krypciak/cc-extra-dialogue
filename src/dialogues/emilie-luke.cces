@@ -46,7 +46,7 @@ Emilie > DETERMINED: \c[1]I have to know!
 Lea > ANNOYED: ...?
 Luke > EYES_CLOSED: Sorry, Emilie.
 Luke > WINK: Classified information.
-Emilie > MOPING: Common! It's not fair to keep secrets from your friends, non?
+Emilie > MOPING: Come on! It's not fair to keep secrets from your friends, non?
 Lea > EXHAUSTED: ...
 
 Message 6
@@ -101,10 +101,10 @@ Emilie > CURIOUS: Why are you looking at me?\. I thought you were an expert.
 Lea > SHOUT_PANIC: \c[1]WAIT!!\c[0]
 
 Message 11
-Emilie > MOPING: I'm sorry.
-Emilie > EMBARRASSED: It's really none of my business.
+Emilie > MOPING: You know what... I'm sorry.
+Emilie > EMBARRASSED: Your matters is really none of my business.
 Lea > PROUD: Hi sorry, meet Lea! # If the joke doesn't fit this dialogue, stick it somewhere else.
-Luke > LAUGH: Bwahahahaha~! Nice one.
+Luke > LAUGH: Bwahaha~! Nice one.
 Emilie > SUSPICIOUS: ...
 Emilie > MOPING: Oui, you two are dumb.
 Lea > SMILE: Sorry.

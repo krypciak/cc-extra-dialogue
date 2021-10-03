@@ -76,12 +76,12 @@ if plot.apollo.leaWins >= 3
     Joern > SMILE: About time he met a \c[3]superior\c[0] opponent.
 else
     if plot.apollo.leaWins >= 2
-        Emilie > CURIOUS: They are pretty even in terms of skill, non.
+        Emilie > CURIOUS: Lea looks even with grasshead in terms of skill.
         Lea > EXHAUSTED: ...
         Joern > DEFAULT: Surprisingly.
         Joern > SMILE: Nice to finally see him fight a \c[3]challenging\c[0] opponent.
     else
-        Joern > TOWARD: Could've went easier on Lea.
+        Joern > TOWARD: Could've went easier on Lea in duels too...
         Lea > PRE_CRY1: ...
         Emilie > ANGRY: Yeah!\. Bashing newbies is \c[1]not fair\c[0]!
         Lea > PRE_CRY2: ...
@@ -117,12 +117,11 @@ Emilie > TAUNTING: Nothing goes unnoticed in my presence.
 Lea > SHAKE: [shakes head]
 Joern > DEFAULT: Right...\! They also looked the same.
 Joern > SARCASTIC: \c[3]Exactly\c[0] the same.
-Lea > EXHAUSTED: ...!
 
 Message 3
 Emilie > DEFAULT: Playing with you is fun, Joern.
 Emilie > DETERMINED: Since you watch my back, I can focus on punching them things.
-Joern > DEFAULT: Thanks. I like my job.
+Joern > SMILE: Thanks. I like my job.
 Joern > SMILE: Always a pleasure, when people acknowledge their tanks.
 Emilie > AWAY: You play tanks often?
 Joern > UP: I like to help other people.
@@ -169,12 +168,12 @@ Message 3
 Emilie > DEFAULT: So it's a special fish, fried on a stone. Neat.
 Joern > DEFAULT: But wait...\. There is more...
 Emilie > ASTONISHED: Nooooo~!
-Joern > SARCASTIC: The heated stone is brought to the table.
+Joern > SARCASTIC: The heated lava stone is brought to the table.
 Emilie > CURIOUS: Uhm...\. Why?
 Joern > SMILE: The fish is not prepared beforehand. 
-Joern > SMILE: Instead, you \c[3]do it yourself\c[0] by searing it on that stone.
+Joern > SMILE: Instead, you \c[3]do it yourself\c[0] by searing it on the stone.
 Emilie > ASTONISHED: Wow, exotique!
-Joern > SMILE: Indeed.\. You cook it as you eat and make it as seared as you like.
+Joern > SMILE: Indeed.\. You cook it as you eat, searing to your liking.
 Emilie > DETERMINED: Now I want to try it out!
 Lea > NOD_SAD: [nods]
 

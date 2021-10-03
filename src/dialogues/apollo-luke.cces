@@ -62,6 +62,7 @@ endif
 if newgame.lea-must-die
     Lea > EXHAUSTED: ...!
     Luke > SKEPTICAL: Can't argue about Lea.\. Hardly applies to me though.
+    goto postGrind
 endif
 if player.level > 75
     Luke > DEFAULT: If by honing skills you mean grinding \c[3]under-leveled\c[0] mobs.
