@@ -179,37 +179,47 @@ condition: party.alive.Glasses && party.alive.Joern && area.forest.isCurrent
 
 Message 1
 Joern > SMILE: Can't find places like this back at home.
-C'Tron > DEFAULT: Sapphire Ridge. A forest, permanently shrouded in twilight.
-C'tron > DOWN: Perpetual dusk, while not unheard of, is a very rare planetary anomaly.
-C'tron > SURPRISED: For that to be natural, Raritan Gem must have synchronous rotation with the star.
-C'tron > WORRIED: No, this can't be right.\! The climate should then be much more hostile.
-Joern > SMILE: Relax and enjoy the atmosphere, Tronny.
+C'Tron > DEFAULT: Sapphire Ridge... A mysterious forest, permanently shrouded in twilight.
+Joern > SMILE: Peaceful and relaxing, isn't it. 
+Lea > NOD: [nods]
 
 Message 2
-C'tron > DOWN: Almost entirety of this planet is water, yet we never see any storms or waves.
-Joern > DEFAULT: Large waves would be quite disastrous for areas, like Rookie Harbor.
-C'tron > WORRIED: Raritan Gem must have synchronous rotation with the gas giant...
-C'tron > EXHAUSTED: But then it may orbit into the giant's dark side...
-C'tron > BLANK: Unless...
-Lea > EXHAUSTED: ...
-C'tron > EXHAUSTED: No, what a nonsense. The water and illumination are just not real.
+C'tron > DOWN: Did you know that perpetual dusk is a very rare planetary anomaly?
+C'tron > SURPRISED: For that to be natural, Raritan Gem must have synchronous rotation with the star.
+C'tron > WORRIED: But something isn't right...\! The climate should be much more hostile.
+Joern > SMILE: Relax and enjoy the atmosphere, Tronny.
 
 Message 3
-C'tron > WORRIED: There are also hundreds of instanced rooms for every player...
-C'tron > DEFAULT: No way they hollowed out the entire continent for them. It's just too much terraforming.
+C'tron > DOWN: Almost entirety of this moon is water, yet we never see any storms or waves.
+Joern > DEFAULT: Large waves would be disastrous for beach areas.
+C'tron > WORRIED: And to avoid waves, Raritan Gem must be tidally locked...
+Joern > DEFAULT: Sounds plausible.
+C'tron > EXHAUSTED: But then it may orbit behind gas giant, blocking the light...
+C'tron > BLANK: Unless...
+
+Message 4
+Joern > DEFAULT: Unless it doesn't \c[3]rotate\c[0] nor \c[3]revolve\c[0] around gas giant?
+C'tron > EXHAUSTED: No, what a nonsense. That's impossibly rare.
+C'Tron > DOWN: On top of that, perfectly habitable atmosphere and gravity?
+C'tron > WORRIED: The water and illumination are just not real.
+Lea > EXHAUSTED: ...
+
+Message 5
+C'tron > DEFAULT: There are also hundreds of instanced rooms for every player...
+C'tron > WORRIED: No way they hollowed out the entire continent to built them. It's just too much terraforming.
 C'tron > BLANK: That means only one thing...
 Joern > DEFAULT: Tronny.
 C'tron > CRAZY_PANIC: Not only water and light are fake! 
-C'tron > CRAZY_PANIC2: \c[1]The entire planet must be simulated!!\c[0]
+C'tron > CRAZY_PANIC2: \c[1]The entire moon must be simulated!!\c[0]
 Joern > SARCASTIC: Relax, Tronny.
 Joern > EX2_TRANQUIL: Relax.
 Lea > SLEEPING: ...
 
-Message 3
+Message 6
 C'tron > EXHAUSTED: Okay, maybe that was a bit too crazy.
 C'tron > THOUGHTFUL: Raritan Gem is real. There are ships with maintenance crew after all.
 C'tron > WORRIED: But illumination... it's clearly artificial...\. like every other special effect.
-Joern > TOWARD: What if planet is also artificial? 
+Joern > TOWARD: What if moon is also artificial? 
 Joern > SARCASTIC: Like, all metal on the inside?
 C'tron > PANIC: Oh no...
 Lea > SMILE: ...
