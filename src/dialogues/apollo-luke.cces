@@ -56,7 +56,7 @@ Apollo > CONTENT: Once again our noble party is victorious!
 Apollo > DEFAULT: With each adversary, we continue honing our skills.
 if newgame.sergey-hax
     Luke > COMPLAINING: Certainly not honing anything in this party.
-    Lea > INSANE: ...!!
+    Lea > INSANE: \c[1]...!!
     goto postGrind
 endif
 if newgame.lea-must-die

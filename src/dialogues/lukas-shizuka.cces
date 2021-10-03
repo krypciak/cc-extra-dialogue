@@ -100,7 +100,7 @@ Lukas > DEFAULT: Ever heard about ancient strategy of \c[3]W plus M 1\c[0]?
 Shizuka > BRIGHT: That's basically our game plan.
 if newgame.sergey-hax
     Shizuka > FUNNY_SMILE: Not like we need to do anything anyway.
-    Lea > INSANE_DOWN: ...!!
+    Lea > INSANE_DOWN: \c[1]...!!
     goto postGamePlan
 endif
 if player.level <= 10

@@ -25,7 +25,7 @@ Message 3
 Lukas > DEFAULT: You lot didn't forget to spend your \c[3]circuit points\c[0], right?
 # Insane Spheromancer
 if newgame.sergey-hax
-    Lea > INSANE_DOWN: ...!
+    Lea > INSANE_DOWN: \c[1]...!
     Lukas > COMPLAINING: Yeah...\. like you need them at all...
     goto postUnusedCP
 endif
@@ -82,7 +82,7 @@ Lukas > SKEPTICAL: They give more than just resistances, you know.
 Lukas > DEFAULT: For example, \c[3]Sharpening Flames\c[0] also grants significant increase to \c[3]attack\c[0] stat.
 if newgame.sergey-hax
     Lukas > COMPLAINING: Maybe with it I'll manage to kill at least something.
-    Lea > INSANE_DOWN: ...!
+    Lea > INSANE_DOWN: \c[1]...!
     C'tron > EMBARRASSED: Right...
 else
     Lukas > WINK: I think, Lea would appreciate such buff. Bigger numbers never hurt.
@@ -98,7 +98,7 @@ C'tron > EXHAUSTED: Sorry.
 Lukas > TOWARDS: Just kidding, don't worry about it.
 Lukas > LAUGH: It's not like we need buffs at this point anyway.
 if newgame.sergey-hax
-    Lea > INSANE_DOWN: ...!
+    Lea > INSANE_DOWN: \c[1]...!
     Lukas > SKEPTICAL: Like I said...
 else
     Lukas > WINK: Lea can take care of enemies just fine.

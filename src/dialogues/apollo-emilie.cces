@@ -79,7 +79,7 @@ Apollo > DEFAULT: I may have considered picking this class.
 Apollo > CONTENT: It would be an honor to protect Spheromancer Lea.
 if newgame.sergey-hax
     Apollo > SUSPICIOUS: Not that she really needs any protection...
-    Lea > INSANE_DOWN: Hi~
+    Lea > INSANE_DOWN: \c[1]Hi~
 else
     Lea > SCARED: ...!
 endif

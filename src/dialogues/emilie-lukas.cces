@@ -24,7 +24,7 @@ Emilie > EMBARRASSED: I passed them anyway...\. somehow...
 Lukas > LAUGH: Well, it's good that everything turned out as it is, right?
 Emilie > DETERMINED: Oui! And since we're all equally leveled, we can kick ass together!
 if newgame.sergey-hax
-    Lea > INSANE: ...!!
+    Lea > INSANE: \c[1]...!!
     Emilie > SUSPICIOUS: Right...\. watch \c[1]you\c[0] kick ass...
 else
     if player.level <= 10

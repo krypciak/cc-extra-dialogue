@@ -109,7 +109,7 @@ Joern > AWWW: Lea, can we go back to Bergen?
 Lea > SHAKE: [shakes head]
 Joern > SARCASTIC: You're a little devil, you know that?
 if newgame.sergey-hax
-    Lea > INSANE_DOWN: Lea! 
+    Lea > INSANE_DOWN: \c[1]Lea! 
     C'tron > EMBARRASSED: What did you expect? She went mad with power.
 endif
 

@@ -30,7 +30,7 @@ Emilie > DETERMINED: Punching our way to victory, one mob at a time.
 if newgame.sergey-hax
     Joern > TOWARD: Are you sure about that?
     Emilie > WATCH_OUT_BADASS: Never said it was done by me.
-    Lea > INSANE_DOWN: \c[1]Hi!\c[0]
+    Lea > INSANE_DOWN: \c[1]Hi!
 else
     Joern > DEFAULT: You two are rather aggressive.
     Emilie > WATCH_OUT_BADASS: I'm a Pentafist...\! I punch things.
@@ -129,7 +129,7 @@ Joern > DEFAULT: Tanks are my go-to class in any RPG.
 Emilie > DETERMINED: And I like to punch things out of existance before they even attack us.
 if newgame.sergey-hax
     Emilie > DEAD_INSIDE: At least, I used to...
-    Lea > INSANE_DOWN: \c[1]...!!\c[0]
+    Lea > INSANE_DOWN: \c[1]...!!
     Emilie > DEAD_INSIDE: Why are we still here, Joern?
     Joern > SMILE: To have a nice chat and take in the view.
 endif

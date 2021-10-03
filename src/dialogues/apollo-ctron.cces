@@ -70,7 +70,7 @@ else
     Apollo > POINTING: By your compassionate example, public opinion of Evotars shall undoubtedly be swayed!
     if newgame.sergey-hax
         C'tron > EMBARRASSED: Uhm... are you sure about that one?
-        Lea > INSANE_DOWN: ...
+        Lea > INSANE_DOWN: \c[1]...
     else
         if lea.words.thanks
             Lea > TOUCHED: ...Thanks.

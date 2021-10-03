@@ -32,7 +32,7 @@ C'tron > DEFAULT: I sense something familiar when playing with you, Shizuka.
 Shizuka > SMUG: Bet it's the pure power, radiating from us.
 if newgame.sergey-hax
     Shizuka > FUNNY_SMILE: Wish I also had her bugged damage.
-    Lea > INSANE_DOWN: ...!
+    Lea > INSANE_DOWN: \c[1]...!
 else
     Lea > SMUG: ...!
 endif
