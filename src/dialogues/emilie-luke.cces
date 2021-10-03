@@ -97,17 +97,20 @@ Lea > EX2_EMBARRASSED: ...W-why?!
 Emilie > SMILE: I'm a detective, remember?
 Emilie > DEAD_INSIDE: \c[1]Did you kiss or no?
 Luke > WONDERING: Can evotars even do that?
+Lea > ANGRY: Wait.
 Emilie > CURIOUS: Why are you looking at me?\. I thought you were an expert.
-Lea > SHOUT_PANIC: \c[1]WAIT!!\c[0]
+Lea > SHOUT_PANIC: \c[1]WAAAAAAAAIT!!\c[0]
+Emilie > CURIOUS: .\..\..\.O-okay.\. I'll stop.
+Lea > ANNOYED: Thanks...
 
 Message 11
 Emilie > MOPING: You know what... I'm sorry.
-Emilie > EMBARRASSED: Your matters is really none of my business.
+Emilie > EMBARRASSED: Your matters are really none of my business.
 Lea > PROUD: Hi sorry, meet Lea! # If the joke doesn't fit this dialogue, stick it somewhere else.
 Luke > LAUGH: Bwahaha~! Nice one.
 Emilie > SUSPICIOUS: ...
-Emilie > MOPING: Oui, you two are dumb.
+Emilie > MOPING: Oui, you two are \c[3]dumb\c[0].
 Lea > SMILE: Sorry.
-Luke > LAUGH: Ja. Let's pretend all this never happened.
+Luke > LAUGH: Let's pretend all this never happened.
 
 set cced.emilie-luke.battle-over-1.finished true

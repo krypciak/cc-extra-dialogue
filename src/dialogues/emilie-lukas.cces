@@ -45,7 +45,7 @@ Lukas > WONDERING: Sometimes I wonder about it myself. Wouldn't it be cheaper to
 Emilie > SHRUG: Guess we'll never know.
 
 Message 4
-Lukas > DEFAULT: By the way, how did you like \c[3]that jumping puzzle\c[0] in Gaia's Garden?
+Lukas > DEFAULT: By the way, how did you like \c[3]that jumping puzzle\c[0] in Gaia's Garden? # Personally, I like them all. Especially the Azure Archipelago.
 Emilie > EXHAUSTED: Mon Dieu, the jumping ones are bad already.
 Emilie > CURIOUS: Ones where you have to hit switches on time are even worse.
 Lukas > TOWARDS: Or when you have to escort a slowly traveling VRP.
@@ -56,7 +56,7 @@ Emilie > EXHAUSTED: Me neither.
 Message 5
 Emilie > DEFAULT: Most enemies in CrossWorlds are kind of cool.
 Emilie > EMBARRASSED: Hate the flying ones though.
-Lukas > LAUGH: Jap. They keep flying away if you get too close. 
+Lukas > LAUGH: Jap. They keep getting away if you get too close. 
 Lukas > SKEPTICAL: Most of the time, it turns the fight into a waiting game.
 Emilie > EXHAUSTED: It's always some dumb papagun for me.
 Emilie > MOPING: He stays up high and keeps throwing stupid bananas.
@@ -69,13 +69,16 @@ Emilie > AWAY: How is your job, Lukas?
 Lukas > SKEPTICAL: Project scope increased, but deadlines are left unchanged.
 Lukas > DEFAULT: Meanwhile, most of the department has no clue what they are doing.
 Lukas > LAUGH: You know, business as usual.
+Emilie > EXHAUSTED: Oui, some things never change.
 
 Message 7
 Emilie > CURIOUS: I wonder if Lea will also get a job.
 Lea > SURPRISED_AWAY: How?
 Lukas > WONDERING: I'm sure Instatainment will find something for you to do.
+Lea > THINKING: ...
 
 Message 8
+Lukas > DEFAULT: Just got an idea.
 Lukas > WINK: Lea may perform play-testing of new content.
 Emilie > CURIOUS: Like an early access?
 Lea > EXCITED: ...!
@@ -85,16 +88,3 @@ Emilie > MOPING: Not fair! She can't even spoil it!
 Lea > WHISTLING: ...!
 
 set cced.emilie-lukas.battle-over-1.finished true
-
-# Message 10
-# Lukas > SHOCKED: Did someone just move in that bush?!
-# Emilie > CURIOUS: You mean the grassheaded player, who's been following us for a few hours?
-# Emilie > SMILE: Oui, he's \c[3]creepy\c[0].
-# Lukas > PANIC: \c[1]Few hours\c[0]?!
-# Lea > SURPRISED_TOWARD: ...?
-# Lea > SURPRISED_AWAY: ...?
-# if plot.line >= 40000
-#     Lea > SURPRISED: What? Where?
-# else
-#     Lea > SURPRISED: Hi?
-# endif
