@@ -1,4 +1,4 @@
-![CrossCode Extra Dialogue Banner](docs/images/title.png)
+# ![CrossCode Extra Dialogue Banner](docs/images/title.png)
 
 This mod adds more lore-friendly dialogues for party members, that previously had none. 
 
