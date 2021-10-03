@@ -1,10 +1,12 @@
-# ![CrossCode Extra Dialogue Banner](docs/images/title.png)
+# CrossCode Extra Dialogue
 
-This mod adds more lore-friendly dialogues for party members, that previously had none. 
+![CrossCode Extra Dialogue Banner](docs/images/title.png)
 
-New interactions increase amount of post-combat party conversations by **at least 4 times**, when compared to original game + DLC.
+This mod adds more lore-friendly dialogues for party members, that previously had no interractions with each other. 
 
-*Note: 'A New Home' DLC is NOT required, although majority of new content is only available in post-game.*
+Compared to original game + DLC, amount of post-combat party conversations is increased by **at least 4 times**.
+
+*Note: 'A New Home' DLC is NOT required, although majority of new content is only available in post-game episode.*
 
 ## Installation
 This mod requires [CCLoader](https://github.com/CCDirectLink/CCLoader) which you can either install manually or use the [CCLoader installer](https://github.com/CCDirectLink/ccloader-installer).
@@ -41,13 +43,13 @@ It mostly concerns equipment upgrade and finishing combat with S rank.
 ## Custom Expressions
 ![Extra expressions](docs/images/extra_expressions.png)
 
-This mod utilizes new custom expressions, provided by [Extra Expressions Pack](https://github.com/Paradragon/cc-extra-expressions-pack/). 
+This mod utilizes a few custom expressions, provided by [Extra Expressions Pack](https://github.com/Paradragon/cc-extra-expressions-pack/). 
 
 This pack is already integrated. **You don't have to download it manually.** 
 
 # Other
 ## Other languages
-*CrossCode: Extra Dialogue* features only English translation. We have no plans for implementing translations for other languages ourselves.
+*CrossCode Extra Dialogue* features only English translation. We have no plans for implementing translations for other languages ourselves.
 
 If you want to contribute by implementing a translation to different language, we're open to pull requests.
 
