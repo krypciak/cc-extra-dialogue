@@ -2,16 +2,16 @@
 
 ![CrossCode Extra Dialogue Banner](docs/images/title.png)
 
-This mod adds more lore-friendly dialogues for party members, that previously had no interractions with each other. 
+This mod adds more lore-friendly dialogue for party members, that previously had no interactions with each other. 
 
 Compared to original game + DLC, amount of post-combat party conversations is increased by **at least 4 times**.
 
 *Note: 'A New Home' DLC is NOT required, although majority of new content is only available in post-game episode.*
 
 ## Installation
-This mod requires [CCLoader](https://github.com/CCDirectLink/CCLoader) which you can either install manually or use the [CCLoader installer](https://github.com/CCDirectLink/ccloader-installer).
+This mod requires [CCLoader](https://github.com/CCDirectLink/CCLoader#ccloader) which you can either install manually or use the [CCLoader installer](https://github.com/CCDirectLink/ccloader-installer#ccloader-installer).
 
-Once CCLoader is installed, [download cc-extra-dialogue.ccmod](https://github.com/Paradragon/cc-extra-dialogue/releases) and put it into `CrossCode/assets/mods` folder.
+Once CCLoader is installed, download [cc-extra-dialogue.ccmod](https://github.com/Paradragon/cc-extra-dialogue/releases) and put it into `CrossCode/assets/mods` folder.
 
 [![Download latest release](docs/images/download_release.png)](https://github.com/Paradragon/cc-extra-dialogue/releases)
 
@@ -19,11 +19,11 @@ Once CCLoader is installed, [download cc-extra-dialogue.ccmod](https://github.co
 # Extended Party Dialogue
 ![Extended party dialogue](docs/images/party_dialogue.png)
 
-*CrossCode: Extra Dialogue* features new dialogue for **16 different parties**, which were not covered by the original game. 
+This mod features new dialogue for **16 different parties**, which were not covered by the original game. In other words, every pair of companions now has something to say to each other. 
 
-Numbers say it all. The mod adds approximately 7500 words of text, which is almost a size of novelette!
+*CrossCode Extra Dialogue* adds approximately 7500 words of text, which is almost a size of novelette.
 
-We paid extra attention to keeping new dialogues lore-friendly and true to characters personalities, while also making them interesting and expanding a little bit on the world of CrossCode.
+We paid special attention to keeping new dialogues lore-friendly and true to characters personalities, while also expanding a little bit on the world of CrossCode.
 
 Just like in the original game, new dialogues play out after finishing combat.
 
@@ -31,7 +31,7 @@ Just like in the original game, new dialogues play out after finishing combat.
 ## Reactive Dialogue
 ![Reactive dialogue](docs/images/reactive_dialogue.png)
 
-Party dialogue may have subtle changes based on which other dialogues have already played out, how certain past events have unfolded, active NG+ modifiers and even your personal stats, like current level.
+Party dialogue may have subtle changes based on which other dialogues have already played out, current story progression, active NG+ modifiers and player level.
 
 ## Extended Miscellaneous Comments
 ![Miscellaneous dialogue](docs/images/miscellaneous.png)
@@ -50,8 +50,6 @@ This pack is already integrated. **You don't have to download it manually.**
 # Other
 ## Other languages
 *CrossCode Extra Dialogue* features only English translation. We have no plans for implementing translations for other languages ourselves.
-
-If you want to contribute by implementing a translation to different language, we're open to pull requests.
 
 ## Compatibility
 This mod should have no conflicts and is safe to use with any other mod, big or small.
