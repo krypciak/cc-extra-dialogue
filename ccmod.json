@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "title": "CrossCode Extra Dialogue",
   "description": "Adds more lore-friendly dialogue for party members.",
-  "homepage": "https://github.com/Paradragon/cc-extra-dialogue",
+  "repository": "https://github.com/Paradragon/cc-extra-dialogue",
+  "tags": ["QoL"],
+  "authors": "Paradragon",
   "icons": {
     "24": "icon.png"
   },
