@@ -1,8 +1,0 @@
-{
-  "name": "cc-extra-dialogue",
-  "version": "1.0.1",
-  "ccmodHumanName": "CrossCode Extra Dialogue",
-  "description": "Adds more lore-friendly dialogue for party members.",
-  "homepage": "https://github.com/Paradragon/cc-extra-dialogue",
-  "prestart": "prestart.js"
-}

@@ -33,8 +33,8 @@ jobs:
 
       - name: Create CCED archives
         run: |
-          zip -q -r cc-extra-dialogue.ccmod assets patches js prestart.js ccmod.json package.json icon.png
-          tar -czf cc-extra-dialogue.tar.gz --transform 's,^,cc-extra-dialogue/,' assets patches js prestart.js ccmod.json package.json icon.png
+          zip -q -r cc-extra-dialogue.ccmod assets patches js prestart.js ccmod.json icon.png
+          tar -czf cc-extra-dialogue.tar.gz --transform 's,^,cc-extra-dialogue/,' assets patches js prestart.js ccmod.json icon.png
 
       - name: Get version
         id: get_version
