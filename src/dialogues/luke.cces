@@ -1,5 +1,5 @@
 
-# by Paradragon
+# by anonymous
 == cced-luke-rumors-parrot-battle-over ==
 
 condition: party.alive.Luke && !party.has.Apollo && !party.has.Joern && cced.apollo-luke.battle-over-1.finished && cced.joern-luke.battle-over-1.finished

@@ -1,6 +1,6 @@
 
 # Original idea by CoolWall
-# by Paradragon
+# by anonymous
 == cced-joern-lukas-battle-over-1 ==
 
 condition: party.alive.Joern && party.alive.Schneider && plot.line >= 40000
@@ -50,7 +50,7 @@ set cced.joern-lukas.battle-over-1.finished true
 
 
 
-# by Paradragon
+# by anonymous
 == cced-joern-lukas-battle-over-2 ==
 
 condition: party.alive.Joern && party.alive.Schneider && cced.joern-lukas.battle-over-1.finished && plot.line >= 40000

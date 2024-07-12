@@ -1,4 +1,4 @@
-# by Paradragon
+# by anonymous
 == cced-emilie-joern-battle-over-1 ==
 
 condition: party.alive.Emilie && party.alive.Joern
@@ -139,7 +139,7 @@ set cced.emilie-joern.battle-over-2.finished true
 
 
 # Original idea by Lolz
-# by Paradragon
+# by anonymous
 == cced-emilie-joern-battle-over-3 ==
 
 condition: party.alive.Emilie && party.alive.Joern && plot.line >= 18700 && cced.emilie-joern.battle-over-2.finished

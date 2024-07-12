@@ -1,5 +1,5 @@
 
-# by Paradragon
+# by anonymous
 == cced-luke-shizuka-battle-over-1 ==
 condition: party.alive.Luke && party.alive.Shizuka && plot.line >= 48000
 

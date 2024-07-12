@@ -1,5 +1,5 @@
 
-# by Paradragon
+# by anonymous
 == cced-apollo-ctron-battle-over-1 ==
 
 condition: party.alive.Apollo && party.alive.Glasses

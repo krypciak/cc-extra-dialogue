@@ -1,5 +1,5 @@
 
-# by Paradragon
+# by anonymous
 == cced-lukas-shizuka-battle-over-1 ==
 # plot.line 48000 is post final dungeon
 condition: party.alive.Schneider && party.alive.Shizuka && plot.line >= 48000

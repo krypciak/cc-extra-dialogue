@@ -1,5 +1,5 @@
 
-# by Paradragon
+# by anonymous
 == cced-shizuka-rumors-similarity-battle-over ==
 
 condition: party.alive.Shizuka && party.size == 2 && cced.shizuka.lea-similarity-mentions >= 4
@@ -17,7 +17,7 @@ set cced.shizuka.similarity-rumor.finished true
 
 
 
-# by Paradragon
+# by anonymous
 == cced-shizuka-rumors-shadytron-battle-over ==
 
 condition: party.alive.Shizuka && party.size == 2 && cced.ctron-shizuka.battle-over-1.finished
@@ -34,7 +34,7 @@ set cced.shizuka.shadytron-rumor.finished true
 
 
 
-# by Paradragon
+# by anonymous
 == cced-shizuka-rumors-lukasdate-battle-over ==
 
 condition: party.alive.Shizuka && party.size == 2 && cced.lukas-shizuka.battle-over-2.finished

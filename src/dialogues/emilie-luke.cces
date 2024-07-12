@@ -1,5 +1,5 @@
 
-# by Paradragon
+# by anonymous
 == cced-emilie-luke-battle-over-1 ==
 
 condition: party.alive.Emilie && party.alive.Luke && plot.line >= 40000

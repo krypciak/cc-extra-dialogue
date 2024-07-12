@@ -1,5 +1,5 @@
 
-# by Paradragon
+# by anonymous
 == cced-ctron-joern-battle-over-rise ==
 condition: party.alive.Glasses && party.alive.Joern && area.autumn-area.isCurrent
 

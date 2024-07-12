@@ -1,5 +1,5 @@
 
-# by Paradragon
+# by anonymous
 == cced-ctron-shizuka-battle-over-1 ==
 
 condition: party.alive.Glasses && party.alive.Shizuka && plot.line >= 40000

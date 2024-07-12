@@ -1,6 +1,6 @@
 
 # Original idea by Lolz
-# by Paradragon
+# by anonymous
 == cced-joern-luke-battle-over-1 ==
 
 condition: party.alive.Joern && party.alive.Luke && plot.line >= 40000

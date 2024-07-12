@@ -1,5 +1,5 @@
 
-# by Paradragon
+# by anonymous
 == cced-joern-shizuka-battle-over-1 ==
 
 condition: party.alive.Joern && party.alive.Shizuka && plot.line >= 40000

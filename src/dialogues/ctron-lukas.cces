@@ -1,5 +1,5 @@
 
-# by Paradragon
+# by anonymous
 == cced-ctron-lukas-battle-over-1 ==
 
 condition: party.alive.Glasses && party.alive.Schneider && plot.line >= 40000

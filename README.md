@@ -1,5 +1,7 @@
 # CrossCode Extra Dialogue
 
+## NOTE: This wasn't created by me! The author wants to stay anonymous and has agreed for further distribution of this mod.
+
 ![CrossCode Extra Dialogue Banner](docs/images/title.png)
 
 This mod adds more lore-friendly dialogue for party members, that previously had no interactions with each other. 

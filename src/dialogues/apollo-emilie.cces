@@ -1,6 +1,6 @@
 
 # Original idea by el2020
-# by Paradragon
+# by anonymous
 == cced-apollo-emilie-battle-over-1 ==
 
 condition: party.alive.Apollo && party.alive.Emilie

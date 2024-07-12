@@ -1,6 +1,6 @@
 
 # Original ideas by Function, CoolWall
-# by Paradragon
+# by anonymous
 == cced-apollo-lukas-battle-over-gaia ==
 
 condition: party.alive.Apollo && party.alive.Schneider && area.jungle.isCurrent && !cced.apollo-lukas.battle-over-1.finished && plot.line >= 40000
