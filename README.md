@@ -1,5 +1,7 @@
 # CrossCode Extra Dialogue
 
+[![CCModManager badge](https://raw.githubusercontent.com/CCDirectLink/CCModManager/refs/heads/master/icon/badge.png)](https://github.com/CCDirectLink/CCModManager)
+
 ## NOTE: This wasn't created by me! The author wants to stay anonymous and has agreed for further distribution of this mod.
 
 ![CrossCode Extra Dialogue Banner](docs/images/title.png)
