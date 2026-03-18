@@ -1,0 +1,146 @@
+{
+    "EX2_DISAPPOINTED_DOWN": {
+        "faces": [
+            [
+                "straight",
+                "down",
+                "ex2_downDisappointed"
+            ]
+        ]
+    },
+    "EX2_DISAPPOINTED": {
+        "faces": [
+            [
+                "straight",
+                "norm",
+                "ex2_normDisappointed"
+            ]
+        ]
+    },
+    "EX2_JOKING_TOWARD": {
+        "faces": [
+            [
+                "straight",
+                "toward",
+                "ex2_towardJoking"
+            ]
+        ]
+    },
+    "EX2_LIGHT_SMILE": {
+        "faces": [
+            [
+                "straight",
+                "norm",
+                "ex2_normLightSmile"
+            ]
+        ]
+    },
+    "EX2_GENTLE_SMILE": {
+        "faces": [
+            [
+                "straight",
+                "norm",
+                "ex2_normGentleSmile"
+            ]
+        ]
+    },
+    "EX2_SMUG": {
+        "faces": [
+            [
+                "straight",
+                "norm",
+                "ex2_normSmug"
+            ]
+        ]
+    },
+    "EX2_DETERMINED": {
+        "faces": [
+            [
+                "strong",
+                "norm",
+                "ex2_normDetermined"
+            ]
+        ]
+    },
+    "EX2_SURVIVOR": {
+        "faces": [
+            [
+                "strong",
+                "up",
+                "ex2_upSurvivor"
+            ]
+        ]
+    },
+    "EX2_SUGGESTIVE": {
+        "faces": [
+            [
+                "straight",
+                "away",
+                "ex2_awaySuggestive"
+            ]
+        ]
+    },
+    "EX2_PLOTTING": {
+        "faces": [
+            [
+                "forward",
+                "away",
+                "ex2_awaySuggestive"
+            ]
+        ]
+    },
+    "EX2_NERVOUS_GLANCE": {
+        "faces": [
+            [
+                "straight",
+                "down",
+                "ex2_downNervousGlance"
+            ]
+        ]
+    },
+    "EX2_SUSPICIOUS": {
+        "faces": [
+            [
+                "straight",
+                "norm",
+                "ex2_normSuspicious"
+            ]
+        ]
+    },
+    "EX2_SUSPICIOUS_TIGHT": {
+        "faces": [
+            [
+                "tight",
+                "norm",
+                "ex2_normSuspicious"
+            ]
+        ]
+    },
+    "EX2_EMBARRASSED_UP": {
+        "faces": [
+            [
+                "straight",
+                "norm",
+                "ex2_normEmbarrassedUp"
+            ]
+        ]
+    },
+    "EX2_EMBARRASSED": {
+        "faces": [
+            [
+                "straight",
+                "norm",
+                "ex2_normEmbarrassed"
+            ]
+        ]
+    },
+    "EX2_CRACKING_UP": {
+        "faces": [
+            [
+                "straight",
+                "toward",
+                "ex2_towardCrackingUp"
+            ]
+        ]
+    }
+}

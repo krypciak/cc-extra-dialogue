@@ -1,0 +1,75 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["schneider-equip"]
+    },
+  
+    {
+        "type": "SET_KEY",
+        "index": "event",
+        "content": [
+            {
+              "type": "SELECT_RANDOM",
+              "options": [{ "0": " ", "count": 4, "weight": 1 }],
+              "0_0": [
+                {
+                    "message": {
+                      "en_US": "Bought some shiny new gear. Wunderbar!",
+                      "langUid": 18523,
+                      "zh_TW": "<<A<<[CHANGED 2021/03/10]",
+                      "zh_CN": "\u6211\u6574\u4e86\u70b9\u65b0\u88c5\u5907\u3002\u5389\u5bb3\u5427\uff01<<A<<[CHANGED 2021/03/10]",
+                      "ja_JP": "\u30d4\u30c3\u30ab\u30d4\u30ab\u306e\u65b0\u3057\u3044\u30ae\u30a2\u8cb7\u3063\u305f\u3093\u3060\u3002\n\u3059\u3052\u3047\u305e\uff01<<A<<[CHANGED 2021/03/10]",
+                      "ko_KR": "\uc0c8 \uc7a5\ube44\ub97c \uc0c0\uc5b4! \uadfc\uc0ac\ud574!<<A<<[CHANGED 2021/03/10]",
+                      "de_DE": "Habe mir funkelnagelneue Ausr\u00fcstung gekauft. Wunderbar!"
+                    },
+                    "type": "SHOW_SIDE_MSG",
+                    "person": { 
+                        "person": "main.schneider", 
+                        "expression": "DEFAULT" 
+                    }
+                }
+              ],
+              "0_1": [
+                {
+                    "message": {
+                      "en_US": "About time for gear upgrade! Let's go cut some things."
+                    },
+                    "type": "SHOW_SIDE_MSG",
+                    "person": { 
+                        "person": "main.schneider", 
+                        "expression": "DEFAULT" 
+                    }
+                }
+              ],
+              "0_2": [
+                {
+                    "message": {
+                      "en_US": "Bought myself new gear! So glad it doesn't cost real money."
+                    },
+                    "type": "SHOW_SIDE_MSG",
+                    "person": { 
+                        "person": "main.schneider", 
+                        "expression": "LAUGH" 
+                    }
+                }
+              ],
+              "0_3": [
+                {
+                    "message": {
+                      "en_US": "Got new gear! Let's play in a \\c[3]Team Cup\\c[0] to test it out."
+                    },
+                    "type": "SHOW_SIDE_MSG",
+                    "person": { 
+                        "person": "main.schneider", 
+                        "expression": "DEFAULT" 
+                    }
+                }
+              ]
+            }
+          ]
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+]

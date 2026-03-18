@@ -1,0 +1,10 @@
+[{
+	"type": "ENTER",
+	"index": ["face", "expressions"]
+},{
+	"type": "IMPORT",
+	"src": "mod:patches/expressions/manlea.json"
+},{
+	"type": "EXIT",
+	"count": 2
+}]

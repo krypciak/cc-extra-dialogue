@@ -1,0 +1,6 @@
+[
+    {
+    	"type": "INCLUDE",
+    	"src": "mod:patches/miscellaneous/equip/joern.json"
+    }
+]

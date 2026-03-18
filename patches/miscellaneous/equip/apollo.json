@@ -1,0 +1,85 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["apollo-equip"]
+    },
+  
+    {
+        "type": "SET_KEY",
+        "index": "event",
+        "content": [
+            {
+              "type": "SELECT_RANDOM",
+              "options": [{ "0": " ", "count": 4, "weight": 1 }],
+              "0_0": [
+                {
+                    "message": {
+                      "en_US": "I just updated my gear, you should do so as well, Spheromancer Lea!",
+                      "de_DE": "Ich habe neue Ausr\u00fcstung. Auch du solltest welche kaufen, Spheromancer Lea!",
+                      "zh_CN": "\u6211\u521a\u53bb\u5347\u7ea7\u4e86\u4e00\u4e0b\u6211\u7684\u88c5\u5907\uff0c\u4f60\u4e5f\u8be5\u8fd9\u4e48\u505a\uff0c\u6c14\u5706\u4f7f\u8005\u8389\u4e9a\uff01<<A<<[CHANGED 2018/08/28]",
+                      "ja_JP": "\u4ffa\u306f\u30ae\u30a2\u3092\u30a2\u30c3\u30d7\u30b0\u30ec\u30fc\u30c9\u3057\u305f\u3002\n\u304a\u524d\u3082\u305d\u3046\u3057\u305f\u307b\u3046\u304c\u3044\u3044\u305e\u3001\n\u30b9\u30d5\u30a3\u30ed\u30de\u30f3\u30b5\u30fc\u306e\u30ec\u30a2\uff01<<A<<[CHANGED 2018/08/28]",
+                      "ko_KR": "\ubc29\uae08 \ub0b4 \uc7a5\ube44\ub97c \ud5a5\uc0c1\ud588\uc73c\ub2c8 \ub108\ub3c4 \uadf8\ub807\uac8c \ud558\ub294 \uac8c \uc88b\uc744 \uac70\ub2e4, \uc6d0\uc220\uc0ac \ub808\uc544.<<A<<[CHANGED 2018/08/28]",
+                      "langUid": 15870,
+                      "zh_TW": "\u6211\u525b\u53bb\u5347\u7d1a\u4e86\u4e00\u4e0b\u6211\u7684\u88dd\u5099\uff0c\u4f60\u4e5f\u8a72\u9019\u9ebc\u505a\uff0c\u6c23\u5713\u4f7f\u8005\u8389\u4e9e\uff01<<A<<[CHANGED 2018/08/28]"
+                    },
+                    "type": "SHOW_SIDE_MSG",
+                    "person": {
+                      "person": "antagonists.fancyguy",
+                      "expression": "CONTENT"
+                    }
+                }
+              ],
+              "0_1": [
+                {
+                    "message": {
+                      "en_US": "By failing to prepare, you are preparing to fail."
+                    },
+                    "type": "SHOW_SIDE_MSG",
+                    "person": {
+                      "person": "antagonists.fancyguy",
+                      "expression": "LECTURING"
+                    }
+                },
+                {
+                    "message": {
+                      "en_US": "Don't forget to keep your gear in check, Spheromancer Lea!"
+                    },
+                    "type": "SHOW_SIDE_MSG",
+                    "person": {
+                      "person": "antagonists.fancyguy",
+                      "expression": "POINTING"
+                    }
+                }
+              ],
+              "0_2": [
+                {
+                    "message": {
+                      "en_US": "My gear is upgraded and I am ready to follow you, Spheromacer Lea!"
+                    },
+                    "type": "SHOW_SIDE_MSG",
+                    "person": {
+                      "person": "antagonists.fancyguy",
+                      "expression": "DEFAULT"
+                    }
+                }
+              ],
+              "0_3": [
+                {
+                    "message": {
+                      "en_US": "I've just upgraded my gear, and you should too, Spheromancer Lea!"
+                    },
+                    "type": "SHOW_SIDE_MSG",
+                    "person": {
+                      "person": "antagonists.fancyguy",
+                      "expression": "LECTURING"
+                    }
+                }
+              ]
+            }
+          ]
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+]

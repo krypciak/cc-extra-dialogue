@@ -1,0 +1,146 @@
+{
+    "EX2_DISAPPOINTED_DOWN": {
+        "faces": [
+            [
+                "tired",
+                "down",
+                "downExhausted"
+            ]
+        ]
+    },
+    "EX2_DISAPPOINTED": {
+        "faces": [
+            [
+                "tight",
+                "toward",
+                "towardDisgusted"
+            ]
+        ]
+    },
+    "EX2_JOKING_TOWARD": {
+        "faces": [
+            [
+                "straight",
+                "toward",
+                "towardSmile"
+            ]
+        ]
+    },
+    "EX2_LIGHT_SMILE": {
+        "faces": [
+            [
+                "straight",
+                "norm",
+                "normNeutral"
+            ]
+        ]
+    },
+    "EX2_GENTLE_SMILE": {
+        "faces": [
+            [
+                "straight",
+                "norm",
+                "normNeutral"
+            ]
+        ]
+    },
+    "EX2_SMUG": {
+        "faces": [
+            [
+                "spread",
+                "up",
+                "upProud"
+            ]
+        ]
+    },
+    "EX2_DETERMINED": {
+        "faces": [
+            [
+                "spread",
+                "up",
+                "upProud"
+            ]
+        ]
+    },
+    "EX2_SURVIVOR": {
+        "faces": [
+            [
+                "straight",
+                "down",
+                "downDeadInside"
+            ]
+        ]
+    },
+    "EX2_SUGGESTIVE": {
+        "faces": [
+            [
+                "straight",
+                "toward",
+                "towardSmile"
+            ]
+        ]
+    },
+    "EX2_PLOTTING": {
+        "faces": [
+            [
+                "forward",
+                "away",
+                "awayCharmed"
+            ]
+        ]
+    },
+    "EX2_NERVOUS_GLANCE": {
+        "faces": [
+            [
+                "tight",
+                "toward",
+                "towardConfused"
+            ]
+        ]
+    },
+    "EX2_SUSPICIOUS": {
+        "faces": [
+            [
+                "straight",
+                "toward",
+                "towardConfused"
+            ]
+        ]
+    },
+    "EX2_SUSPICIOUS_TIGHT": {
+        "faces": [
+            [
+                "tight",
+                "toward",
+                "towardConfused"
+            ]
+        ]
+    },
+    "EX2_EMBARRASSED_UP": {
+        "faces": [
+            [
+                "tight",
+                "down",
+                "downScared"
+            ]
+        ]
+    },
+    "EX2_EMBARRASSED": {
+        "faces": [
+            [
+                "tight",
+                "down",
+                "downScared"
+            ]
+        ]
+    },
+    "EX2_CRACKING_UP": {
+        "faces": [
+            [
+                "straight",
+                "toward",
+                "towardSmile"
+            ]
+        ]
+    }
+}

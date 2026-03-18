@@ -1,0 +1,14 @@
+[
+    {
+    	"type": "INCLUDE",
+    	"src": "mod:patches/miscellaneous/equip/shizuka.json"
+    },
+    {
+    	"type": "INCLUDE",
+    	"src": "mod:patches/miscellaneous/char_dies/shizuka.json"
+    },
+    {
+    	"type": "INCLUDE",
+    	"src": "mod:patches/miscellaneous/bo_rank_S/shizuka.json"
+    }
+]

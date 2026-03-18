@@ -1,0 +1,47 @@
+{
+    "ex2_normSuspicious": {
+        "srcX": 0,
+        "srcY": 0,
+        "width": 96,
+        "height": 56,
+        "destX": 0,
+        "destY": 32,
+        "img": "ex2-shizuka"
+    },
+    "ex2_downEyesClosed": {
+        "srcX": 0,
+        "srcY": 56,
+        "width": 96,
+        "height": 56,
+        "destX": 0,
+        "destY": 32,
+        "img": "ex2-shizuka"
+    },
+    "ex2_downPissed": {
+        "srcX": 0,
+        "srcY": 112,
+        "width": 96,
+        "height": 56,
+        "destX": 0,
+        "destY": 32,
+        "img": "ex2-shizuka"
+    },
+    "ex2_normDisappointed": {
+        "srcX": 0,
+        "srcY": 168,
+        "width": 96,
+        "height": 56,
+        "destX": 0,
+        "destY": 32,
+        "img": "ex2-shizuka"
+    },
+    "ex2_downAnnoyed": {
+        "srcX": 0,
+        "srcY": 224,
+        "width": 96,
+        "height": 56,
+        "destX": 0,
+        "destY": 32,
+        "img": "ex2-shizuka"
+    }
+}

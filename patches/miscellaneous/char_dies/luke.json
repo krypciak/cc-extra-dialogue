@@ -1,0 +1,42 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["luke-dies", "event", 0]
+    },
+  
+    {
+        "type": "SET_KEY",
+        "index": "0_2",
+        "content": [
+            {
+              "message": {
+                "en_US": "Verdammt, should've seen this coming."
+              },
+              "type": "SHOW_SIDE_MSG",
+              "person": {
+                "person": "main.luke",
+                "expression": "PISSED"
+              }
+            }
+          ]
+    },
+  
+    {
+        "type": "ENTER",
+        "index": ["options", 0]
+    },
+    {
+        "type": "SET_KEY",
+        "index": "count",
+        "content": 3
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+  
+    {
+        "type": "EXIT",
+        "count": 3
+    }
+]

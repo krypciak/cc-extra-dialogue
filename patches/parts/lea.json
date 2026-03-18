@@ -1,0 +1,128 @@
+{
+    "ex2_downDisappointed": {
+        "srcX": 0,
+        "srcY": 0,
+        "width": 96,
+        "height": 48,
+        "destX": 8,
+        "destY": 24,
+        "img": "ex2-lea"
+    },
+    "ex2_normDisappointed": {
+        "srcX": 0,
+        "srcY": 48,
+        "width": 96,
+        "height": 48,
+        "destX": 8,
+        "destY": 24,
+        "img": "ex2-lea"
+    },
+    "ex2_towardJoking": {
+        "srcX": 0,
+        "srcY": 96,
+        "width": 96,
+        "height": 48,
+        "destX": 8,
+        "destY": 24,
+        "img": "ex2-lea"
+    },
+    "ex2_normLightSmile": {
+        "srcX": 0,
+        "srcY": 144,
+        "width": 96,
+        "height": 48,
+        "destX": 8,
+        "destY": 24,
+        "img": "ex2-lea"
+    },
+    "ex2_normGentleSmile": {
+        "srcX": 0,
+        "srcY": 192,
+        "width": 96,
+        "height": 48,
+        "destX": 8,
+        "destY": 24,
+        "img": "ex2-lea"
+    },
+    "ex2_normSmug": {
+        "srcX": 0,
+        "srcY": 240,
+        "width": 96,
+        "height": 48,
+        "destX": 8,
+        "destY": 24,
+        "img": "ex2-lea"
+    },
+    "ex2_normDetermined": {
+        "srcX": 0,
+        "srcY": 288,
+        "width": 96,
+        "height": 48,
+        "destX": 8,
+        "destY": 24,
+        "img": "ex2-lea"
+    },
+    "ex2_upSurvivor": {
+        "srcX": 112,
+        "srcY": 0,
+        "width": 96,
+        "height": 48,
+        "destX": 8,
+        "destY": 24,
+        "img": "ex2-lea"
+    },
+    "ex2_awaySuggestive": {
+        "srcX": 112,
+        "srcY": 48,
+        "width": 96,
+        "height": 48,
+        "destX": 8,
+        "destY": 24,
+        "img": "ex2-lea"
+    },
+    "ex2_downNervousGlance": {
+        "srcX": 112,
+        "srcY": 96,
+        "width": 96,
+        "height": 48,
+        "destX": 8,
+        "destY": 24,
+        "img": "ex2-lea"
+    },
+    "ex2_normSuspicious": {
+        "srcX": 112,
+        "srcY": 144,
+        "width": 96,
+        "height": 48,
+        "destX": 8,
+        "destY": 24,
+        "img": "ex2-lea"
+    },
+    "ex2_normEmbarrassedUp": {
+        "srcX": 112,
+        "srcY": 192,
+        "width": 96,
+        "height": 48,
+        "destX": 8,
+        "destY": 24,
+        "img": "ex2-lea"
+    },
+    "ex2_normEmbarrassed": {
+        "srcX": 112,
+        "srcY": 240,
+        "width": 96,
+        "height": 48,
+        "destX": 8,
+        "destY": 24,
+        "img": "ex2-lea"
+    },
+    "ex2_towardCrackingUp": {
+        "srcX": 112,
+        "srcY": 288,
+        "width": 96,
+        "height": 48,
+        "destX": 8,
+        "destY": 24,
+        "img": "ex2-lea"
+    }
+}

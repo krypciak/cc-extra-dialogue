@@ -1,0 +1,21 @@
+{
+    "EX2_SIDE_WINK": {
+        "faces": [
+            [
+                "folded",
+                "towards",
+                "ex2_towardsSideWink"
+            ]
+          ]
+    },
+    
+    "EX2_IMPRESSED_UP": {
+        "faces": [
+            [
+              "folded",
+              "up",
+              "ex2_upImpressed"
+            ]
+          ]
+    }
+}

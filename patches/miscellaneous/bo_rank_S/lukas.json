@@ -1,0 +1,62 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["schneider-battle-over-S", "event", 0]
+    },
+
+    {
+        "type": "SET_KEY",
+        "index": "0_2",
+        "content": [
+            {
+              "message": {
+                "en_US": "Verdammt, that was quite the marathon!"
+              },
+              "type": "SHOW_SIDE_MSG",
+              "person": {
+                "person": "main.schneider",
+                "expression": "COMPLAINING"
+              }
+            },
+            {
+                "message": {
+                  "en_US": "No wonder you've reached my level so fast."
+                },
+                "type": "SHOW_SIDE_MSG",
+                "person": {
+                  "person": "main.schneider",
+                  "expression": "DEFAULT"
+                }
+            },
+            {
+                "message": {
+                  "en_US": "...!"
+                },
+                "type": "SHOW_SIDE_MSG",
+                "person": {
+                  "person": "main.lea",
+                  "expression": "WHISTLING"
+                }
+            }
+          ]
+    },
+
+    {
+        "type": "ENTER",
+        "index": ["options", 0]
+    },
+    {
+        "type": "SET_KEY",
+        "index": "count",
+        "content": 3
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "EXIT",
+        "count": 3
+    }
+]

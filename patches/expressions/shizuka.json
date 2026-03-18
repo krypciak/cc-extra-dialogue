@@ -1,0 +1,77 @@
+{
+    "EX2_SUSPICIOUS": {
+        "faces": [
+            [
+                "straight",
+                "norm",
+                "ex2_normSuspicious"
+            ]
+        ]
+    },
+    "EX2_EYES_CLOSED": {
+        "faces": [
+            [
+                "straight",
+                "down",
+                "ex2_downEyesClosed"
+            ]
+        ]
+    },
+    "EX2_PISSED": {
+        "faces": [
+            [
+                "straight",
+                "down",
+                "ex2_downPissed"
+            ]
+        ]
+    },
+    "EX2_DISAPPOINTED": {
+        "faces": [
+            [
+                "straight",
+                "norm",
+                "ex2_normDisappointed"
+            ]
+        ]
+    },
+    "EX2_ANNOYED": {
+        "faces": [
+            [
+                "straight",
+                "down",
+                "ex2_downAnnoyed"
+            ]
+        ]
+    },
+    "EX2_PASSIVE_AGGRESSIVE": {
+        "anim": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+        ],
+        "time": 0.15,
+        "faces": [
+            [
+                "straight",
+                "down",
+                "downDenying"
+            ],
+            [
+                "straight",
+                "down",
+                "ex2_downEyesClosed"
+            ],
+            [
+                "straight",
+                "down",
+                "ex2_downPissed"
+            ]
+        ]
+    }
+}

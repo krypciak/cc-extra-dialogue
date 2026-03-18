@@ -1,0 +1,14 @@
+[
+    {
+    	"type": "INCLUDE",
+    	"src": "mod:patches/miscellaneous/equip/lukas.json"
+    },
+    {
+    	"type": "INCLUDE",
+    	"src": "mod:patches/miscellaneous/char_dies/lukas.json"
+    },
+    {
+    	"type": "INCLUDE",
+    	"src": "mod:patches/miscellaneous/bo_rank_S/lukas.json"
+    }
+]

@@ -1,0 +1,11 @@
+{
+    "EX2_TRANQUIL": {
+        "faces": [
+            [
+                "straight",
+                "up",
+                "ex2_upTranquil"
+            ]
+          ]
+    }
+}

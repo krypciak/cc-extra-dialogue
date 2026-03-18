@@ -1,0 +1,52 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["luke-battle-over-S", "event", 0]
+    },
+
+    {
+        "type": "SET_KEY",
+        "index": "0_2",
+        "content": [
+            {
+              "message": {
+                "en_US": "Where did you get this energy, Lea?"
+              },
+              "type": "SHOW_SIDE_MSG",
+              "person": {
+                "person": "main.luke",
+                "expression": "SHOCKED"
+              }
+            },
+            {
+                "message": {
+                  "en_US": "...!"
+                },
+                "type": "SHOW_SIDE_MSG",
+                "person": {
+                  "person": "main.lea",
+                  "expression": "WHISTLING"
+                }
+            }
+          ]
+    },
+
+    {
+        "type": "ENTER",
+        "index": ["options", 0]
+    },
+    {
+        "type": "SET_KEY",
+        "index": "count",
+        "content": 3
+    },
+    {
+        "type": "EXIT",
+        "count": 2
+    },
+
+    {
+        "type": "EXIT",
+        "count": 3
+    }
+]

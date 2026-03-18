@@ -1,0 +1,41 @@
+[{
+    "type": "ENTER",
+    "index": ["face", "subImages"]
+}, 
+{
+    "type": "SET_KEY",
+    "index": "ex2-lea",
+    "content": "cced-lea.png"
+}, 
+{
+    "type": "EXIT",
+    "count": 1
+}, 
+
+
+{
+    "type": "ENTER",
+    "index": ["parts", 2]
+}, 
+{
+    "type": "IMPORT",
+    "src": "mod:patches/parts/lea.json"
+},   
+{
+    "type": "EXIT",
+    "count": 2
+}, 
+
+
+{
+    "type": "ENTER",
+    "index": "expressions"
+}, 
+{
+    "type": "IMPORT",
+    "src": "mod:patches/expressions/lea.json"
+}, 
+{
+    "type": "EXIT",
+    "count": 2
+}]

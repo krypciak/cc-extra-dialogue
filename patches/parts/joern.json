@@ -1,0 +1,11 @@
+{
+    "ex2_upTranquil": {
+        "srcX": 0,
+        "srcY": 0,
+        "width": 72,
+        "height": 64,
+        "destX": 64,
+        "destY": 16,
+        "img": "ex2-joern"
+    }
+}

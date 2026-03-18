@@ -1,0 +1,75 @@
+[
+    {
+        "type": "ENTER",
+        "index": ["luke-equip"]
+    },
+  
+    {
+        "type": "SET_KEY",
+        "index": "event",
+        "content": [
+            {
+              "type": "SELECT_RANDOM",
+              "options": [{ "0": " ", "count": 4, "weight": 1 }],
+              "0_0": [
+                {
+                    "message": {
+                      "en_US": "Upgraded my gear. Would be nice to get a change of fashion too, living in the game and all.",
+                      "langUid": 18533,
+                      "zh_TW": "<<A<<[CHANGED 2021/03/10]",
+                      "zh_CN": "\u6211\u5347\u7ea7\u4e86\u4e00\u4e0b\u88c5\u5907\u3002\u53ef\u60dc\u4eba\u7269\u5916\u89c2\u4e0d\u663e\u793a\u5462\u3002<<A<<[CHANGED 2021/03/10]",
+                      "ja_JP": "\u30ae\u30a2\u3092\u30a2\u30c3\u30d7\u30b0\u30ec\u30fc\u30c9\u3057\u305f\u3093\u3060\u3002\u30b2\u30fc\u30e0\u306e\n\u4e16\u754c\u306b\u751f\u304d\u3066\u308a\u3083\u3001\u8863\u88c5\u30c1\u30a7\u30f3\u30b8\u3082\n\u3044\u3044\u3082\u3093\u3060\u3002<<A<<[CHANGED 2021/03/10]",
+                      "ko_KR": "\uc7a5\ube44\ub97c \uc5c5\uadf8\ub808\uc774\ub4dc\ud588\uc5b4. \uc5b4\ucc28\ud53c \uac8c\uc784 \uc548\uc5d0\uc11c \uc0ac\ub294\ub370 \uc637\ub3c4 \ubc14\uafc0 \uc218 \uc788\ub2e4\uba74 \uc88b\uaca0\ub124.<<A<<[CHANGED 2021/03/10]",
+                      "de_DE": "Hab meine Ausr\u00fcstung aufgem\u00f6belt. Neue Designs w\u00e4ren zur Abwechslung mal ganz sch\u00f6n, wenn ich schon im Spiel leben muss. "
+                    },
+                    "type": "SHOW_SIDE_MSG",
+                    "person": { 
+                        "person": "main.luke", 
+                        "expression": "EYES_CLOSED" 
+                    }
+                }
+              ],
+              "0_1": [
+                {
+                    "message": {
+                      "en_US": "About time for a gear upgrade. I was itching for a change."
+                    },
+                    "type": "SHOW_SIDE_MSG",
+                    "person": { 
+                        "person": "main.luke", 
+                        "expression": "DEFAULT" 
+                    }
+                }
+              ],
+              "0_2": [
+                {
+                    "message": {
+                      "en_US": "Frankly, I could use a change in appearance. Too bad it's not available to us."
+                    },
+                    "type": "SHOW_SIDE_MSG",
+                    "person": { 
+                        "person": "main.luke", 
+                        "expression": "WORRIED" 
+                    }
+                }
+              ],
+              "0_3": [
+                {
+                    "message": {
+                      "en_US": "Got new gear! Wanna run a \\c[3]Team Cup\\c[0] to test it out?"
+                    },
+                    "type": "SHOW_SIDE_MSG",
+                    "person": { 
+                        "person": "main.luke", 
+                        "expression": "WINK" 
+                    }
+                }
+              ]
+            }
+          ]
+    },
+    {
+        "type": "EXIT",
+        "count": 1
+    }
+]
