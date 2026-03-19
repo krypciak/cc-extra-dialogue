@@ -1,1 +1,604 @@
-{"cced-apollo-luke-battle-over-1": {"frequency": "REGULAR", "repeat": "ONCE", "condition": "party.alive.Apollo && party.alive.Luke && plot.line >= 40000", "eventType": "PARALLEL", "runOnTrigger": [1, 2, 3, 4, 5], "event": [{"type": "IF", "withElse": false, "condition": "call.runCount == 1", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Two noble \\c[3]Spheromancers\\c[0] and a mighty \\c[3]Triblader\\c[0] join forces on the Path of Justice!"}, "person": {"person": "antagonists.fancyguy", "expression": "POINTING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " A truly fearsome party!"}, "person": {"person": "antagonists.fancyguy", "expression": "CONTENT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...!"}, "person": {"person": "main.lea", "expression": "PROUD"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Hold up... Spheromancer?"}, "person": {"person": "main.luke", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " I thought you were a Triblader!"}, "person": {"person": "main.luke", "expression": "LAUGH"}}, {"type": "IF", "withElse": true, "condition": "cced.apollo.triblader", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Not this again..."}, "person": {"person": "antagonists.fancyguy", "expression": "MOPING"}}], "elseStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " How could you possibly mistake me for a Triblader? Don't you see my crimson attire?"}, "person": {"person": "antagonists.fancyguy", "expression": "CONTENT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " I don't know...\\! Spiky hair and all that green kinda confused me."}, "person": {"person": "main.luke", "expression": "UP"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " You can't be serious..."}, "person": {"person": "antagonists.fancyguy", "expression": "MOPING"}}, {"type": "CHANGE_VAR_BOOL", "varName": "cced.apollo.triblader", "value": true, "changeType": "set"}]}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 2", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Our noble party is victorious!"}, "person": {"person": "antagonists.fancyguy", "expression": "CONTENT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Every step we make marks our growth..."}, "person": {"person": "antagonists.fancyguy", "expression": "LECTURING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " On the Path of Justice!"}, "person": {"person": "antagonists.fancyguy", "expression": "POINTING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Path of justice? What's that supposed to mean?"}, "person": {"person": "main.luke", "expression": "WONDERING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " It's an idea, an absolute which every Spheromancer must strive to achieve!"}, "person": {"person": "antagonists.fancyguy", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...!"}, "person": {"person": "main.lea", "expression": "EXHAUSTED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Only by following the Path of Justice may you become the True Spheromancer!"}, "person": {"person": "antagonists.fancyguy", "expression": "CONTENT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Huh..."}, "person": {"person": "main.luke", "expression": "SKEPTICAL"}}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 3", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " I'm not a Spheromancer.\\. How does it work for me?"}, "person": {"person": "main.luke", "expression": "SKEPTICAL"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " The ideas of Path of Justice are universal."}, "person": {"person": "antagonists.fancyguy", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " One must fight injustice and uphold the order whenever possible!"}, "person": {"person": "antagonists.fancyguy", "expression": "DOWN"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " One must always strife for improvement, for stagnation leads to corruption!"}, "person": {"person": "antagonists.fancyguy", "expression": "LECTURING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " And most importantly, one shall never cheat or take shortcuts in their mission!"}, "person": {"person": "antagonists.fancyguy", "expression": "SHOUTING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " This is not only our duty as Spheromancers...\\. But our \\c[3]purpose\\c[0] as Seekers!"}, "person": {"person": "antagonists.fancyguy", "expression": "POINTING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " It other words, it's common sense taken too far."}, "person": {"person": "main.luke", "expression": "COMPLAINING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " [nods]"}, "person": {"person": "main.lea", "expression": "NOD"}}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 4", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Luke and Lea!\\. Bringing justice to CrossWords, one hedgehag at a time!"}, "person": {"person": "main.luke", "expression": "LAUGH"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ..."}, "person": {"person": "main.lea", "expression": "SMILE"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " You missed the message, Triblader."}, "person": {"person": "antagonists.fancyguy", "expression": "SUSPICIOUS"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " The Path of Justice is not about specifics."}, "person": {"person": "antagonists.fancyguy", "expression": "DOWN"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " It's about being the change!\\. Working on yourself to make the world around you a better place!"}, "person": {"person": "antagonists.fancyguy", "expression": "LECTURING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " The Path of Justice calls everyone to action!"}, "person": {"person": "antagonists.fancyguy", "expression": "SHOUTING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Only by following it's ideas can we propel society into the bright future!"}, "person": {"person": "antagonists.fancyguy", "expression": "POINTING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Cut the roleplay.\\. Do you really believe all this?"}, "person": {"person": "main.luke", "expression": "WONDERING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " I am!\\. And I'm proud of it!"}, "person": {"person": "antagonists.fancyguy", "expression": "CONTENT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...?"}, "person": {"person": "main.lea", "expression": "SCARED"}}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 5", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Once again our noble party is victorious!"}, "person": {"person": "antagonists.fancyguy", "expression": "CONTENT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " With each adversary, we continue honing our skills."}, "person": {"person": "antagonists.fancyguy", "expression": "DEFAULT"}}, {"type": "IF", "withElse": false, "condition": "newgame.sergey-hax", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Certainly not honing anything in this party."}, "person": {"person": "main.luke", "expression": "COMPLAINING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " \\c[1]...!!"}, "person": {"person": "main.lea", "expression": "INSANE"}}, {"type": "GOTO_LABEL", "name": "postGrind"}]}, {"type": "IF", "withElse": false, "condition": "newgame.lea-must-die", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...!"}, "person": {"person": "main.lea", "expression": "EXHAUSTED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Can't argue about Lea.\\. Hardly applies to me though."}, "person": {"person": "main.luke", "expression": "SKEPTICAL"}}, {"type": "GOTO_LABEL", "name": "postGrind"}]}, {"type": "IF", "withElse": true, "condition": "player.level > 75", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " If by honing skills you mean grinding \\c[3]under-leveled\\c[0] mobs."}, "person": {"person": "main.luke", "expression": "DEFAULT"}}], "elseStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " If by honing skills you mean grinding mobs."}, "person": {"person": "main.luke", "expression": "DEFAULT"}}]}, {"type": "LABEL", "name": "postGrind"}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Struggling for survival is but one law of this universe."}, "person": {"person": "antagonists.fancyguy", "expression": "CONTENT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " As Seekers, we must not shy away from the fight.\\. No matter, how hard it's going to be."}, "person": {"person": "antagonists.fancyguy", "expression": "DOWN"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " How any of this is going to help society?"}, "person": {"person": "main.luke", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " What?"}, "person": {"person": "antagonists.fancyguy", "expression": "PONDERING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " The path of justice...\\. Wasn't it about improving society or something?"}, "person": {"person": "main.luke", "expression": "TOWARDS"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Tribladers..."}, "person": {"person": "antagonists.fancyguy", "expression": "MOPING"}}, {"type": "CHANGE_VAR_BOOL", "varName": "cced.apollo-luke.battle-over-1.finished", "value": true, "changeType": "set"}]}], "overrideSideMessage": false, "loopCount": 3, "type": {"killCount": 0, "type": "BATTLE_OVER"}}}
+{
+  "cced-apollo-luke-battle-over-1": {
+    "frequency": "REGULAR",
+    "repeat": "ONCE",
+    "condition": "party.alive.Apollo && party.alive.Luke && plot.line >= 40000",
+    "eventType": "PARALLEL",
+    "runOnTrigger": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "event": [
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 1",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Two noble \\c[3]Spheromancers\\c[0] and a mighty \\c[3]Triblader\\c[0] join forces on the Path of Justice!"
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "POINTING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " A truly fearsome party!"
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "CONTENT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...!"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "PROUD"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Hold up... Spheromancer?"
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " I thought you were a Triblader!"
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "LAUGH"
+            }
+          },
+          {
+            "type": "IF",
+            "withElse": true,
+            "condition": "cced.apollo.triblader",
+            "thenStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " Not this again..."
+                },
+                "person": {
+                  "person": "antagonists.fancyguy",
+                  "expression": "MOPING"
+                }
+              }
+            ],
+            "elseStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " How could you possibly mistake me for a Triblader? Don't you see my crimson attire?"
+                },
+                "person": {
+                  "person": "antagonists.fancyguy",
+                  "expression": "CONTENT"
+                }
+              },
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " I don't know...\\! Spiky hair and all that green kinda confused me."
+                },
+                "person": {
+                  "person": "main.luke",
+                  "expression": "UP"
+                }
+              },
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " You can't be serious..."
+                },
+                "person": {
+                  "person": "antagonists.fancyguy",
+                  "expression": "MOPING"
+                }
+              },
+              {
+                "type": "CHANGE_VAR_BOOL",
+                "varName": "cced.apollo.triblader",
+                "value": true,
+                "changeType": "set"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 2",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Our noble party is victorious!"
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "CONTENT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Every step we make marks our growth..."
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "LECTURING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " On the Path of Justice!"
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "POINTING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Path of justice? What's that supposed to mean?"
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "WONDERING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " It's an idea, an absolute which every Spheromancer must strive to achieve!"
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...!"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "EXHAUSTED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Only by following the Path of Justice may you become the True Spheromancer!"
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "CONTENT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Huh..."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "SKEPTICAL"
+            }
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 3",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " I'm not a Spheromancer.\\. How does it work for me?"
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "SKEPTICAL"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " The ideal of The Path of Justice is universal."
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " One must fight injustice and uphold the order whenever possible!"
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "DOWN"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " One must always strive for improvement, for stagnation leads to corruption!"
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "LECTURING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " And most importantly, one shall never cheat or take shortcuts in their mission!"
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "SHOUTING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " This is not only our duty as Spheromancers...\\. But our \\c[3]purpose\\c[0] as Seekers!"
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "POINTING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " It other words, it's common sense taken too far."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "COMPLAINING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " [nods]"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "NOD"
+            }
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 4",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Luke and Lea!\\. Bringing justice to CrossWords, one hedgehag at a time!"
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "LAUGH"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ..."
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "SMILE"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " You missed the message, Triblader."
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "SUSPICIOUS"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " The Path of Justice is not about specifics."
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "DOWN"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " It's about being the change!\\. Working on yourself to make the world around you a better place!"
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "LECTURING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " The Path of Justice calls everyone to action!"
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "SHOUTING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Only by following it's ideas can we propel society into the bright future!"
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "POINTING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Cut the roleplay.\\. Do you really believe all this?"
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "WONDERING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " I do!\\. And I'm proud of it!"
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "CONTENT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...?"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "SCARED"
+            }
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 5",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Once again our noble party is victorious!"
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "CONTENT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " With each adversary, we continue honing our skills."
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "IF",
+            "withElse": false,
+            "condition": "newgame.sergey-hax",
+            "thenStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " Certainly not honing anything in this party."
+                },
+                "person": {
+                  "person": "main.luke",
+                  "expression": "COMPLAINING"
+                }
+              },
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " \\c[1]...!!"
+                },
+                "person": {
+                  "person": "main.lea",
+                  "expression": "INSANE"
+                }
+              },
+              {
+                "type": "GOTO_LABEL",
+                "name": "postGrind"
+              }
+            ]
+          },
+          {
+            "type": "IF",
+            "withElse": false,
+            "condition": "newgame.lea-must-die",
+            "thenStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " ...!"
+                },
+                "person": {
+                  "person": "main.lea",
+                  "expression": "EXHAUSTED"
+                }
+              },
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " Can't argue about Lea.\\. Hardly applies to me though."
+                },
+                "person": {
+                  "person": "main.luke",
+                  "expression": "SKEPTICAL"
+                }
+              },
+              {
+                "type": "GOTO_LABEL",
+                "name": "postGrind"
+              }
+            ]
+          },
+          {
+            "type": "IF",
+            "withElse": true,
+            "condition": "player.level > 75",
+            "thenStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " If by honing skills you mean grinding \\c[3]under-leveled\\c[0] mobs."
+                },
+                "person": {
+                  "person": "main.luke",
+                  "expression": "DEFAULT"
+                }
+              }
+            ],
+            "elseStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " If by honing skills you mean grinding mobs."
+                },
+                "person": {
+                  "person": "main.luke",
+                  "expression": "DEFAULT"
+                }
+              }
+            ]
+          },
+          {
+            "type": "LABEL",
+            "name": "postGrind"
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Struggling for survival is but one law of this universe."
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "CONTENT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " As Seekers, we must not shy away from the fight.\\. No matter, how hard it's going to be."
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "DOWN"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " How any of this is going to help society?"
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " What?"
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "PONDERING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " The path of justice...\\. Wasn't it about improving society or something?"
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "TOWARDS"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Tribladers..."
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "MOPING"
+            }
+          },
+          {
+            "type": "CHANGE_VAR_BOOL",
+            "varName": "cced.apollo-luke.battle-over-1.finished",
+            "value": true,
+            "changeType": "set"
+          }
+        ]
+      }
+    ],
+    "overrideSideMessage": false,
+    "loopCount": 3,
+    "type": {
+      "killCount": 0,
+      "type": "BATTLE_OVER"
+    }
+  }
+}

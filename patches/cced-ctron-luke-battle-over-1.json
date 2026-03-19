@@ -1,1 +1,404 @@
-{"cced-ctron-luke-battle-over-1": {"frequency": "REGULAR", "repeat": "ONCE", "condition": "party.alive.Glasses && party.alive.Luke && plot.line >= 40000", "eventType": "PARALLEL", "runOnTrigger": [1, 2, 3, 4, 5], "event": [{"type": "IF", "withElse": false, "condition": "call.runCount == 1", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " A party of \\c[3]3 Evotars\\c[0].\\. Pretty neat, huh?"}, "person": {"person": "main.luke", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Uhm... I guess."}, "person": {"person": "main.glasses", "expression": "EMBARRASSED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...!"}, "person": {"person": "main.lea", "expression": "PROUD"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " But is it really anything special?"}, "person": {"person": "main.glasses", "expression": "DOWN"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Don't know, man. Evotars look quite special to me."}, "person": {"person": "main.luke", "expression": "LAUGH"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Else Instatainment wouldn't bother keeping us."}, "person": {"person": "main.luke", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " You have a point."}, "person": {"person": "main.glasses", "expression": "TOWARD"}}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 2", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " What does it even mean to be an evotar?"}, "person": {"person": "main.luke", "expression": "WONDERING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " For once, a living proof that \\c[3]general artificial intelligence\\c[0] is possible."}, "person": {"person": "main.glasses", "expression": "EMBARRASSED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Though I'd refrain from making any other conclusions."}, "person": {"person": "main.glasses", "expression": "WORRIED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Why? Doesn't it negate most disputes about 'what is an AI'?"}, "person": {"person": "main.luke", "expression": "LAUGH"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Way to early to make loud statements."}, "person": {"person": "main.glasses", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Even Satoshi may not fully comprehend our nature."}, "person": {"person": "main.glasses", "expression": "EMBARRASSED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Huh..."}, "person": {"person": "main.luke", "expression": "SKEPTICAL"}}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 3", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " A whole branch of philosophy is dedicated to understanding AI."}, "person": {"person": "main.glasses", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...?"}, "person": {"person": "main.lea", "expression": "SURPRISED_AWAY"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Can machine act intelligently? Are human and machine intelligence the same?"}, "person": {"person": "main.glasses", "expression": "SURPRISED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " And can it have consciousness in the same sense that a human being does?"}, "person": {"person": "main.glasses", "expression": "THOUGHTFUL"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Maybe with our help they'll finally figure out some things."}, "person": {"person": "main.luke", "expression": "LAUGH"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Yeah. The problem was to make an AI in the first place."}, "person": {"person": "main.glasses", "expression": "EMBARRASSED"}}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 4", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " I wonder if it's possible for us to leave CrossWords."}, "person": {"person": "main.glasses", "expression": "SURPRISED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " These avatars will look out of place basically everywhere."}, "person": {"person": "main.luke", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Maybe not with instant matter bodies..."}, "person": {"person": "main.glasses", "expression": "EMBARRASSED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " But something more sturdy. \\.Like a specialized humanoid robot."}, "person": {"person": "main.glasses", "expression": "SMILE"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...!"}, "person": {"person": "main.lea", "expression": "ASTONISHED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Already planning on leaving Homestedt?"}, "person": {"person": "main.luke", "expression": "LAUGH"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Among other things, yeah."}, "person": {"person": "main.glasses", "expression": "EMBARRASSED"}}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 5", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Why not? Just a matter of properly integrating us with new controls and sensors."}, "person": {"person": "main.luke", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " I'm surprised they haven't done it already for CrossGear."}, "person": {"person": "main.luke", "expression": "WHISTLING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Let's hope Instatainment will look into it."}, "person": {"person": "main.glasses", "expression": "SMILE"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " I'd like to visit a real forest someday."}, "person": {"person": "main.glasses", "expression": "EMBARRASSED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Just gotta be more careful when you do."}, "person": {"person": "main.luke", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Real life has that thing called \\c[3]fall damage\\c[0]."}, "person": {"person": "main.luke", "expression": "LAUGH"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ..."}, "person": {"person": "main.lea", "expression": "SMILE"}}, {"type": "CHANGE_VAR_BOOL", "varName": "cced.ctron-luke.battle-over-1.finished", "value": true, "changeType": "set"}]}], "overrideSideMessage": false, "loopCount": 3, "type": {"killCount": 0, "type": "BATTLE_OVER"}}}
+{
+  "cced-ctron-luke-battle-over-1": {
+    "frequency": "REGULAR",
+    "repeat": "ONCE",
+    "condition": "party.alive.Glasses && party.alive.Luke && plot.line >= 40000",
+    "eventType": "PARALLEL",
+    "runOnTrigger": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "event": [
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 1",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " A party of \\c[3]3 Evotars\\c[0].\\. Pretty neat, huh?"
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Uhm... I guess."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "EMBARRASSED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...!"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "PROUD"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " But is it really anything special?"
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "DOWN"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Don't know, man. Evotars look quite special to me."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "LAUGH"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Else Instatainment wouldn't bother keeping us."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " You have a point."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "TOWARD"
+            }
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 2",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " What does it even mean to be an evotar?"
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "WONDERING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " For once, a living proof that \\c[3]general artificial intelligence\\c[0] is possible."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "EMBARRASSED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Though I'd refrain from making any other conclusions."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "WORRIED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Why? Doesn't it negate most disputes about 'what is an AI'?"
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "LAUGH"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Way to early to make loud statements."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Even Satoshi may not fully comprehend our nature."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "EMBARRASSED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Huh..."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "SKEPTICAL"
+            }
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 3",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " A whole branch of philosophy is dedicated to understanding AI."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...?"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "SURPRISED_AWAY"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Can machines act intelligently? Are human and machine intelligence the same?"
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "SURPRISED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " And can it have consciousness in the same sense that a human being does?"
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "THOUGHTFUL"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Maybe with our help they'll finally figure out some things."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "LAUGH"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Yeah. The problem was to make an AI in the first place."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "EMBARRASSED"
+            }
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 4",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " I wonder if it's possible for us to leave CrossWords."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "SURPRISED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " These avatars will look out of place basically everywhere."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Maybe not with instant matter bodies..."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "EMBARRASSED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " But something more sturdy. \\.Like a specialized humanoid robot."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "SMILE"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...!"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "ASTONISHED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Already planning on leaving Homestedt?"
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "LAUGH"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Among other things, yeah."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "EMBARRASSED"
+            }
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 5",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Why not? Just a matter of properly integrating us with new controls and sensors."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " I'm surprised they haven't done it already for CrossGear."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "WHISTLING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Let's hope Instatainment will look into it."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "SMILE"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " I'd like to visit a real forest someday."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "EMBARRASSED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Just gotta be more careful when you do."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Real life has that thing called \\c[3]fall damage\\c[0]."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "LAUGH"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ..."
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "SMILE"
+            }
+          },
+          {
+            "type": "CHANGE_VAR_BOOL",
+            "varName": "cced.ctron-luke.battle-over-1.finished",
+            "value": true,
+            "changeType": "set"
+          }
+        ]
+      }
+    ],
+    "overrideSideMessage": false,
+    "loopCount": 3,
+    "type": {
+      "killCount": 0,
+      "type": "BATTLE_OVER"
+    }
+  }
+}

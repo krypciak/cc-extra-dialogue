@@ -1,1 +1,136 @@
-{"cced-apollo-lukas-battle-over-2": {"frequency": "REGULAR", "repeat": "ONCE", "condition": "party.alive.Apollo && party.alive.Schneider && cced.apollo-lukas.battle-over-1.finished && (cced.apollo-lukas.battle-over-2.started || ccipt.vars.Apollo-Schneider.maxDowntime >= 600) && plot.line >= 40000", "eventType": "PARALLEL", "runOnTrigger": [1], "event": [{"type": "IF", "withElse": false, "condition": "call.runCount == 1", "thenStep": [{"type": "CHANGE_VAR_BOOL", "varName": "cced.apollo-lukas.battle-over-2.started", "value": true, "changeType": "set"}, {"type": "CHANGE_VAR_NUMBER", "varName": "ccipt.vars.Apollo-Schneider.trackDowntime", "value": 1, "changeType": "sub"}, {"type": "CHANGE_VAR_NUMBER", "varName": "ccipt.vars.Apollo-Schneider.maxDowntime", "value": 0, "changeType": "set"}, {"type": "CHANGE_VAR_NUMBER", "varName": "ccipt.vars.Apollo-Schneider.lastDowntime", "value": 0, "changeType": "set"}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Man. You do look more confident when fighting mobs."}, "person": {"person": "main.schneider", "expression": "LAUGH"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Do not flatter yourself, Triblader!\\. You may have won last fight..."}, "person": {"person": "antagonists.fancyguy", "expression": "SHOUTING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Narrowly...\\. and not without the advantage of your class..."}, "person": {"person": "antagonists.fancyguy", "expression": "LECTURING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...?"}, "person": {"person": "main.lea", "expression": "SURPRISED_AWAY"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Jap.\\. Tribladers OP and game is trash."}, "person": {"person": "main.schneider", "expression": "SKEPTICAL"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...meanwhile I shall prepare for our next duel, and then I'll have my revenge!"}, "person": {"person": "antagonists.fancyguy", "expression": "POINTING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Exactly what I always wanted to do...\\. Sweat over PVP in CrossWorlds..."}, "person": {"person": "main.schneider", "expression": "COMPLAINING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ..."}, "person": {"person": "main.lea", "expression": "SMILE"}}, {"type": "CHANGE_VAR_BOOL", "varName": "cced.apollo-lukas.battle-over-2.finished", "value": true, "changeType": "set"}]}], "overrideSideMessage": false, "loopCount": 3, "type": {"killCount": 0, "type": "BATTLE_OVER"}}}
+{
+  "cced-apollo-lukas-battle-over-2": {
+    "frequency": "REGULAR",
+    "repeat": "ONCE",
+    "condition": "party.alive.Apollo && party.alive.Schneider && cced.apollo-lukas.battle-over-1.finished && (cced.apollo-lukas.battle-over-2.started || ccipt.vars.Apollo-Schneider.maxDowntime >= 600) && plot.line >= 40000",
+    "eventType": "PARALLEL",
+    "runOnTrigger": [
+      1
+    ],
+    "event": [
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 1",
+        "thenStep": [
+          {
+            "type": "CHANGE_VAR_BOOL",
+            "varName": "cced.apollo-lukas.battle-over-2.started",
+            "value": true,
+            "changeType": "set"
+          },
+          {
+            "type": "CHANGE_VAR_NUMBER",
+            "varName": "ccipt.vars.Apollo-Schneider.trackDowntime",
+            "value": 1,
+            "changeType": "sub"
+          },
+          {
+            "type": "CHANGE_VAR_NUMBER",
+            "varName": "ccipt.vars.Apollo-Schneider.maxDowntime",
+            "value": 0,
+            "changeType": "set"
+          },
+          {
+            "type": "CHANGE_VAR_NUMBER",
+            "varName": "ccipt.vars.Apollo-Schneider.lastDowntime",
+            "value": 0,
+            "changeType": "set"
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Man. You do look more confident when fighting mobs."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "LAUGH"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Do not flatter yourself, Triblader!\\. You may have won last fight..."
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "SHOUTING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Narrowly...\\. and not without the advantage of your class..."
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "LECTURING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...?"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "SURPRISED_AWAY"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Jap.\\. Tribladers are overpowered and the game is trash."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "SKEPTICAL"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Meanwhile, I shall prepare for our next duel, and then I'll have my revenge!"
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "POINTING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Exactly what I always wanted to do...\\. Sweat over PVP in CrossWorlds..."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "COMPLAINING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ..."
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "SMILE"
+            }
+          },
+          {
+            "type": "CHANGE_VAR_BOOL",
+            "varName": "cced.apollo-lukas.battle-over-2.finished",
+            "value": true,
+            "changeType": "set"
+          }
+        ]
+      }
+    ],
+    "overrideSideMessage": false,
+    "loopCount": 3,
+    "type": {
+      "killCount": 0,
+      "type": "BATTLE_OVER"
+    }
+  }
+}

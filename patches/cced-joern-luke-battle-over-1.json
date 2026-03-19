@@ -1,1 +1,463 @@
-{"cced-joern-luke-battle-over-1": {"frequency": "REGULAR", "repeat": "ONCE", "condition": "party.alive.Joern && party.alive.Luke && plot.line >= 40000", "eventType": "PARALLEL", "runOnTrigger": [1, 2, 3, 4, 5], "event": [{"type": "IF", "withElse": false, "condition": "call.runCount == 1", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Hey, Joern. If you're with us, where is Apollo?"}, "person": {"person": "main.luke", "expression": "WONDERING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Feeding the cats."}, "person": {"person": "antagonists.sidekick", "expression": "SMILE"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Didn't know you had pets."}, "person": {"person": "main.luke", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Quite a few, actually."}, "person": {"person": "antagonists.sidekick", "expression": "SMILE"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Love them fluffy furballs."}, "person": {"person": "antagonists.sidekick", "expression": "AWWW"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ..."}, "person": {"person": "main.lea", "expression": "EX2_GENTLE_SMILE"}}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 2", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Ever had a pet, Luke?"}, "person": {"person": "antagonists.sidekick", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Nope."}, "person": {"person": "main.luke", "expression": "EYES_CLOSED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Why?"}, "person": {"person": "main.lea", "expression": "SURPRISED_TOWARD"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Pets demand an awful lot of responsibility."}, "person": {"person": "main.luke", "expression": "WHISTLING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " I've had enough of it at my job."}, "person": {"person": "main.luke", "expression": "SKEPTICAL"}}, {"type": "IF", "withElse": true, "condition": "cced.joern-lukas.battle-over-1.finished", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Or maybe it's something about \\c[3]insufficient funds\\c[0]?"}, "person": {"person": "antagonists.sidekick", "expression": "SARCASTIC"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " You got me on that one!"}, "person": {"person": "main.luke", "expression": "LAUGH"}}], "elseStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " You don't have one now."}, "person": {"person": "antagonists.sidekick", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " And I'm very glad for that..."}, "person": {"person": "main.luke", "expression": "COMPLAINING"}}]}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 3", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Maybe Instatainment can create pets for evotars."}, "person": {"person": "antagonists.sidekick", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " We kinda have ones from arena."}, "person": {"person": "main.luke", "expression": "WONDERING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Pet is more than just a furball that follows you around."}, "person": {"person": "antagonists.sidekick", "expression": "TOWARD"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " It is a \\c[3]friend for life\\c[0]."}, "person": {"person": "antagonists.sidekick", "expression": "AWWW"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " But I already have the best friend one could ask for..."}, "person": {"person": "main.luke", "expression": "EX2_SIDE_WINK"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ..."}, "person": {"person": "main.lea", "expression": "CHARMED"}}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 4", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Pets also have therapeutic effect."}, "person": {"person": "antagonists.sidekick", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " How?"}, "person": {"person": "main.lea", "expression": "SURPRISED_AWAY"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Interactions with pets reduce stress and blood pressure."}, "person": {"person": "antagonists.sidekick", "expression": "TOWARD"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " They also ease loneliness and improve overall mental state."}, "person": {"person": "antagonists.sidekick", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Oh yeah!\\. I remember reading, how dogs help children to fight anxiety."}, "person": {"person": "main.luke", "expression": "WHISTLING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...!"}, "person": {"person": "main.lea", "expression": "ASTONISHED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " And pets are always there when you need them the most."}, "person": {"person": "antagonists.sidekick", "expression": "SMILE"}}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 5", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " I don't know, Joern. Seems like it requires a lot of commitment."}, "person": {"person": "main.luke", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " You can't just leave your pet to their own business."}, "person": {"person": "main.luke", "expression": "WHISTLING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " I'm not that responsible."}, "person": {"person": "main.luke", "expression": "SKEPTICAL"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...?"}, "person": {"person": "main.lea", "expression": "EX2_DISAPPOINTED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Then I suggest to work on yourself."}, "person": {"person": "antagonists.sidekick", "expression": "SUSPICIOUS"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " You got plenty of time."}, "person": {"person": "antagonists.sidekick", "expression": "SARCASTIC"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Right...\\. Of course I will!"}, "person": {"person": "main.luke", "expression": "LAUGH"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " What nonsense am I even talking about..."}, "person": {"person": "main.luke", "expression": "SKEPTICAL"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...!"}, "person": {"person": "main.lea", "expression": "DETERMINED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " I'm being honest!\\. Stop looking at me like that."}, "person": {"person": "main.luke", "expression": "COMPLAINING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ..."}, "person": {"person": "main.lea", "expression": "SMUG"}}, {"type": "CHANGE_VAR_BOOL", "varName": "cced.joern-luke.battle-over-1.finished", "value": true, "changeType": "set"}]}], "overrideSideMessage": false, "loopCount": 3, "type": {"killCount": 0, "type": "BATTLE_OVER"}}}
+{
+  "cced-joern-luke-battle-over-1": {
+    "frequency": "REGULAR",
+    "repeat": "ONCE",
+    "condition": "party.alive.Joern && party.alive.Luke && plot.line >= 40000",
+    "eventType": "PARALLEL",
+    "runOnTrigger": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "event": [
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 1",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Hey, Joern. If you're with us, where is Apollo?"
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "WONDERING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Feeding the cats."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "SMILE"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Didn't know you had pets."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Quite a few, actually."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "SMILE"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Love them fluffy furballs."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "AWWW"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ..."
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "EX2_GENTLE_SMILE"
+            }
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 2",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Ever had a pet, Luke?"
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Nope."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "EYES_CLOSED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Why?"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "SURPRISED_TOWARD"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Pets demand an awful lot of responsibility."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "WHISTLING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " I've had enough of it at my job."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "SKEPTICAL"
+            }
+          },
+          {
+            "type": "IF",
+            "withElse": true,
+            "condition": "cced.joern-lukas.battle-over-1.finished",
+            "thenStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " Or maybe it's something about \\c[3]insufficient funds\\c[0]?"
+                },
+                "person": {
+                  "person": "antagonists.sidekick",
+                  "expression": "SARCASTIC"
+                }
+              },
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " You got me on that one!"
+                },
+                "person": {
+                  "person": "main.luke",
+                  "expression": "LAUGH"
+                }
+              }
+            ],
+            "elseStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " You don't have one now."
+                },
+                "person": {
+                  "person": "antagonists.sidekick",
+                  "expression": "DEFAULT"
+                }
+              },
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " And I'm very glad for that..."
+                },
+                "person": {
+                  "person": "main.luke",
+                  "expression": "COMPLAINING"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 3",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Maybe Instatainment can create pets for evotars."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " We kinda have ones from arena."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "WONDERING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " A pet is more than just a furball that follows you around."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "TOWARD"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " It's a \\c[3]friend for life\\c[0]."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "AWWW"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " But I already have the best friend one could ask for..."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "EX2_SIDE_WINK"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ..."
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "CHARMED"
+            }
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 4",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Pets also have a therapeutic effect."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " How?"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "SURPRISED_AWAY"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Interactions with pets reduce stress and blood pressure."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "TOWARD"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " They also ease loneliness and improve overall mental state."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Oh yeah!\\. I remember reading how dogs help children to fight anxiety."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "WHISTLING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...!"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "ASTONISHED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " And pets are always there when you need them the most."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "SMILE"
+            }
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 5",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " I don't know, Joern. Seems like it requires a lot of commitment."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " You can't just leave your pet to their own business."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "WHISTLING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " I'm not that responsible."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "SKEPTICAL"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...?"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "EX2_DISAPPOINTED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Then I suggest to work on yourself."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "SUSPICIOUS"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " You got plenty of time."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "SARCASTIC"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Right...\\. Of course I will!"
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "LAUGH"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " What nonsense am I even talking about..."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "SKEPTICAL"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...!"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "DETERMINED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " I'm being honest!\\. Stop looking at me like that."
+            },
+            "person": {
+              "person": "main.luke",
+              "expression": "COMPLAINING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ..."
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "SMUG"
+            }
+          },
+          {
+            "type": "CHANGE_VAR_BOOL",
+            "varName": "cced.joern-luke.battle-over-1.finished",
+            "value": true,
+            "changeType": "set"
+          }
+        ]
+      }
+    ],
+    "overrideSideMessage": false,
+    "loopCount": 3,
+    "type": {
+      "killCount": 0,
+      "type": "BATTLE_OVER"
+    }
+  }
+}

@@ -1,1 +1,730 @@
-{"cced-ctron-lukas-battle-over-1": {"frequency": "REGULAR", "repeat": "ONCE", "condition": "party.alive.Glasses && party.alive.Schneider && plot.line >= 40000", "eventType": "PARALLEL", "runOnTrigger": [1, 2, 3, 4, 5, 6], "event": [{"type": "IF", "withElse": false, "condition": "call.runCount == 1", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Aw, man! Been a while since I've played with a proper hexacast."}, "person": {"person": "main.schneider", "expression": "LAUGH"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Your buffs are super useful for Tribladers."}, "person": {"person": "main.schneider", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Uhm... I guess..."}, "person": {"person": "main.glasses", "expression": "EMBARRASSED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " But I am not the only Hexacast in your guild, correct?"}, "person": {"person": "main.glasses", "expression": "TOWARD"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Yeah, but... when I need his help, Albert usually ends up busy."}, "person": {"person": "main.schneider", "expression": "COMPLAINING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Why?"}, "person": {"person": "main.lea", "expression": "SURPRISED_TOWARD"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " You know, he is just always... busy... with stuff."}, "person": {"person": "main.schneider", "expression": "SKEPTICAL"}}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 2", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Hey, Tronny. Are you feeling alright?"}, "person": {"person": "main.schneider", "expression": "WONDERING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Mostly yes... just my mind is a little foggy."}, "person": {"person": "main.glasses", "expression": "EMBARRASSED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " No need to worry about it."}, "person": {"person": "main.glasses", "expression": "SMILE"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Oh, ok."}, "person": {"person": "main.schneider", "expression": "SURPRISED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " I've noticed you were reluctant to use some abilities, that's all."}, "person": {"person": "main.schneider", "expression": "LAUGH"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ..."}, "person": {"person": "main.lea", "expression": "SMILE"}}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 3", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " You lot didn't forget to spend your \\c[3]circuit points\\c[0], right?"}, "person": {"person": "main.schneider", "expression": "DEFAULT"}}, {"type": "IF", "withElse": false, "condition": "newgame.sergey-hax", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " \\c[1]...!"}, "person": {"person": "main.lea", "expression": "INSANE_DOWN"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Yeah...\\. like you need them at all..."}, "person": {"person": "main.schneider", "expression": "COMPLAINING"}}, {"type": "GOTO_LABEL", "name": "postUnusedCP"}]}, {"type": "IF", "withElse": false, "condition": "player.level <= 10", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...?"}, "person": {"person": "main.lea", "expression": "SURPRISED_AWAY"}}, {"type": "GOTO_LABEL", "name": "postUnusedCP"}]}, {"type": "IF", "withElse": false, "condition": "player.unusedCP >= 12", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " ..."}, "person": {"person": "main.lea", "expression": "EX2_NERVOUS_GLANCE"}}, {"type": "GOTO_LABEL", "name": "postUnusedCP"}]}, {"type": "IF", "withElse": false, "condition": "player.level == 99 && player.unusedCP == 0", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...!!"}, "person": {"person": "main.lea", "expression": "WHISTLING"}}, {"type": "GOTO_LABEL", "name": "postUnusedCP"}]}, {"type": "IF", "withElse": false, "condition": "player.level >= 80", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...!"}, "person": {"person": "main.lea", "expression": "SMUG"}}, {"type": "GOTO_LABEL", "name": "postUnusedCP"}]}, {"type": "IF", "withElse": false, "condition": "player.level >= 10", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...!"}, "person": {"person": "main.lea", "expression": "PROUD"}}, {"type": "GOTO_LABEL", "name": "postUnusedCP"}]}, {"type": "LABEL", "name": "postUnusedCP"}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Of course... kind of hard to forget it."}, "person": {"person": "main.glasses", "expression": "SMILE"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Then you surely have \\c[3]Divine Protection\\c[0] unlocked, Tronny. Give it a shot."}, "person": {"person": "main.schneider", "expression": "SKEPTICAL"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Is it like a... defensive art?"}, "person": {"person": "main.glasses", "expression": "SURPRISED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": "  Jap. Surprised you don't throw it more often."}, "person": {"person": "main.schneider", "expression": "LAUGH"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " For a \\c[3]level 1\\c[0], it's surprisingly good. Albert uses it all the time."}, "person": {"person": "main.schneider", "expression": "TOWARDS"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Okay-dokey."}, "person": {"person": "main.glasses", "expression": "EMBARRASSED"}}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 4", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Not a fan of protective arts, are you?"}, "person": {"person": "main.schneider", "expression": "SKEPTICAL"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " It's a lot to keep track of."}, "person": {"person": "main.glasses", "expression": "EXHAUSTED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " I'm not sure about which elemental protection to cast."}, "person": {"person": "main.glasses", "expression": "SURPRISED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " And by the time I've figured it out, Lea already destroyed all enemies."}, "person": {"person": "main.glasses", "expression": "EMBARRASSED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...!"}, "person": {"person": "main.lea", "expression": "WHISTLING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Makes sense, if you rarely used them before."}, "person": {"person": "main.schneider", "expression": "LAUGH"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Don't worry about elements. Just throw \\c[3]Sharpening Flames\\c[0] next time we get in a fight."}, "person": {"person": "main.schneider", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " It's the \\c[3]heat\\c[0] version if you're wondering."}, "person": {"person": "main.schneider", "expression": "WHISTLING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Sure, I'll try to remember that."}, "person": {"person": "main.glasses", "expression": "EMBARRASSED"}}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 5", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...Tronny."}, "person": {"person": "main.schneider", "expression": "COMPLAINING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Right... sorry..."}, "person": {"person": "main.glasses", "expression": "EXHAUSTED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " I ugh... I think, I just don't like protective arts."}, "person": {"person": "main.glasses", "expression": "EMBARRASSED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " They give more than just resistances, you know."}, "person": {"person": "main.schneider", "expression": "SKEPTICAL"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " For example, \\c[3]Sharpening Flames\\c[0] also grants significant increase to \\c[3]attack\\c[0] stat."}, "person": {"person": "main.schneider", "expression": "DEFAULT"}}, {"type": "IF", "withElse": true, "condition": "newgame.sergey-hax", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Maybe with it I'll manage to kill at least something."}, "person": {"person": "main.schneider", "expression": "COMPLAINING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " \\c[1]...!"}, "person": {"person": "main.lea", "expression": "INSANE_DOWN"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Right..."}, "person": {"person": "main.glasses", "expression": "EMBARRASSED"}}], "elseStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " I think, Lea would appreciate such buff. Bigger numbers never hurt."}, "person": {"person": "main.schneider", "expression": "WINK"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " [nods]"}, "person": {"person": "main.lea", "expression": "NOD_HAPPY"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Right..."}, "person": {"person": "main.glasses", "expression": "WORRIED"}}]}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 6", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Oh Junge, guess Albert was right."}, "person": {"person": "main.schneider", "expression": "RANTING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " You're just terrible at this game."}, "person": {"person": "main.schneider", "expression": "SERIOUS"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " [nods]"}, "person": {"person": "main.lea", "expression": "NOD"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Sorry."}, "person": {"person": "main.glasses", "expression": "EXHAUSTED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Just kidding, don't worry about it."}, "person": {"person": "main.schneider", "expression": "TOWARDS"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " It's not like we need buffs at this point anyway."}, "person": {"person": "main.schneider", "expression": "LAUGH"}}, {"type": "IF", "withElse": true, "condition": "newgame.sergey-hax", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " \\c[1]...!"}, "person": {"person": "main.lea", "expression": "INSANE_DOWN"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Like I said..."}, "person": {"person": "main.schneider", "expression": "SKEPTICAL"}}], "elseStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Lea can take care of enemies just fine."}, "person": {"person": "main.schneider", "expression": "WINK"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Hi."}, "person": {"person": "main.lea", "expression": "SMUG"}}]}, {"type": "CHANGE_VAR_BOOL", "varName": "cced.ctron-lukas.battle-over-1.finished", "value": true, "changeType": "set"}]}], "overrideSideMessage": false, "loopCount": 3, "type": {"killCount": 0, "type": "BATTLE_OVER"}}}
+{
+  "cced-ctron-lukas-battle-over-1": {
+    "frequency": "REGULAR",
+    "repeat": "ONCE",
+    "condition": "party.alive.Glasses && party.alive.Schneider && plot.line >= 40000",
+    "eventType": "PARALLEL",
+    "runOnTrigger": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "event": [
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 1",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Aw, man! Been a while since I've played with a proper hexacast."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "LAUGH"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Your buffs are super useful for Tribladers."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Uhm... I guess..."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "EMBARRASSED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " But I am not the only Hexacast in your guild, correct?"
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "TOWARD"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Yeah, but... when I need his help, Albert usually ends up busy."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "COMPLAINING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Why?"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "SURPRISED_TOWARD"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " You know, he is just always... busy... with stuff."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "SKEPTICAL"
+            }
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 2",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Hey, Tronny. Are you feeling alright?"
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "WONDERING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Mostly yes... just my mind is a little foggy."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "EMBARRASSED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " No need to worry about it."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "SMILE"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Oh, ok."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "SURPRISED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " I've noticed you were reluctant to use some abilities, that's all."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "LAUGH"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ..."
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "SMILE"
+            }
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 3",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " You lot didn't forget to spend your \\c[3]circuit points\\c[0], right?"
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "IF",
+            "withElse": false,
+            "condition": "newgame.sergey-hax",
+            "thenStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " \\c[1]...!"
+                },
+                "person": {
+                  "person": "main.lea",
+                  "expression": "INSANE_DOWN"
+                }
+              },
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " Yeah...\\. like you need them at all..."
+                },
+                "person": {
+                  "person": "main.schneider",
+                  "expression": "COMPLAINING"
+                }
+              },
+              {
+                "type": "GOTO_LABEL",
+                "name": "postUnusedCP"
+              }
+            ]
+          },
+          {
+            "type": "IF",
+            "withElse": false,
+            "condition": "player.level <= 10",
+            "thenStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " ...?"
+                },
+                "person": {
+                  "person": "main.lea",
+                  "expression": "SURPRISED_AWAY"
+                }
+              },
+              {
+                "type": "GOTO_LABEL",
+                "name": "postUnusedCP"
+              }
+            ]
+          },
+          {
+            "type": "IF",
+            "withElse": false,
+            "condition": "player.unusedCP >= 12",
+            "thenStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " ..."
+                },
+                "person": {
+                  "person": "main.lea",
+                  "expression": "EX2_NERVOUS_GLANCE"
+                }
+              },
+              {
+                "type": "GOTO_LABEL",
+                "name": "postUnusedCP"
+              }
+            ]
+          },
+          {
+            "type": "IF",
+            "withElse": false,
+            "condition": "player.level == 99 && player.unusedCP == 0",
+            "thenStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " ...!!"
+                },
+                "person": {
+                  "person": "main.lea",
+                  "expression": "WHISTLING"
+                }
+              },
+              {
+                "type": "GOTO_LABEL",
+                "name": "postUnusedCP"
+              }
+            ]
+          },
+          {
+            "type": "IF",
+            "withElse": false,
+            "condition": "player.level >= 80",
+            "thenStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " ...!"
+                },
+                "person": {
+                  "person": "main.lea",
+                  "expression": "SMUG"
+                }
+              },
+              {
+                "type": "GOTO_LABEL",
+                "name": "postUnusedCP"
+              }
+            ]
+          },
+          {
+            "type": "IF",
+            "withElse": false,
+            "condition": "player.level >= 10",
+            "thenStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " ...!"
+                },
+                "person": {
+                  "person": "main.lea",
+                  "expression": "PROUD"
+                }
+              },
+              {
+                "type": "GOTO_LABEL",
+                "name": "postUnusedCP"
+              }
+            ]
+          },
+          {
+            "type": "LABEL",
+            "name": "postUnusedCP"
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Of course... kind of hard to forget it."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "SMILE"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Then you surely have \\c[3]Divine Protection\\c[0] unlocked, Tronny. Give it a shot."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "SKEPTICAL"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Is it like a... defensive art?"
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "SURPRISED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": "  Jap. Surprised you don't throw it more often."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "LAUGH"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " For a \\c[3]level 1\\c[0], it's surprisingly good. Albert uses it all the time."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "TOWARDS"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Okay-dokey."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "EMBARRASSED"
+            }
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 4",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Not a fan of protective arts, are you?"
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "SKEPTICAL"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " It's a lot to keep track of."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "EXHAUSTED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " I'm not sure about which elemental protection to cast."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "SURPRISED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " And by the time I've figured it out, Lea's already destroyed all the enemies."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "EMBARRASSED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...!"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "WHISTLING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Makes sense, if you rarely used them before."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "LAUGH"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Don't worry about elements. Just throw \\c[3]Sharpening Flames\\c[0] next time we get in a fight."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " It's the \\c[3]heat\\c[0] version if you're wondering."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "WHISTLING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Sure, I'll try to remember that."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "EMBARRASSED"
+            }
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 5",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...Tronny."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "COMPLAINING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Right... sorry..."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "EXHAUSTED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " I ugh... I think, I just don't like protective arts."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "EMBARRASSED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " They give more than just resistances, you know."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "SKEPTICAL"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " For example, \\c[3]Sharpening Flames\\c[0] also grants significant increase to \\c[3]attack\\c[0] stat."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "IF",
+            "withElse": true,
+            "condition": "newgame.sergey-hax",
+            "thenStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " Maybe with it I'll manage to kill at least something."
+                },
+                "person": {
+                  "person": "main.schneider",
+                  "expression": "COMPLAINING"
+                }
+              },
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " \\c[1]...!"
+                },
+                "person": {
+                  "person": "main.lea",
+                  "expression": "INSANE_DOWN"
+                }
+              },
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " Right..."
+                },
+                "person": {
+                  "person": "main.glasses",
+                  "expression": "EMBARRASSED"
+                }
+              }
+            ],
+            "elseStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " I think Lea would appreciate such a buff. Bigger numbers never hurt."
+                },
+                "person": {
+                  "person": "main.schneider",
+                  "expression": "WINK"
+                }
+              },
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " [nods]"
+                },
+                "person": {
+                  "person": "main.lea",
+                  "expression": "NOD_HAPPY"
+                }
+              },
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " Right..."
+                },
+                "person": {
+                  "person": "main.glasses",
+                  "expression": "WORRIED"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 6",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Oh Junge, I guess Albert was right."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "RANTING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " You're just terrible at this game."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "SERIOUS"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " [nods]"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "NOD"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Sorry."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "EXHAUSTED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Just kidding, don't worry about it."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "TOWARDS"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " It's not like we need buffs at this point anyway."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "LAUGH"
+            }
+          },
+          {
+            "type": "IF",
+            "withElse": true,
+            "condition": "newgame.sergey-hax",
+            "thenStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " \\c[1]...!"
+                },
+                "person": {
+                  "person": "main.lea",
+                  "expression": "INSANE_DOWN"
+                }
+              },
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " Like I said..."
+                },
+                "person": {
+                  "person": "main.schneider",
+                  "expression": "SKEPTICAL"
+                }
+              }
+            ],
+            "elseStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " Lea can take care of enemies just fine."
+                },
+                "person": {
+                  "person": "main.schneider",
+                  "expression": "WINK"
+                }
+              },
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " Hi."
+                },
+                "person": {
+                  "person": "main.lea",
+                  "expression": "SMUG"
+                }
+              }
+            ]
+          },
+          {
+            "type": "CHANGE_VAR_BOOL",
+            "varName": "cced.ctron-lukas.battle-over-1.finished",
+            "value": true,
+            "changeType": "set"
+          }
+        ]
+      }
+    ],
+    "overrideSideMessage": false,
+    "loopCount": 3,
+    "type": {
+      "killCount": 0,
+      "type": "BATTLE_OVER"
+    }
+  }
+}

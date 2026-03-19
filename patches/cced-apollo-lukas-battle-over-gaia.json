@@ -1,1 +1,122 @@
-{"cced-apollo-lukas-battle-over-gaia": {"frequency": "REGULAR", "repeat": "ONCE", "condition": "party.alive.Apollo && party.alive.Schneider && area.jungle.isCurrent && !cced.apollo-lukas.battle-over-1.finished && plot.line >= 40000", "eventType": "PARALLEL", "runOnTrigger": [1], "event": [{"type": "IF", "withElse": false, "condition": "call.runCount == 1", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Hey, Lea...\\. Where did your friend go?"}, "person": {"person": "main.schneider", "expression": "WONDERING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " I'm here."}, "person": {"person": "antagonists.fancyguy", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Strange. Did you go invisible or something?"}, "person": {"person": "main.schneider", "expression": "WONDERING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...?"}, "person": {"person": "main.lea", "expression": "SURPRISED_AWAY"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " What...\\! You're looking straight at me, Triblader..."}, "person": {"person": "antagonists.fancyguy", "expression": "ANGRY"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Ah, there you are!"}, "person": {"person": "main.schneider", "expression": "LAUGH"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Sorry, man!\\. Your hair blends way too well with the surroundings."}, "person": {"person": "main.schneider", "expression": "COMPLAINING"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ..."}, "person": {"person": "main.lea", "expression": "SMILE"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Unbelievable..."}, "person": {"person": "antagonists.fancyguy", "expression": "MOPING"}}, {"type": "CHANGE_VAR_BOOL", "varName": "cced.apollo-lukas.battle-over-gaia.finished", "value": true, "changeType": "set"}]}], "overrideSideMessage": false, "loopCount": 3, "type": {"killCount": 0, "type": "BATTLE_OVER"}}}
+{
+  "cced-apollo-lukas-battle-over-gaia": {
+    "frequency": "REGULAR",
+    "repeat": "ONCE",
+    "condition": "party.alive.Apollo && party.alive.Schneider && area.jungle.isCurrent && !cced.apollo-lukas.battle-over-1.finished && plot.line >= 40000",
+    "eventType": "PARALLEL",
+    "runOnTrigger": [
+      1
+    ],
+    "event": [
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 1",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Hey, Lea...\\. Where did your friend go?"
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "WONDERING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " I'm here."
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Strange. Did you go invisible or something?"
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "WONDERING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...?"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "SURPRISED_AWAY"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " What...\\! You're looking straight at me, Triblader..."
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "ANGRY"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Ah, there you are!"
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "LAUGH"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Sorry, man!\\. Your hair blends way too well with the surroundings."
+            },
+            "person": {
+              "person": "main.schneider",
+              "expression": "COMPLAINING"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ..."
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "SMILE"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Unbelievable..."
+            },
+            "person": {
+              "person": "antagonists.fancyguy",
+              "expression": "MOPING"
+            }
+          },
+          {
+            "type": "CHANGE_VAR_BOOL",
+            "varName": "cced.apollo-lukas.battle-over-gaia.finished",
+            "value": true,
+            "changeType": "set"
+          }
+        ]
+      }
+    ],
+    "overrideSideMessage": false,
+    "loopCount": 3,
+    "type": {
+      "killCount": 0,
+      "type": "BATTLE_OVER"
+    }
+  }
+}

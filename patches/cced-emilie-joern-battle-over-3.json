@@ -1,1 +1,406 @@
-{"cced-emilie-joern-battle-over-3": {"frequency": "REGULAR", "repeat": "ONCE", "condition": "party.alive.Emilie && party.alive.Joern && plot.line >= 18700 && cced.emilie-joern.battle-over-2.finished", "eventType": "PARALLEL", "runOnTrigger": [1, 2, 3, 4], "event": [{"type": "IF", "withElse": false, "condition": "call.runCount == 1", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Any plans for this weekend?"}, "person": {"person": "main.emilie", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Going to prepare \\c[3]seared ahi tuna steak\\c[0]."}, "person": {"person": "antagonists.sidekick", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Ohhh~.\\. What's an ahi tuna?"}, "person": {"person": "main.emilie", "expression": "ASTONISHED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " A certain kind of tuna.\\. It's covered in spices and served with wasabi dipping."}, "person": {"person": "antagonists.sidekick", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Like a sushi?"}, "person": {"person": "main.emilie", "expression": "CURIOUS"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Sushi is a dish with specially prepared rice, usually dressed with seafood."}, "person": {"person": "antagonists.sidekick", "expression": "TOWARD"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Sashimi would be more accurate in this case."}, "person": {"person": "antagonists.sidekick", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " [nods]"}, "person": {"person": "main.lea", "expression": "NOD"}}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 2", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Why is it seared though?"}, "person": {"person": "main.emilie", "expression": "AWAY"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " It's prepared on a hot surface before being eaten."}, "person": {"person": "antagonists.sidekick", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " So...\\. it's a grilled fish steak?"}, "person": {"person": "main.emilie", "expression": "SUSPICIOUS"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " A bit more complicated."}, "person": {"person": "antagonists.sidekick", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " How so?"}, "person": {"person": "main.emilie", "expression": "CURIOUS"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Instead of grill, it's cooked on a \\c[1]hot lava stone\\c[0]."}, "person": {"person": "antagonists.sidekick", "expression": "SMILE"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...!"}, "person": {"person": "main.lea", "expression": "ASTONISHED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Now that's unusual!"}, "person": {"person": "main.emilie", "expression": "ASTONISHED"}}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 3", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " So it's a special fish, fried on a stone. Neat."}, "person": {"person": "main.emilie", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " But wait...\\. There is more..."}, "person": {"person": "antagonists.sidekick", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Nooooo~!"}, "person": {"person": "main.emilie", "expression": "ASTONISHED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " The heated lava stone is brought to the table."}, "person": {"person": "antagonists.sidekick", "expression": "SARCASTIC"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Uhm...\\. Why?"}, "person": {"person": "main.emilie", "expression": "CURIOUS"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " The fish is not prepared beforehand."}, "person": {"person": "antagonists.sidekick", "expression": "SMILE"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Instead, you \\c[3]do it yourself\\c[0] by searing it on the stone."}, "person": {"person": "antagonists.sidekick", "expression": "SMILE"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Wow, exotique!"}, "person": {"person": "main.emilie", "expression": "ASTONISHED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Indeed.\\. You cook it as you eat, searing to your liking."}, "person": {"person": "antagonists.sidekick", "expression": "SMILE"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Now I want to try it out!"}, "person": {"person": "main.emilie", "expression": "DETERMINED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " [nods]"}, "person": {"person": "main.lea", "expression": "NOD_SAD"}}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 4", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " How hot is this stone again?"}, "person": {"person": "main.emilie", "expression": "AWAY"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Around \\c[1]700 degrees\\c[0]."}, "person": {"person": "antagonists.sidekick", "expression": "SMILE"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...?!"}, "person": {"person": "main.lea", "expression": "SHOCKED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...\\!S-Seems dangerous to put it on a table, non?"}, "person": {"person": "main.emilie", "expression": "SWEATY_SMILE"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " It is."}, "person": {"person": "antagonists.sidekick", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " You better avoid touching it."}, "person": {"person": "antagonists.sidekick", "expression": "SARCASTIC"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...!!"}, "person": {"person": "main.lea", "expression": "SCARED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Oui...\\. Maybe I'll try it out later..."}, "person": {"person": "main.emilie", "expression": "SWEATY_SMILE"}}, {"type": "CHANGE_VAR_BOOL", "varName": "cced.emilie-joern.battle-over-3.finished", "value": true, "changeType": "set"}]}], "overrideSideMessage": false, "loopCount": 3, "type": {"killCount": 0, "type": "BATTLE_OVER"}}}
+{
+  "cced-emilie-joern-battle-over-3": {
+    "frequency": "REGULAR",
+    "repeat": "ONCE",
+    "condition": "party.alive.Emilie && party.alive.Joern && plot.line >= 18700 && cced.emilie-joern.battle-over-2.finished",
+    "eventType": "PARALLEL",
+    "runOnTrigger": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "event": [
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 1",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Any plans for this weekend?"
+            },
+            "person": {
+              "person": "main.emilie",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Going to prepare \\c[3]seared ahi tuna steak\\c[0]."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Ohhh~.\\. What's an ahi tuna?"
+            },
+            "person": {
+              "person": "main.emilie",
+              "expression": "ASTONISHED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " A certain kind of tuna.\\. It's covered in spices and served with wasabi dipping."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Like a sushi?"
+            },
+            "person": {
+              "person": "main.emilie",
+              "expression": "CURIOUS"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Sushi is a dish with specially prepared rice, usually dressed with seafood."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "TOWARD"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Sashimi would be more accurate in this case."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " [nods]"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "NOD"
+            }
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 2",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Why is it seared though?"
+            },
+            "person": {
+              "person": "main.emilie",
+              "expression": "AWAY"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " It's prepared on a hot surface before being eaten."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " So...\\. it's a grilled fish steak?"
+            },
+            "person": {
+              "person": "main.emilie",
+              "expression": "SUSPICIOUS"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " A bit more complicated."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " How so?"
+            },
+            "person": {
+              "person": "main.emilie",
+              "expression": "CURIOUS"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Instead of grill, it's cooked on a \\c[1]hot lava stone\\c[0]."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "SMILE"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...!"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "ASTONISHED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Now that's unusual!"
+            },
+            "person": {
+              "person": "main.emilie",
+              "expression": "ASTONISHED"
+            }
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 3",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " So it's a special fish, fried on a stone. Neat."
+            },
+            "person": {
+              "person": "main.emilie",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " But wait...\\. There is more..."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Nooooo~!"
+            },
+            "person": {
+              "person": "main.emilie",
+              "expression": "ASTONISHED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " The heated lava stone is brought to the table."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "SARCASTIC"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Uhm...\\. Why?"
+            },
+            "person": {
+              "person": "main.emilie",
+              "expression": "CURIOUS"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " The fish is not prepared beforehand."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "SMILE"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Instead, you \\c[3]do it yourself\\c[0] by searing it on the stone."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "SMILE"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Wow, exotique!"
+            },
+            "person": {
+              "person": "main.emilie",
+              "expression": "ASTONISHED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Indeed.\\. You cook it as you eat, searing to your liking."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "SMILE"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Now I want to try it out!"
+            },
+            "person": {
+              "person": "main.emilie",
+              "expression": "DETERMINED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " [nods]"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "NOD_SAD"
+            }
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 4",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " How hot is this stone again?"
+            },
+            "person": {
+              "person": "main.emilie",
+              "expression": "AWAY"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Around \\c[1]700 degrees\\c[0]."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "SMILE"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...?!"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "SHOCKED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...\\!S-Seems dangerous to put it on a table, non?"
+            },
+            "person": {
+              "person": "main.emilie",
+              "expression": "SWEATY_SMILE"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " It is."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " You better avoid touching it."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "SARCASTIC"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...!!"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "SCARED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Oui...\\. Maybe I'll try it out later..."
+            },
+            "person": {
+              "person": "main.emilie",
+              "expression": "SWEATY_SMILE"
+            }
+          },
+          {
+            "type": "CHANGE_VAR_BOOL",
+            "varName": "cced.emilie-joern.battle-over-3.finished",
+            "value": true,
+            "changeType": "set"
+          }
+        ]
+      }
+    ],
+    "overrideSideMessage": false,
+    "loopCount": 3,
+    "type": {
+      "killCount": 0,
+      "type": "BATTLE_OVER"
+    }
+  }
+}

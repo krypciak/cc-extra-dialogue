@@ -1,1 +1,102 @@
-{"cced-shizuka-rumors-similarity-battle-over": {"frequency": "REGULAR", "repeat": "ONCE", "condition": "party.alive.Shizuka && party.size == 2 && cced.shizuka.lea-similarity-mentions >= 4", "eventType": "PARALLEL", "runOnTrigger": [1], "event": [{"type": "IF", "withElse": false, "condition": "call.runCount == 1", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " Maybe they have a point."}, "person": {"person": "main.shizuka", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...?"}, "person": {"person": "main.lea", "expression": "SURPRISED_TOWARD"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " We fight similarly in general."}, "person": {"person": "main.shizuka", "expression": "EVIL_GRIN"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Same running style, dashing motion and all that."}, "person": {"person": "main.shizuka", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " [nods]"}, "person": {"person": "main.lea", "expression": "NOD"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " That's why we're the most badass sisters in CrossWorlds."}, "person": {"person": "main.shizuka", "expression": "SMUG"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...!"}, "person": {"person": "main.lea", "expression": "SMUG"}}, {"type": "CHANGE_VAR_BOOL", "varName": "cced.shizuka.similarity-rumor.finished", "value": true, "changeType": "set"}]}], "overrideSideMessage": false, "loopCount": 3, "type": {"killCount": 0, "type": "BATTLE_OVER"}}}
+{
+  "cced-shizuka-rumors-similarity-battle-over": {
+    "frequency": "REGULAR",
+    "repeat": "ONCE",
+    "condition": "party.alive.Shizuka && party.size == 2 && cced.shizuka.lea-similarity-mentions >= 4",
+    "eventType": "PARALLEL",
+    "runOnTrigger": [
+      1
+    ],
+    "event": [
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 1",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Maybe they have a point."
+            },
+            "person": {
+              "person": "main.shizuka",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...?"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "SURPRISED_TOWARD"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " We fight similarly in general."
+            },
+            "person": {
+              "person": "main.shizuka",
+              "expression": "EVIL_GRIN"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Same running style, dashing motion and all that."
+            },
+            "person": {
+              "person": "main.shizuka",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " [nods]"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "NOD"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " That's why we're the most badass sisters in CrossWorlds."
+            },
+            "person": {
+              "person": "main.shizuka",
+              "expression": "SMUG"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...!"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "SMUG"
+            }
+          },
+          {
+            "type": "CHANGE_VAR_BOOL",
+            "varName": "cced.shizuka.similarity-rumor.finished",
+            "value": true,
+            "changeType": "set"
+          }
+        ]
+      }
+    ],
+    "overrideSideMessage": false,
+    "loopCount": 3,
+    "type": {
+      "killCount": 0,
+      "type": "BATTLE_OVER"
+    }
+  }
+}

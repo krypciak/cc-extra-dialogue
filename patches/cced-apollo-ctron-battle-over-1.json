@@ -69,7 +69,7 @@
           {
             "type": "SHOW_SIDE_MSG",
             "message": {
-              "en_US": " The justice has been served once again!"
+              "en_US": " Justice has been served once again!"
             },
             "person": {
               "person": "antagonists.fancyguy",
@@ -337,7 +337,7 @@
           {
             "type": "SHOW_SIDE_MSG",
             "message": {
-              "en_US": " Humans behind such experiments must be very smart."
+              "en_US": " The humans behind such experiments must be very smart."
             },
             "person": {
               "person": "main.glasses",
@@ -357,7 +357,7 @@
           {
             "type": "SHOW_SIDE_MSG",
             "message": {
-              "en_US": " Not smart enough as it seems."
+              "en_US": " Not smart enough, as it seems."
             },
             "person": {
               "person": "antagonists.fancyguy",
@@ -377,7 +377,7 @@
           {
             "type": "SHOW_SIDE_MSG",
             "message": {
-              "en_US": " We can only theorize, why and how that happened."
+              "en_US": " We can only theorize why and how that happened."
             },
             "person": {
               "person": "antagonists.fancyguy",
@@ -404,7 +404,7 @@
           {
             "type": "SHOW_SIDE_MSG",
             "message": {
-              "en_US": " To bad real world research into uplifting was shut down."
+              "en_US": " Too bad real world research into cybernetics was shut down."
             },
             "person": {
               "person": "main.glasses",
@@ -439,7 +439,7 @@
               {
                 "type": "SHOW_SIDE_MSG",
                 "message": {
-                  "en_US": " Probably the same reason why they are scared of \\c[3]Artificial General Intelligence\\c[0]."
+                  "en_US": " Probably the same reason why they're scared of \\c[3]Artificial General Intelligence\\c[0]."
                 },
                 "person": {
                   "person": "main.glasses",
@@ -449,7 +449,7 @@
               {
                 "type": "SHOW_SIDE_MSG",
                 "message": {
-                  "en_US": " Fear that non-human intelligence will go mad with power and destroy humanity."
+                  "en_US": " They fear that non-human intelligence will go mad with power and destroy humanity."
                 },
                 "person": {
                   "person": "main.glasses",
@@ -471,7 +471,7 @@
               {
                 "type": "SHOW_SIDE_MSG",
                 "message": {
-                  "en_US": " Probably the same reason why they are scared of \\c[3]Artificial General Intelligence\\c[0]."
+                  "en_US": " Probably the same reason why they're scared of \\c[3]Artificial General Intelligence\\c[0]."
                 },
                 "person": {
                   "person": "main.glasses",
@@ -481,7 +481,7 @@
               {
                 "type": "SHOW_SIDE_MSG",
                 "message": {
-                  "en_US": " Fear that non-human intelligence will go mad with power and destroy humanity."
+                  "en_US": " They fear that non-human intelligence will go mad with power and destroy humanity."
                 },
                 "person": {
                   "person": "main.glasses",

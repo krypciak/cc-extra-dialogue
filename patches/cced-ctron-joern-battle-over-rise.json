@@ -1,1 +1,173 @@
-{"cced-ctron-joern-battle-over-rise": {"frequency": "REGULAR", "repeat": "ONCE", "condition": "party.alive.Glasses && party.alive.Joern && area.autumn-area.isCurrent", "eventType": "PARALLEL", "runOnTrigger": [1, 2], "event": [{"type": "IF", "withElse": false, "condition": "call.runCount == 1", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " So peaceful in here."}, "person": {"person": "antagonists.sidekick", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " When we don't kill everything in sight."}, "person": {"person": "antagonists.sidekick", "expression": "TOWARD"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " ...!"}, "person": {"person": "main.lea", "expression": "SMUG"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " It's a very pleasant area for sure."}, "person": {"person": "main.glasses", "expression": "SURPRISED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Maybe my favorite out of all we've been to."}, "person": {"person": "main.glasses", "expression": "SMILE"}}, {"type": "IF", "withElse": false, "condition": "plot.line >= 40000", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " And a nice location for your village."}, "person": {"person": "antagonists.sidekick", "expression": "DEFAULT"}}]}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " [nods]"}, "person": {"person": "main.lea", "expression": "NOD"}}]}, {"type": "IF", "withElse": false, "condition": "call.runCount == 2", "thenStep": [{"type": "SHOW_SIDE_MSG", "message": {"en_US": " We should go on a picnic someday."}, "person": {"person": "antagonists.sidekick", "expression": "DEFAULT"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Agreed. Just need to find a place without too many players."}, "person": {"person": "main.glasses", "expression": "EMBARRASSED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " I bet Lea knows a few quiet spots in Autumns Rise, right?"}, "person": {"person": "main.glasses", "expression": "SURPRISED"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " [nods]"}, "person": {"person": "main.lea", "expression": "NOD_HAPPY"}}, {"type": "SHOW_SIDE_MSG", "message": {"en_US": " Picnic shopping."}, "person": {"person": "antagonists.sidekick", "expression": "SMILE"}}, {"type": "CHANGE_VAR_NUMBER", "varName": "cced.ctron-joern.tourism.locations", "value": 1, "changeType": "add"}, {"type": "CHANGE_VAR_BOOL", "varName": "cced.ctron-joern.tourism.rise", "value": true, "changeType": "set"}]}], "overrideSideMessage": false, "loopCount": 3, "type": {"killCount": 0, "type": "BATTLE_OVER"}}}
+{
+  "cced-ctron-joern-battle-over-rise": {
+    "frequency": "REGULAR",
+    "repeat": "ONCE",
+    "condition": "party.alive.Glasses && party.alive.Joern && area.autumn-area.isCurrent",
+    "eventType": "PARALLEL",
+    "runOnTrigger": [
+      1,
+      2
+    ],
+    "event": [
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 1",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " So peaceful in here."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " When we don't kill everything in sight."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "TOWARD"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " ...!"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "SMUG"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " It's a very pleasant area for sure."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "SURPRISED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Maybe my favorite out of all we've been to."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "SMILE"
+            }
+          },
+          {
+            "type": "IF",
+            "withElse": false,
+            "condition": "plot.line >= 40000",
+            "thenStep": [
+              {
+                "type": "SHOW_SIDE_MSG",
+                "message": {
+                  "en_US": " And a nice location for your village."
+                },
+                "person": {
+                  "person": "antagonists.sidekick",
+                  "expression": "DEFAULT"
+                }
+              }
+            ]
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " [nods]"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "NOD"
+            }
+          }
+        ]
+      },
+      {
+        "type": "IF",
+        "withElse": false,
+        "condition": "call.runCount == 2",
+        "thenStep": [
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " We should go on a picnic someday."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "DEFAULT"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Agreed. Just need to find a place without too many players."
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "EMBARRASSED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " I bet Lea knows a few quiet spots in Autumns Rise, right?"
+            },
+            "person": {
+              "person": "main.glasses",
+              "expression": "SURPRISED"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " [nods]"
+            },
+            "person": {
+              "person": "main.lea",
+              "expression": "NOD_HAPPY"
+            }
+          },
+          {
+            "type": "SHOW_SIDE_MSG",
+            "message": {
+              "en_US": " Picnic shopping."
+            },
+            "person": {
+              "person": "antagonists.sidekick",
+              "expression": "SMILE"
+            }
+          },
+          {
+            "type": "CHANGE_VAR_NUMBER",
+            "varName": "cced.ctron-joern.tourism.locations",
+            "value": 1,
+            "changeType": "add"
+          },
+          {
+            "type": "CHANGE_VAR_BOOL",
+            "varName": "cced.ctron-joern.tourism.rise",
+            "value": true,
+            "changeType": "set"
+          }
+        ]
+      }
+    ],
+    "overrideSideMessage": false,
+    "loopCount": 3,
+    "type": {
+      "killCount": 0,
+      "type": "BATTLE_OVER"
+    }
+  }
+}
