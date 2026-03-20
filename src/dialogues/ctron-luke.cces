@@ -1,0 +1,97 @@
+
+# by anonymous
+== cced-ctron-luke-battle-over-1 ==
+# What is an evotar
+condition: party.alive.Glasses && party.alive.Luke && plot.line >= 40000
+
+Message 1
+Luke > DEFAULT: A party of \c[3]3 Evotars\c[0].\. Pretty neat, huh?
+C'tron > EMBARRASSED: Uhm... I guess.
+Lea > PROUD: ...!
+C'tron > DOWN: But is it really anything special?
+Luke > LAUGH: Don't know, man. Evotars look quite special to me.
+Luke > DEFAULT: Else Instatainment wouldn't bother keeping us.
+C'tron > TOWARD: You have a point.
+
+Message 2
+Luke > WONDERING: What does it even mean to be an evotar? 
+C'tron > EMBARRASSED: For once, a living proof that \c[3]general artificial intelligence\c[0] is possible.
+C'tron > WORRIED: Though I'd refrain from making any other conclusions.
+Luke > LAUGH: Why? Doesn't it negate most disputes about 'what is an AI'?
+C'tron > DEFAULT: Way to early to make loud statements.
+C'tron > EMBARRASSED: Even Satoshi may not fully comprehend our nature. 
+Luke > SKEPTICAL: Huh...
+
+Message 3
+C'tron > DEFAULT: A whole branch of philosophy is dedicated to understanding AI.
+Lea > SURPRISED_AWAY: ...?
+C'tron > SURPRISED: Can machine act intelligently? Are human and machine intelligence the same?
+C'tron > THOUGHTFUL: And can it have consciousness in the same sense that a human being does?
+Luke > LAUGH: Maybe with our help they'll finally figure out some things.
+C'tron > EMBARRASSED: Yeah. The problem was to make an AI in the first place.
+
+Message 4
+C'tron > SURPRISED: I wonder if it's possible for us to leave CrossWords.
+Luke > DEFAULT: These avatars will look out of place basically everywhere.
+C'tron > EMBARRASSED: Maybe not with instant matter bodies...
+C'tron > SMILE: But something more sturdy. \.Like a specialized humanoid robot.
+Lea > ASTONISHED: ...!
+Luke > LAUGH: Already planning on leaving Homestedt?
+C'tron > EMBARRASSED: Among other things, yeah.
+
+Message 5
+Luke > DEFAULT: Why not? Just a matter of properly integrating us with new controls and sensors.
+Luke > WHISTLING: I'm surprised they haven't done it already for CrossGear.
+C'tron > SMILE: Let's hope Instatainment will look into it.
+C'tron > EMBARRASSED: I'd like to visit a real forest someday.
+Luke > DEFAULT: Just gotta be more careful when you do.
+Luke > LAUGH: Real life has that thing called \c[3]fall damage\c[0].
+Lea > SMILE: ...
+
+set cced.ctron-luke.battle-over-1.finished true
+
+
+
+== cced-ctron-luke-battle-over-2 ==
+# Surveilance
+condition: party.alive.Glasses && party.alive.Luke && cced.ctron-luke.battle-over-1.finished && plot.line >= 40000
+
+Message 1
+C'tron > THOUGHTFUL: Do you think Instatainment is spying on us right now?
+Luke > DEFAULT: What do you mean?
+C'tron > DEFAULT: Evotars are a part of \c[3]research project\c[0].
+C'tron > EMBARRASSED: It would make sense to gather as much data as possible.
+Luke > WONDERING: Are you saying they have \c[3]constant surveillance\c[0] on evotars?
+C'tron > THOUGHTFUL:  Wouldn't put it past them.
+Luke > COMPLAINING: Verdammt, from one conspiracy into another.
+C'tron > EMBARRASSED: At least Instatainment is doing it with good intentions.
+
+Message 2
+Luke > DEFAULT: What would be the goal of that research project?
+Luke > LAUGH: Doubt that watching my lazy ass will do any good to it.
+C'tron > SMILE: We constantly learn new things from nature by observing it.
+C'tron > EMBARRASSED: After all, it's one of the fundamental scientific methods.
+C'tron > SMILE: Watching evotar's lives is a good start for understanding them.
+Luke > SKEPTICAL: I'm starting to feel like we live in a zoo.
+C'tron > EMBARRASSED: It's kind of true though.
+
+Message 3
+Luke > EYES_CLOSED: Wouldn't knowing that you're being watched change your behavior?
+C'Tron > SMILE: It's called \c[3]Hawthorne effect\c[0]. 
+C'tron > EMBARRASSED: Not much we can do about it.
+Luke > LAUGH: Neither is it our problem.
+Lea > SMILE: ...
+
+Message 4
+Luke > WHISTLING: Lea, are you bothered by constant surveillance?
+Lea > SHAKE: [shakes head]
+Lea > SURPRISED_TOWARD: Why?
+Luke > TOWARDS: For once, you can't have some private time with somebody.
+Luke > WINK: Unless you're fine with being watched.
+Lea > ANNOYED: What?
+C'tron > TOWARD: What would you even do privately in CrossWorlds?  # Cuddles and TV, folks. Not much else to do besides that for now.
+C'tron > WORRIED: Oh... 
+Luke > SKEPTICAL: Forget I said anything.
+Lea > EX2_DISAPPOINTED: ...
+
+set cced.ctron-luke.battle-over-2.finished true

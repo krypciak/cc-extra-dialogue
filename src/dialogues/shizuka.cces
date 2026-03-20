@@ -1,0 +1,55 @@
+
+# by anonymous
+== cced-shizuka-rumors-similarity-battle-over ==
+
+condition: party.alive.Shizuka && party.size == 2 && cced.shizuka.lea-similarity-mentions >= 4
+
+Message 1
+Shizuka > DEFAULT: Maybe they have a point.
+Lea > SURPRISED_TOWARD: ...?
+Shizuka > EVIL_GRIN: We fight similarly in general.
+Shizuka > DEFAULT: Same running style, dashing motion and all that.
+Lea > NOD: [nods]
+Shizuka > SMUG: That's why we're the most badass sisters in CrossWorlds.
+Lea > SMUG: ...!
+
+set cced.shizuka.similarity-rumor.finished true
+
+
+
+# by anonymous
+== cced-shizuka-rumors-shadytron-battle-over ==
+
+condition: party.alive.Shizuka && party.size == 2 && cced.ctron-shizuka.battle-over-1.finished
+
+Message 1
+Shizuka > DENYING: In your place, I wouldn't go anywhere near that \c[3]C'Tron\c[0].
+Lea > SURPRISED: Why?
+Shizuka > DENYING: He is a shady guy, that lies through his teeth.
+Shizuka > EX2_PISSED: Dealing with that type always ends up in trouble.
+Shizuka > CONCERNED: I've seen it...
+Lea > NERVOUS: ...
+
+set cced.shizuka.shadytron-rumor.finished true
+
+
+
+# by anonymous
+== cced-shizuka-rumors-lukasdate-battle-over ==
+
+condition: party.alive.Shizuka && party.size == 2 && cced.lukas-shizuka.battle-over-2.finished
+
+Message 1
+Shizuka > EVIL_GRIN: That friend of your, Lukas...
+Shizuka > BRIGHT: Remember our recent talk with him?
+Lea > NOD: [nods]
+Shizuka > BRIGHT: He noticed how Luke asked you for a \c[3]walk on the beach\c[0].
+Shizuka > INNOCENT: "Welp! If my evotar planned a date with her evotar, maybe I should do that too."
+Lea > ASTONISHED: ...!
+Lea > EXCITED: Meet?
+Shizuka > SARCASTIC: Are you kidding me?\. Of course not.
+Shizuka > FUNNY_SMILE: Slapped him so hard, my hand disintegrated.
+Lea > SMILE: ...
+Shizuka > EVIL_GRIN: The audacity of that guy... Unbelievable.
+
+set cced.shizuka.lukasdate-rumor.finished true

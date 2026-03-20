@@ -1,0 +1,83 @@
+
+# by anonymous
+== cced-apollo-ctron-battle-over-1 ==
+
+condition: party.alive.Apollo && party.alive.Glasses
+
+Message 1
+Apollo > POINTING: Two noble \c[3]Spheromancers\c[0] and an acute \c[3]Hexacast\c[0] join forces on the Path of Justice! # for revision: wise / keen / cunning
+Apollo > CONTENT: Truly a sight to behold.
+Lea > PROUD: ...!
+C'tron > THOUGHTFUL: Uhm...\. path of... justice?
+
+Message 2
+Apollo > POINTING: The justice has been served once again!
+C'tron > WORRIED: If you call murdering a bunch of animals justice...
+Apollo > DOWN: We must face each and every obstacle put in our way!
+Apollo > POINTING: It is our duty as Seekers!
+Lea > EXHAUSTED: ...
+
+Message 3
+Apollo > POINTING: Our enemies are vanquished once again!
+Apollo > SHOUTING: Imbued with power of the Track, they test our resolve on the path to true mastery.
+C'tron > WORRIED: I don't know if you can call adding guns to birds as "imbuing power"...
+Lea > SMILE: ...
+Apollo > DEFAULT: But it's true, Hexacast.\. It is the very same power that flows through seekers.
+C'tron > EXHAUSTED: Then why don't I have a jetpack growing on my back?
+Apollo > PONDERING: Hmm...\. I suppose it works differently for every creature.
+
+Message 4
+C'tron > EMBARRASSED: Having jetpack in CrossWords would make chest hunting less of a hussle.
+Lea > EXCITED: ...!
+Apollo > POINTING: Jumping puzzles are but one of many challenges on the path to mastery!
+Apollo > LECTURING: Skipping them with jetpack would be nothing short of cheating!
+Lea > MOPING: ...
+C'tron > EXHAUSTED: That's the point...
+
+Message 5
+C'tron > DEFAULT: Awful lot of cybernetic enemies in CrossWorlds. 
+C'tron > TOWARD: But they don't look like designs of the Ancients.
+Apollo > CONTENT: I'm proud of your observational skills, Hexacast. You've chosen the right virtue to follow.
+Apollo > LECTURING: Some creatures are actually victims of evil experiments...
+Apollo > POINTING: Secretly performed by \c[1]humans\c[0]!
+Lea > ASTONISHED: ...!
+
+Message 6
+C'tron > DEFAULT: Humans behind such experiments must be very smart.
+C'tron > SURPRISED: Cybernetics and animal uplifting are complicated concepts.
+Apollo > LECTURING: Not smart enough as it seems.
+Apollo > DOWN: In the end, animals managed to escape from their laboratory.
+Apollo > LECTURING: We can only theorize, why and how that happened.
+C'tron > EMBARRASSED: Intelligent birds with guns. What could possibly go wrong?
+
+Message 7
+C'tron > WORRIED: To bad real world research into uplifting was shut down.
+C'tron > EXHAUSTED: Scientists never managed to get approval from ACF. # Todo: Unlock ACF lore entry
+Lea > SURPRISED_AWAY: Why?
+if plot.line < 40000
+    # Ignorance is bliss
+    C'tron > SMILE: Probably the same reason why they are scared of \c[3]Artificial General Intelligence\c[0].
+    C'tron > EMBARRASSED: Fear that non-human intelligence will go mad with power and destroy humanity.
+    Lea > SAD: ...
+else
+    # Compassionate from knowing
+    C'tron > PONDERING: Probably the same reason why they are scared of \c[3]Artificial General Intelligence\c[0].
+    C'tron > SAD: Fear that non-human intelligence will go mad with power and destroy humanity. 
+    Lea > SAD: ...
+    Apollo > LECTURING: Do not falter, Spheromancer Lea! Doubt is the root of evil!
+    Apollo > DEFAULT: You are the most noble AI I've met to date! 
+    Apollo > CONTENT: Only fools would question your true and honest nature!
+    Apollo > POINTING: By your compassionate example, public opinion of Evotars shall undoubtedly be swayed!
+    if newgame.sergey-hax
+        C'tron > EMBARRASSED: Uhm... are you sure about that one?
+        Lea > INSANE_DOWN: \c[1]...
+    else
+        if lea.words.thanks
+            Lea > TOUCHED: ...Thanks.
+        else
+            Lea > TOUCHED: ...
+        endif
+    endif
+endif
+
+set cced.apollo-ctron.battle-over-1.finished true

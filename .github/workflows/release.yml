@@ -1,0 +1,48 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build:
+    name: Build and publish release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone cc-extra-dialogue
+        uses: actions/checkout@v2
+
+      - name: Clone cc-eventscript-parser
+        uses: actions/checkout@v2
+        with:
+          repository: Paradragon/cc-eventscript-parser
+          path: parser
+
+      - name: Install dependencies
+        run: sudo apt update; sudo apt install zip
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10-dev'
+
+      - name: Compile CCES files
+        run: python3.10 parser/cc_eventscript_parser.py -r src/dialogues/
+
+      - name: Create CCED archives
+        run: |
+          zip -q -r cc-extra-dialogue.ccmod assets patches js prestart.js ccmod.json icon.png
+          tar -czf cc-extra-dialogue.tar.gz --transform 's,^,cc-extra-dialogue/,' assets patches js prestart.js ccmod.json icon.png
+
+      - name: Get version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF#refs/tags/}
+
+      - name: Create release
+        run: |
+          gh release create ${{ steps.get_version.outputs.VERSION }} -d -t "CCED ${{ steps.get_version.outputs.VERSION }}" ${{ env.FILES }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FILES: cc-extra-dialogue.ccmod cc-extra-dialogue.tar.gz

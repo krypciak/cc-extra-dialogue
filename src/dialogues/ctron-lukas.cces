@@ -1,0 +1,108 @@
+
+# by anonymous
+== cced-ctron-lukas-battle-over-1 ==
+
+condition: party.alive.Glasses && party.alive.Schneider && plot.line >= 40000
+
+Message 1
+Lukas > LAUGH: Aw, man! Been a while since I've played with a proper hexacast.
+Lukas > DEFAULT: Your buffs are super useful for Tribladers.
+C'tron > EMBARRASSED: Uhm... I guess...
+C'tron > TOWARD: But I am not the only Hexacast in your guild, correct?
+Lukas > COMPLAINING: Yeah, but... when I need his help, Albert usually ends up busy.
+Lea > SURPRISED_TOWARD: Why?
+Lukas > SKEPTICAL: You know, he is just always... busy... with stuff.
+
+Message 2
+Lukas > WONDERING: Hey, Tronny. Are you feeling alright?
+C'tron > EMBARRASSED: Mostly yes... just my mind is a little foggy.
+C'tron > SMILE: No need to worry about it.
+Lukas > SURPRISED: Oh, ok.
+Lukas > LAUGH: I've noticed you were reluctant to use some abilities, that's all.
+Lea > SMILE: ...
+
+Message 3
+Lukas > DEFAULT: You lot didn't forget to spend your \c[3]circuit points\c[0], right?
+# Insane Spheromancer
+if newgame.sergey-hax
+    Lea > INSANE_DOWN: \c[1]...!
+    Lukas > COMPLAINING: Yeah...\. like you need them at all...
+    goto postUnusedCP
+endif
+# NG+ Spheromancer, level 1 to 10
+if player.level <= 10
+    Lea > SURPRISED_AWAY: ...?
+    goto postUnusedCP
+endif
+# Forgetful Spheromancer. More than 12 unspent CP
+if player.unusedCP >= 12
+    Lea > EX2_NERVOUS_GLANCE: ...
+    goto postUnusedCP
+endif
+# True Spheromancer, every circuit node is unlocked.
+if player.level == 99 && player.unusedCP == 0
+    Lea > WHISTLING: ...!!
+    goto postUnusedCP
+endif
+# Anti-hedgehag Spheromancer, level 80+
+if player.level >= 80
+    Lea > SMUG: ...!
+    goto postUnusedCP
+endif
+# Average Spheromancer, level 10 to 79
+if player.level >= 10
+    Lea > PROUD: ...!
+    goto postUnusedCP
+endif
+label postUnusedCP
+C'tron > SMILE: Of course... kind of hard to forget it.
+Lukas > SKEPTICAL: Then you surely have \c[3]Divine Protection\c[0] unlocked, Tronny. Give it a shot.
+C'tron > SURPRISED: Is it like a... defensive art?
+Lukas > LAUGH:  Jap. Surprised you don't throw it more often.
+Lukas > TOWARDS: For a \c[3]level 1\c[0], it's surprisingly good. Albert uses it all the time.
+C'tron > EMBARRASSED: Okay-dokey.
+
+Message 4
+Lukas > SKEPTICAL: Not a fan of protective arts, are you?
+C'tron > EXHAUSTED: It's a lot to keep track of.
+C'tron > SURPRISED: I'm not sure about which elemental protection to cast.
+C'tron > EMBARRASSED: And by the time I've figured it out, Lea already destroyed all enemies.
+Lea > WHISTLING: ...!
+# Better fix the tauthology / repetition in next two lines
+Lukas > LAUGH: Makes sense, if you rarely used them before.
+Lukas > DEFAULT: Don't worry about elements. Just throw \c[3]Sharpening Flames\c[0] next time we get in a fight.
+Lukas > WHISTLING: It's the \c[3]heat\c[0] version if you're wondering.
+C'tron > EMBARRASSED: Sure, I'll try to remember that.
+
+Message 5
+Lukas > COMPLAINING: ...Tronny.
+C'tron > EXHAUSTED: Right... sorry...
+C'tron > EMBARRASSED: I ugh... I think, I just don't like protective arts.
+Lukas > SKEPTICAL: They give more than just resistances, you know.
+Lukas > DEFAULT: For example, \c[3]Sharpening Flames\c[0] also grants significant increase to \c[3]attack\c[0] stat.
+if newgame.sergey-hax
+    Lukas > COMPLAINING: Maybe with it I'll manage to kill at least something.
+    Lea > INSANE_DOWN: \c[1]...!
+    C'tron > EMBARRASSED: Right...
+else
+    Lukas > WINK: I think, Lea would appreciate such buff. Bigger numbers never hurt.
+    Lea > NOD_HAPPY: [nods]
+    C'tron > WORRIED: Right...
+endif
+
+Message 6
+Lukas > RANTING: Oh Junge, guess Albert was right.
+Lukas > SERIOUS: You're just terrible at this game.
+Lea > NOD: [nods]
+C'tron > EXHAUSTED: Sorry.
+Lukas > TOWARDS: Just kidding, don't worry about it.
+Lukas > LAUGH: It's not like we need buffs at this point anyway.
+if newgame.sergey-hax
+    Lea > INSANE_DOWN: \c[1]...!
+    Lukas > SKEPTICAL: Like I said...
+else
+    Lukas > WINK: Lea can take care of enemies just fine.
+    Lea > SMUG: Hi.
+endif
+
+set cced.ctron-lukas.battle-over-1.finished true

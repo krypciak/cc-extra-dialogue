@@ -1,0 +1,60 @@
+
+# Original idea by Lolz
+# by anonymous
+== cced-joern-luke-battle-over-1 ==
+
+condition: party.alive.Joern && party.alive.Luke && plot.line >= 40000
+
+Message 1
+Luke > WONDERING: Hey, Joern. If you're with us, where is Apollo?
+Joern > SMILE: Feeding the cats.
+Luke > DEFAULT: Didn't know you had pets.
+Joern > SMILE: Quite a few, actually.
+Joern > AWWW: Love them fluffy furballs.
+Lea > EX2_GENTLE_SMILE: ...
+
+Message 2
+Joern > DEFAULT: Ever had a pet, Luke?
+Luke > EYES_CLOSED: Nope.
+Lea > SURPRISED_TOWARD: Why?
+Luke > WHISTLING: Pets demand an awful lot of responsibility.
+Luke > SKEPTICAL: I've had enough of it at my job.
+if cced.joern-lukas.battle-over-1.finished
+    Joern > SARCASTIC: Or maybe it's something about \c[3]insufficient funds\c[0]?
+    Luke > LAUGH: You got me on that one!
+else
+    Joern > DEFAULT: You don't have one now.
+    Luke > COMPLAINING: And I'm very glad for that...
+endif
+
+Message 3
+Joern > DEFAULT: Maybe Instatainment can create pets for evotars.
+Luke > WONDERING: We kinda have ones from arena.
+Joern > TOWARD: Pet is more than just a furball that follows you around.
+Joern > AWWW: It is a \c[3]friend for life\c[0].
+Luke > EX2_SIDE_WINK: But I already have the best friend one could ask for...
+Lea > CHARMED: ...
+
+Message 4
+Joern > DEFAULT: Pets also have therapeutic effect.
+Lea > SURPRISED_AWAY: How?
+Joern > TOWARD: Interactions with pets reduce stress and blood pressure.
+Joern > DEFAULT: They also ease loneliness and improve overall mental state.
+Luke > WHISTLING: Oh yeah!\. I remember reading, how dogs help children to fight anxiety.
+Lea > ASTONISHED: ...!
+Joern > SMILE: And pets are always there when you need them the most.
+
+Message 5
+Luke > DEFAULT: I don't know, Joern. Seems like it requires a lot of commitment.
+Luke > WHISTLING: You can't just leave your pet to their own business.
+Luke > SKEPTICAL: I'm not that responsible.
+Lea > EX2_DISAPPOINTED: ...?
+Joern > SUSPICIOUS: Then I suggest to work on yourself.
+Joern > SARCASTIC: You got plenty of time.
+Luke > LAUGH: Right...\. Of course I will! #EX2_EMBARRASSED_LAUGH with dropping sweat, like CTron?
+Luke > SKEPTICAL: What nonsense am I even talking about...
+Lea > DETERMINED: ...!
+Luke > COMPLAINING: I'm being honest!\. Stop looking at me like that.
+Lea > SMUG: ...
+
+set cced.joern-luke.battle-over-1.finished true

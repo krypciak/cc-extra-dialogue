@@ -1,0 +1,190 @@
+# by anonymous
+== cced-emilie-joern-battle-over-1 ==
+
+condition: party.alive.Emilie && party.alive.Joern
+
+Message 1
+Emilie > DEFAULT: So strange seeing you without Apollo.
+Joern > DEFAULT: Why?
+Emilie > CURIOUS: Every time we saw you, he was somewhere close by.
+Joern > DEFAULT: Not that.
+Joern > TOWARD: Who said, he is not there?
+Emilie > SUSPICIOUS: We're in a party of \c[3]three\c[0], non?
+
+Message 2
+Joern > SARCASTIC: Maybe he is...\! \c[3]right behind you\c[0].
+Emilie > SUSPICIOUS: You must be joking.
+Lea > SURPRISED_AWAY: ...?!
+Lea > SHOCKED: ...!!
+Emilie > SHOCKED: W-What happened?!!\!
+Emilie > MOPING: Hold up...\! nobody is following you.
+if lea.words.sorry
+    Lea > SMILE: Sorry.
+else
+    Lea > SMILE: Hi.
+endif
+Emilie > EXHAUSTED: Sacrebleu, Lea... don't do that again.
+
+Message 3
+Emilie > DETERMINED: Punching our way to victory, one mob at a time.
+if newgame.sergey-hax
+    Joern > TOWARD: Are you sure about that?
+    Emilie > WATCH_OUT_BADASS: Never said it was done by me.
+    Lea > INSANE_DOWN: \c[1]Hi!
+else
+    Joern > DEFAULT: You two are rather aggressive.
+    Emilie > WATCH_OUT_BADASS: I'm a Pentafist...\! I punch things.
+    Emilie > SMILE: And you don't have to sweat with shielding...
+    Emilie > DETERMINED: ... If we punch everything out of existence first!
+    Joern > DEFAULT: Good point.
+endif
+
+Message 4
+Joern > DEFAULT: It's a nice change of pace from Apollo.
+Joern > SMILE: Plenty of time to take in the view.
+Emilie > CURIOUS: How Monsieur grasshead is so quick when it comes to speeding ahead of us?
+Joern > SARCASTIC: Skips everything in a rush to next landmark.
+Joern > SARCASTIC: Except \c[3]certain\c[0] chests.
+Joern > ANGRY: I hardly have the time to figure out a quest with him.
+Emilie > EMBARRASSED: Somehow reminds me of Lea...
+Emilie > EXHAUSTED: Running around and fighting every mob in sight...
+Lea > SMUG: ...
+
+Message 5
+Emilie > DEFAULT: Hey, Joern. Have you played CrossWorlds before?
+Joern > DEFAULT: First time.
+Emilie > ASTONISHED: Cool!\. I'm a new player too!
+Emilie > EXHAUSTED: That grasshead though...
+# They know about Apollo beating CrossWorlds before
+# 18700 is Krys'Kajo end
+if plot.line >= 18700
+    Emilie > MOPING: Turns out he was cheating all along!
+    Joern > SARCASTIC: Agreed. He has more experience with the game.
+else
+    Emilie > MOPING: What's his problem?
+    Joern > SARCASTIC: He can get overzealous.
+    Joern > DEFAULT: But trust me...\. He has good intentions.
+endif
+
+if plot.apollo.leaWins >= 3
+    if plot.line >= 18700
+        Emilie > EMBARRASSED: Beating CrossWorlds before didn't help him too much, non.
+    else
+        Emilie > DETERMINED: As long as he keeps getting his ass kicked, its fine by me!
+    endif
+    Lea > SMUG: Lea!
+    Joern > SMILE: About time he met a \c[3]superior\c[0] opponent.
+else
+    if plot.apollo.leaWins >= 2
+        Emilie > CURIOUS: Lea looks even with grasshead in terms of skill.
+        Lea > EXHAUSTED: ...
+        Joern > DEFAULT: Surprisingly.
+        Joern > SMILE: Nice to finally see him fight a \c[3]challenging\c[0] opponent.
+    else
+        Joern > TOWARD: Could've went easier on Lea in duels too...
+        Lea > PRE_CRY1: ...
+        Emilie > ANGRY: Yeah!\. Bashing newbies is \c[1]not fair\c[0]!
+        Lea > PRE_CRY2: ...
+        Joern > AWWW: You will get him next time, little girl.
+        Lea > NOD_HARD2: [nods]
+        Emilie > UNCERTAIN: Lea, chérie!\. Don't cry!\. It's just a game, non?
+    endif
+endif
+
+set cced.emilie-joern.battle-over-1.finished true
+
+
+
+== cced-emilie-joern-battle-over-2 ==
+
+condition: party.alive.Emilie && party.alive.Joern && plot.line >= 18700 && cced.emilie-joern.battle-over-1.finished
+
+Message 1
+Emilie > DEFAULT: How did you get into CrossWords?
+Joern > DEFAULT: Apollo was playing it a lot.
+Joern > DEFAULT: I wanted to see for myself, what was it all about.
+Emilie > CURIOUS: And he rolled up a \c[3]new character\c[0] to join you?
+Joern > SMILE: Indeed.
+Emilie > MOPING: Bummer! Lukas decided to show me around Rookie Harbor and then disappeared into his guild.
+Emilie > CURIOUS: What are they doing back there anyway?
+Lea > THINKING: ...?
+
+Message 2
+Emilie > DETERMINED: Bet all of grassheads characters were \c[3]Spheromancers\c[0].
+Joern > SARCASTIC: How did you figure that out?
+Emilie > WATCH_OUT_BADASS: I'm a detective, Joern.
+Emilie > TAUNTING: Nothing goes unnoticed in my presence.
+Lea > SHAKE: [shakes head]
+Joern > DEFAULT: Right...\! They also looked the same.
+Joern > SARCASTIC: \c[3]Exactly\c[0] the same.
+
+Message 3
+Emilie > DEFAULT: Playing with you is fun, Joern.
+Emilie > DETERMINED: Since you watch my back, I can focus on punching them things.
+Joern > SMILE: Thanks. I like my job.
+Joern > SMILE: Always a pleasure, when people acknowledge their tanks.
+Emilie > AWAY: You play tanks often?
+Joern > UP: I like to help other people.
+Joern > DEFAULT: Tanks are my go-to class in any RPG.
+Emilie > DETERMINED: And I like to punch things out of existance before they even attack us.
+if newgame.sergey-hax
+    Emilie > DEAD_INSIDE: At least, I used to...
+    Lea > INSANE_DOWN: \c[1]...!!
+    Emilie > DEAD_INSIDE: Why are we still here, Joern?
+    Joern > SMILE: To have a nice chat and take in the view.
+endif
+
+set cced.emilie-joern.battle-over-2.finished true
+
+
+
+# Original idea by Lolz
+# by anonymous
+== cced-emilie-joern-battle-over-3 ==
+
+condition: party.alive.Emilie && party.alive.Joern && plot.line >= 18700 && cced.emilie-joern.battle-over-2.finished
+
+Message 1
+Emilie > DEFAULT: Any plans for this weekend?
+Joern > DEFAULT: Going to prepare \c[3]seared ahi tuna steak\c[0].
+Emilie > ASTONISHED: Ohhh~.\. What's an ahi tuna?
+Joern > DEFAULT: A certain kind of tuna.\. It's covered in spices and served with wasabi dipping.
+Emilie > CURIOUS: Like a sushi?
+Joern > TOWARD: Sushi is a dish with specially prepared rice, usually dressed with seafood. 
+Joern > DEFAULT: Sashimi would be more accurate in this case.
+Lea > NOD: [nods]
+
+Message 2
+Emilie > AWAY: Why is it seared though?
+Joern > DEFAULT: It's prepared on a hot surface before being eaten.
+Emilie > SUSPICIOUS: So...\. it's a grilled fish steak?
+Joern > DEFAULT: A bit more complicated.
+Emilie > CURIOUS: How so?
+Joern > SMILE: Instead of grill, it's cooked on a \c[1]hot lava stone\c[0]. 
+Lea > ASTONISHED: ...!
+Emilie > ASTONISHED: Now that's unusual!
+
+Message 3
+Emilie > DEFAULT: So it's a special fish, fried on a stone. Neat.
+Joern > DEFAULT: But wait...\. There is more...
+Emilie > ASTONISHED: Nooooo~!
+Joern > SARCASTIC: The heated lava stone is brought to the table.
+Emilie > CURIOUS: Uhm...\. Why?
+Joern > SMILE: The fish is not prepared beforehand. 
+Joern > SMILE: Instead, you \c[3]do it yourself\c[0] by searing it on the stone.
+Emilie > ASTONISHED: Wow, exotique!
+Joern > SMILE: Indeed.\. You cook it as you eat, searing to your liking.
+Emilie > DETERMINED: Now I want to try it out!
+Lea > NOD_SAD: [nods]
+
+Message 4
+Emilie > AWAY: How hot is this stone again?
+Joern > SMILE: Around \c[1]700 degrees\c[0].
+Lea > SHOCKED: ...?!
+Emilie > SWEATY_SMILE: ...\!S-Seems dangerous to put it on a table, non?
+Joern > DEFAULT: It is.
+Joern > SARCASTIC: You better avoid touching it.
+Lea > SCARED: ...!!
+Emilie > SWEATY_SMILE: Oui...\. Maybe I'll try it out later...
+
+set cced.emilie-joern.battle-over-3.finished true

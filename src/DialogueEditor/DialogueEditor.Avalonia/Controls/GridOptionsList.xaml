@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="DialogueEditor.Controls.GridOptionsList"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DialogueEditor.Controls"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <ScrollViewer 
+            VerticalScrollBarVisibility="Auto">
+            <ItemsControl ItemsSource="{Binding }">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid  
+                            Width="200"
+                            Margin="8">
+                            <Button 
+                                Style="{StaticResource MahApps.Styles.Button.Flat}"
+                                VerticalAlignment="Stretch"
+                                HorizontalAlignment="Stretch"
+                                Click="Option_Click">
+                            </Button>
+                            <Grid 
+                                IsHitTestVisible="False" 
+                                Margin="8">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="200"/>
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Image 
+                                    Source="{Binding Image}" 
+                                    ClipToBounds="True"
+                                    Stretch="Uniform"
+                                    HorizontalAlignment="Stretch"
+                                    VerticalAlignment="Stretch"
+                                    RenderTransformOrigin="0.5,0.5">
+                                    <!-- By default expressions are facing left -->
+                                    <!-- cc-extra-dialogue works with expressions that are facing right-->
+                                    <Image.RenderTransform>
+                                        <ScaleTransform ScaleX="-1" />
+                                    </Image.RenderTransform>
+                                </Image>
+                                <TextBlock 
+                                    Grid.Row="1"
+                                    Margin="0,5,0,0"
+                                    Text="{Binding Title}" 
+                                    FontSize="14"
+                                    FontWeight="DemiBold"
+                                    HorizontalAlignment="Center" 
+                                    TextWrapping="Wrap"/>
+                            </Grid>
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

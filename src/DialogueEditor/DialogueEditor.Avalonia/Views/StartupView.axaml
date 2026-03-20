@@ -1,0 +1,58 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="235"
+        x:Class="DialogueEditor.Avalonia.Views.StartupView"
+        Name="StartupWindow"
+        CanResize="False"
+        Width="450"
+        Height="235"
+        Icon="/Resources/ccextradialogue.ico"
+        Title="Expressions Viewer">
+  <StackPanel 
+    Margin="10"
+    Orientation="Vertical"
+    HorizontalAlignment="Center">
+    
+    <TextBlock 
+      FontWeight="SemiBold"
+      Text="This application requires a compiled directory of expressions:"/>
+
+    <TextBlock 
+      Margin="0,15,0,0"
+      Text="targetDir/character1/expression1" />
+    <TextBlock 
+      Margin="0,5,0,0"
+      Text="targetDir/character1/expression2" />
+    <TextBlock 
+      Margin="0,5,0,0"
+      Text="targetDir/character2/expression1" />
+    <TextBlock 
+      Margin="0,5,0,0"
+      Text="targetDir/character2/expression2" />
+    <TextBlock 
+      Margin="0,10,0,0"
+      Text="etc..." />
+    
+    <StackPanel 
+      Margin="0,35,0,0"
+      Orientation="Horizontal"
+      HorizontalAlignment="Right">
+      <Button 
+        Margin="5"
+        Content="Use current"
+        Command="{Binding SearchCurrentDirectoryCommand}" 
+        CommandParameter="{Binding ElementName=StartupWindow}" />
+      <Button 
+        Margin="5"
+        Content="Select directory"
+        Command="{Binding SelectDirectoryCommand}"
+        CommandParameter="{Binding ElementName=StartupWindow}" />
+      <Button 
+        Margin="5"
+        Content="Cancel"
+        Command="{Binding CancelCommand}" />
+    </StackPanel>
+  </StackPanel>
+</Window>

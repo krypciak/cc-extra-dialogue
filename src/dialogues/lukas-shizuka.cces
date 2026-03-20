@@ -1,0 +1,191 @@
+
+# by anonymous
+== cced-lukas-shizuka-battle-over-1 ==
+# plot.line 48000 is post final dungeon
+condition: party.alive.Schneider && party.alive.Shizuka && plot.line >= 48000
+
+Message 1
+Lukas >WONDERING: Hey, Shizuka. Are you the one, who Lea was based on?
+Shizuka > DEFAULT: Yeah.
+Lukas > TOWARDS: Isn't it neat how we both have evotars of ourselves?
+Shizuka > INNOCENT: Uhm... I guess.
+Lukas > DEFAULT: Although Luke and I seem much more alike, than you two.
+Shizuka > DEFAULT: Figures. Lea had a head start of a few years.
+Lukas > SKEPTICAL: Makes one think, how much experiences shape us.
+
+Message 2
+Lukas > WONDERING: Aren't you two basically sisters?
+# Similar conversation occurs in Luke-Shizuka party
+if !cced.shizuka.sakai-sisterhood
+    Lukas > DEFAULT: One could say that you have more in common than anybody else in the universe.
+    Shizuka > INNOCENT: I mean...\. if she wants to...
+    Shizuka > BRIGHT: She does understand me better than anyone... 
+    Shizuka > SMILE: Like a real sister.
+    Lea > TOUCHED: ...
+else
+    Shizuka > BRIGHT: Are we?\. What do you say, Lea?
+    Lea > NOD_HAPPY: [nods]
+    Shizuka > SMUG: Thought as much.
+endif
+Lukas > LAUGH: \c[3]Lea Sakai\c[0].\. Has a ring to it!
+
+set cced.shizuka.sakai-sisterhood true
+
+Message 3
+Lukas > WONDERING: Why Lea?
+Lea > SURPRISED_TOWARD: Why Lea?
+Shizuka > SARCASTIC: Why Lukas?
+Lukas > SKEPTICAL: Good point.
+
+Message 4
+# Skip message 4
+
+Message 5
+Lukas > DEFAULT: Huh, you two do fight similarly.
+Lukas > LAUGH: Though Lea is noticeably faster!
+
+# Also occurs in party with C'Tron, Joern and Luke
+if cced.shizuka.lea-similarity-mentions == 1
+    Shizuka > FUNNY_SMILE: Yeah, I get that a lot.
+endif
+if cced.shizuka.lea-similarity-mentions == 2
+    Shizuka > DOWN: Uhm... I guess?
+endif
+if cced.shizuka.lea-similarity-mentions >= 3
+    Shizuka > EX2_ANNOYED: ...
+    Lea > SMILE: ...
+endif
+
+Shizuka > EVIL_GRIN: Just rusty from my vacation.
+Lukas > DEFAULT: Recently traveled somewhere?
+Shizuka > FUNNY_SMILE: Yeah.\! To real life.
+Lukas > COMPLAINING: Jap...\. You two are like twin sisters. Same smug and all that.
+Shizuka > SMUG: Makes sense. She is my copy after all.
+Lea > WHISTLING: ...
+
+set cced.shizuka.lea-similarity-mentions + 1
+
+Message 6
+Lukas > DEFAULT: Did you two always look like that?
+Lea > NOD [nods]
+Shizuka > DEFAULT: Never bothered to change my appearance.
+Lukas > WONDERING: Then why is your avatar different from Lea?
+Lukas > TOWARDS: Luke looked literally like me, when Sergey asked me for help.
+Shizuka > DEFAULT: Before first awakening, someone gave her a new haircut.
+Lea > SURPRISED_TOWARD: Who?
+Shizuka > SMUG: Take a guess. There were three of us. \c[3]Me\c[0], \c[3]Satoshi\c[0] and \c[3]Gautham\c[0].
+Lea > THINKING ...
+
+Message 7
+Lukas > EYES_CLOSED: It was Satoshi.
+Shizuka > BRIGHT: Are you sure?
+Lukas > WINK: One hundred percent. Can't be you.
+Shizuka > SMUG: And why is that?
+Lukas > TOWARDS: Your chest is smaller.
+Lukas > LAUGH: And I don't need a ruler for that one.
+Lea > MOPING: ...!
+Shizuka > SURPRISED: ...
+Shizuka > SHOUT: \c[1]You what?!!\c[0]
+
+Message 8
+Shizuka > EX2_DISAPPOINTED: I am actually impressed.
+Shizuka > EX2_DISAPPOINTED: You've managed to insult me, Lea and my idiot brother...\. all in one sentence.
+Lukas > COMPLAINING: Entschuldigung, alright?
+Lukas > NORM_SERIOUS: Wasn't very tactful of me.
+Shizuka > DEFAULT: Apologies accepted, whatever.
+
+
+Message 9
+Lukas > DEFAULT: Ever heard about ancient strategy of \c[3]W plus M 1\c[0]?
+Shizuka > BRIGHT: That's basically our game plan.
+if newgame.sergey-hax
+    Shizuka > FUNNY_SMILE: Not like we need to do anything anyway.
+    Lea > INSANE_DOWN: \c[1]...!!
+    goto postGamePlan
+endif
+if player.level <= 10
+    Lea > NERVOUS: ...?
+    Shizuka > INNOCENT: Sorry, I meant me and Lukas.\. How is your level that low anyway?
+    Lukas > DEFAULT: Some kind of bug.
+    Shizuka > SARCASTIC: Lazy devs and their broken games, huh.
+    goto postGamePlan
+endif
+Shizuka > FUNNY_SMILE: Why sweat when you're over-leveled anyway.
+Lukas > COMPLAINING: You ruined the joke before I even started.
+Shizuka > SARCASTIC: Dude, I saw it coming from a mile way.
+label postGamePlan
+
+set cced.lukas-shizuka.battle-over-1.finished true
+# Skip starting downtime tracking if the next event will never occur
+if plot.lukeBeachDate
+    set ccipt.vars.Schneider-Shizuka.trackDowntime + 1
+endif
+
+
+
+# Since you can only get Shizuka into your party after final dungeon, this sequence should happen after some time passes since previous one.
+# This sequence only plays out if player replied "Yes" to the beach date proposal. (final-dng/b3/bridge)
+== cced-lukas-shizuka-battle-over-2 ==
+# 5 minutes without Schneider and Shizuka
+condition: party.alive.Schneider && party.alive.Shizuka && cced.lukas-shizuka.battle-over-1.finished && plot.lukeBeachDate && (cced.lukas-shizuka.battle-over-2.started || ccipt.vars.Schneider-Shizuka.maxDowntime >= 300) && plot.line >= 40000
+
+Message 1
+set cced.lukas-shizuka.battle-over-2.started true
+set ccipt.vars.Schneider-Shizuka.trackDowntime - 1
+set ccipt.vars.Schneider-Shizuka.maxDowntime = 0
+set ccipt.vars.Schneider-Shizuka.lastDowntime = 0
+
+Shizuka > EX2_PISSED: ...
+Lukas > WHISTLING: Well... this is awkward...
+Shizuka > EX2_PISSED: It is...
+Lea > SURPRISED_TOWARD: ...?
+Lea > SURPRISED_AWAY: Why?
+
+Message 2
+Shizuka > EX2_DISAPPOINTED: ...
+Lukas > WORRIED: ...
+Lea > SURPRISED_TOWARD: Hi?
+Lea > NERVOUS: ...?
+
+Message 3
+Shizuka > SARCASTIC: So...\! have anything to say?
+Lukas > COMPLAINING: I'm sorry.
+Shizuka > EVIL_GRIN: You should be.
+Shizuka > FUNNY_SMILE: I'm still shaken.
+Lea > SURPRISED_AWAY: Why?
+Lukas > SERIOUS: No, you're not!
+Lukas > PONDERING: It's me, who should be shaken.
+Shizuka > DOWN: Look, my fingers actually went numb from feedback.
+Lea > SURPRISED_TOWARD: ...?
+Shizuka > FUNNY_SMILE: Therefore I'd say we're even.
+
+Message 4
+Shizuka > EVIL_GRIN: How did this thought even occur to you?
+Shizuka > SURPRISED: Wait, I know! It's because of Luke!
+Lukas > SKEPTICAL: Was worth a try.
+Shizuka > SARCASTIC: Should've tried harder.
+Shizuka > FUNNY_SMILE: He put way more thought into it than you.
+
+Message 5
+Lukas > WINK: So you're saying that....
+Shizuka > ANNOYED: No!
+Lukas > LAUGH: Alright.
+Lea > ANNOYED: ...
+Shizuka > DENYING: And let's never bring this topic up again.
+Lukas > DEFAULT: Fair enough.
+Lea > ANNOYED: ...Why?
+
+Message 6
+# Skip message 6
+
+Message 7
+# Skip message 7
+
+Message 8
+Lukas > DEFAULT: Are you still hungry?
+Shizuka > SARCASTIC: Dude...\. You're millions of light years away from me.
+Shizuka > FUNNY_SMILE: You couldn't invite me for dinner even if you wanted.
+Lukas > SKEPTICAL: It's not like I can't buy a ticket...
+Shizuka > SARCASTIC: You clearly don't.\. Now \c[1]stop\c[0].
+
+set cced.lukas-shizuka.battle-over-2.finished true

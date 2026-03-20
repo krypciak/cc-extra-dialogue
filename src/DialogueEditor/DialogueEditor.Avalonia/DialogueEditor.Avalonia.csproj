@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>Resources\ccextradialogue.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <AvaloniaResource Include="Assets\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Controls\GridOptionsList.xaml" />
+    <None Remove="Resources\ccextradialogue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <AvaloniaResource Include="Resources\ccextradialogue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.10.6" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.6" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="0.10.6" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.6" />
+    <PackageReference Include="MessageBox.Avalonia" Version="1.3.1" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="1.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\GridOptionsList.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ccextradialogue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Controls\GridOptionsList.axaml.cs">
+      <DependentUpon>GridOptionsList.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MainView.axaml.cs">
+      <DependentUpon>MainView.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\StartupView.axaml.cs">
+      <DependentUpon>StartupView.axaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utils\" />
+  </ItemGroup>
+</Project>

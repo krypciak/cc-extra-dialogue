@@ -1,0 +1,107 @@
+
+# Original idea by CoolWall
+# by anonymous
+== cced-joern-lukas-battle-over-1 ==
+
+condition: party.alive.Joern && party.alive.Schneider && plot.line >= 40000
+
+Message 1
+Lukas > COMPLAINING: Aw, man. I think, I need a break.
+Joern > TOWARD: Are you tired?
+Lukas > PONDERING: No.\. Just my stomach acting up.
+Lukas > PISSED: Snacked a spoiled pizza.\! Should've guessed by it's color.
+Joern > SARCASTIC: Green bread is very bad.
+Lea > NOD: [nods]
+Lukas > COMPLAINING: Yeah, thanks for advice, chief.
+
+Message 2
+Lukas > COMPLAINING: I think, I'm cool now.\. Swallowed some super pills.
+Joern > TOWARD: Activated charcoal?
+Lukas > SKEPTICAL: Not sure.\. Maybe?
+Joern > ANGRY: How irresponsible. You can't just eat random pills, Lukas.
+Lukas > DEFAULT: Don't worry. I've been taking them for years and so far they seem to help.
+Lukas > LAUGH: No adverse side-effects detected.
+
+Message 3
+Lukas > WHISTLING: Hold on, I think there is one more slice left.
+Lukas > WONDERING: Mmmmm~.\!\! A little \c[3]sour\c[0] though.
+Lea > SHAKE_EYE_CLOSED: [shakes head]
+Lea > ANGRY: Why?
+Joern > ANGRY: Yes. Why are you eating spoiled food?
+Lukas > SKEPTICAL: What can I do about it?
+Lukas > DEFAULT: Blame the universe for making stuff go mouldy \c[3]without a fridge\c[0].
+Lea > EX2_DISAPPOINTED: ...
+Lea > DOWN_EYE_CLOSED: ...
+
+Message 4
+Joern > TOWARD: Do you have a fridge, Lukas?
+Lukas > COMPLAINING: Nope.
+Lea > SURPRISED_TOWARD: Why?
+Lukas > RANTING: It takes a lot of space and I'm short on money. 
+Lukas > SKEPTICAL: CrossWorlds subscription is \c[3]expensive\c[0], you know?
+Lea > ANNOYED: ...?
+Lukas > WINK: Would you rather see me hang out with a fridge or with you?
+Lea > MOPING: Bye.
+Joern > DEFAULT: Agree. Eating healthy is important.
+Lukas > COMPLAINING: Why are you like that, Lea...
+
+set cced.lukas.nofridge true
+set cced.joern-lukas.battle-over-1.finished true
+
+
+
+# by anonymous
+== cced-joern-lukas-battle-over-2 ==
+
+condition: party.alive.Joern && party.alive.Schneider && cced.joern-lukas.battle-over-1.finished && plot.line >= 40000
+
+Message 1
+Lukas > WONDERING: Isn't CrossGear connected to all five senses?
+Joern > DEFAULT: \c[3]Taste\c[0] and \c[3]smell\c[0] are missing.
+Lukas > WHISTLING: But that's the thing, Joern.
+Lukas > SKEPTICAL: They are not missing, just disabled.
+Lea > SURPRISED: Why?
+Joern > DEFAULT: Safety precaution?
+Lukas > LAUGH: Most likely they decided that designing hedgehags taste was to much effort.
+
+Message 2
+Joern > DEFAULT: How do you know they are actually disabled?
+Joern > TOWARD: Maybe CrossGear can't physically support them.
+Lukas > SKEPTICAL: We have \c[3]touch\c[0]. How different is it from taste anyway.
+Joern > SARCASTIC: Enough to be considered a separate sense.
+
+Message 3
+Lukas > DEFAULT: Hey, Joern.
+Lukas > WHISTLING: If \c[3]taste\c[0] actually worked in CrossWorlds, what would you lick first?
+Joern > ANGRY: Nothing.\. That's unsanitary.
+Lukas > COMPLAINING: Tell that to an average player.
+Lukas > TOWARDS: They will immediately lick the first jelly blob they spot.
+Lea > SHAKE_EYE_CLOSED: [shakes head]
+Joern > DEFAULT: Or a snowman.
+Lukas > LAUGH: Ja.\. Tronny would definitely do that one.
+
+# Not sure if it fits the dialogue. Message 4 may be cut out on release.
+Message 4
+Lukas > WONDERING: Lea, do you remember how things taste?
+Lea > THINKING: ...
+Lea > SHAKE: [shakes head]
+Joern > AWWW: Poor little girl.
+Lea > SURPRISED_TOWARD: Why?
+Lukas > COMPLAINING: Well... until you ate a burger, you'll never know what you're missing out on.
+
+Message 5
+Lukas > SURPRISED: I just had the best idea ever...
+Joern > DEFAULT: Go on.
+Lukas > WINK: Forget snowman and blobs!\. Imagine, if you could \c[3]taste\c[0] food in CrossWorlds!
+Lea > ASTONISHED: ...!
+Lukas > LAUGH: Any dish you can imagine, instant preparation time, infinitely scale-able!
+Joern > SMILE: Rhombus restaurants. Lovely.
+Lukas > WINK: Easy money. I should pitch this to Sergey!
+Sergey > ROLL_EYES: We read these kinds of suggestions every day.
+Sergey > SERIOUS: Satoshi left before finishing the \c[3]taste buds\c[0] module. 
+Sergey > WORRIED: And people who can improve CrossGear are not that common.
+Lea > SAD: ...
+Sergey > THINKING: But since he is back...\! Guess, I'll ask him about it.
+Lea > EXCITED: ...!
+
+set cced.joern-lukas.battle-over-2.finished true

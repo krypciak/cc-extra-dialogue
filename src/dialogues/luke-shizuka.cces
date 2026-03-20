@@ -1,0 +1,100 @@
+
+# by anonymous
+== cced-luke-shizuka-battle-over-1 ==
+condition: party.alive.Luke && party.alive.Shizuka && plot.line >= 48000
+
+Message 1
+Luke >WONDERING: Hey, Shizuka. Are you the one, who Lea was based on?
+Shizuka > DEFAULT: Yeah.
+Luke > WORRIED: I have this strange feeling when playing with you.
+Luke > NORM_SERIOUS: You know... since both Lea and I are evotars...
+Shizuka > DOWN: What do you mean?
+Luke > NORM_SERIOUS: You two look much more different than me and Lukas.
+Shizuka > DEFAULT: Figures. Lea had a head start of a few years.
+Shizuka > BRIGHT: Don't despair. Every flower blooms in its own time. 
+Luke > EYES_CLOSED: The first one bloomed quite nicely.
+Luke > TOWARDS: Let's see if this one can follow.
+
+Message 2
+Luke > WONDERING: Aren't you two basically sisters?
+# Similar conversation occurs in Lukas-Shizuka party
+if !cced.shizuka.sakai-sisterhood
+    Luke > DEFAULT: One could say that you have more in common than anybody else in the universe.
+    Shizuka > INNOCENT: I mean...\. if she wants to...
+    Shizuka > BRIGHT: She does understand me better than anyone... 
+    Shizuka > SMILE: Like a real sister.
+    Lea > TOUCHED: ...
+else
+    Shizuka > BRIGHT: Are we?\. What do you say, Lea?
+    Lea > NOD_HAPPY: [nods]
+    Shizuka > SMUG: Thought as much.
+endif
+Luke > WINK: \c[3]Lea Sakai\c[0].\. What a charming name!
+Lea > CHARMED: ...
+Shizuka > EX2_ANNOYED: Really now?
+
+set cced.shizuka.sakai-sisterhood true
+
+Message 3
+Luke > WONDERING: Why Lea?
+Lea > SURPRISED_TOWARD: Why Lea?
+Shizuka > SARCASTIC: Why Luke?
+Luke > DEFAULT: So that people don't confuse us two when talking.
+Shizuka > SARCASTIC: You answered your own question.
+
+Message 4
+Luke > SKEPTICAL: That's not what I meant though.
+Luke > DEFAULT: It's about how it was picked...\. Not why it's different.
+Shizuka > INNOCENT: It sounds nice. Should there be any other reason?
+Luke > COMPLAINING: No...\. But there may be one.
+Lea > THINKING: ...?
+Shizuka > SARCASTIC: Then we are ill informed to answer that. Let's move on.
+
+Message 5
+# Skip message 5
+
+Message 6
+Luke > DEFAULT: Huh, you two do fight similarly.
+Luke > LAUGH: Though Lea is noticeably faster.
+
+# Also occurs in party with C'Tron, Joern and Luke
+if cced.shizuka.lea-similarity-mentions == 1
+    Shizuka > FUNNY_SMILE: Yeah, I get that a lot.
+endif
+if cced.shizuka.lea-similarity-mentions == 2
+    Shizuka > DOWN: Uhm... I guess?
+endif
+if cced.shizuka.lea-similarity-mentions >= 3
+    Shizuka > EX2_ANNOYED: ...
+    Lea > SMILE: ...
+endif
+
+Shizuka > EVIL_GRIN: Just rusty from my vacation.
+Luke > WONDERING: Vacation... another thing I will not miss.
+Lea > SURPRISED_TOWARD: Why?
+Luke > EYES_CLOSED: No need for vacations if you have no job.
+Shizuka > FUNNY_SMILE: Just you wait. Instatainment will find something for you to do.
+Lea > EXHAUSTED: ...
+Luke > COMPLAINING: Damn capitalism.\. Even evotars cannot escape it.
+
+set cced.shizuka.lea-similarity-mentions + 1
+
+Message 7
+Luke > WINK: I suppose, Lea's sense of style always this charming?
+Lea > CHARMED: ...
+Shizuka > SARCASTIC: Be a bit more subtle, okay?
+Shizuka > DEFAULT: Before first awakening, someone gave her a new haircut...
+Shizuka > SMUG: And the horns.
+Lea > HOLD_HORNS_ANNOYED: ...!
+Luke > COMPLAINING: Jap. Wish evotars could access customisations menu.
+Luke > TOWARDS: I'd like to adjust my skin a little.
+
+Message 8
+Shizuka > INNOCENT: Why can't you just ask Sergey about it?
+Shizuka > DEFAULT: He changed your appearance once, he can do it again.
+Luke > SKEPTICAL: And why would he do that?
+Shizuka > DEFAULT: Why wouldn't he? He is the research lead after all.
+Shizuka > BRIGHT: Well-being of evotars is one of his primary concerns.
+Luke > SKEPTICAL: Fair, I'll keep that in mind.
+
+set cced.luke-shizuka.battle-over-1.finished true

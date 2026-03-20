@@ -1,0 +1,80 @@
+
+# by anonymous
+== cced-apollo-luke-battle-over-1 ==
+
+condition: party.alive.Apollo && party.alive.Luke && plot.line >= 40000
+
+Message 1
+Apollo > POINTING: Two noble \c[3]Spheromancers\c[0] and a mighty \c[3]Triblader\c[0] join forces on the Path of Justice!
+Apollo > CONTENT: A truly fearsome party! # This particular line is the same with one in apollo-lukas
+Lea > PROUD: ...!
+Luke > DEFAULT: Hold up... Spheromancer?
+Luke > LAUGH: I thought you were a Triblader!
+if cced.apollo.triblader
+    Apollo > MOPING: Not this again...
+else
+    Apollo > CONTENT: How could you possibly mistake me for a Triblader? Don't you see my crimson attire?
+    Luke > UP: I don't know...\! Spiky hair and all that green kinda confused me.
+    Apollo > MOPING: You can't be serious...
+    set cced.apollo.triblader true
+endif
+
+Message 2
+Apollo > CONTENT: Our noble party is victorious!
+Apollo > LECTURING: Every step we make marks our growth...
+Apollo > POINTING: On the Path of Justice!
+Luke > WONDERING: Path of justice? What's that supposed to mean?
+Apollo > DEFAULT: It's an idea, an absolute which every Spheromancer must strive to achieve!
+Lea > EXHAUSTED: ...!
+Apollo > CONTENT: Only by following the Path of Justice may you become the True Spheromancer!
+Luke > SKEPTICAL: Huh...
+
+Message 3
+Luke > SKEPTICAL: I'm not a Spheromancer.\. How does it work for me?
+Apollo > DEFAULT: The ideas of Path of Justice are universal.
+Apollo > DOWN: One must fight injustice and uphold the order whenever possible!
+Apollo > LECTURING: One must always strife for improvement, for stagnation leads to corruption!
+Apollo > SHOUTING: And most importantly, one shall never cheat or take shortcuts in their mission!
+Apollo > POINTING: This is not only our duty as Spheromancers...\. But our \c[3]purpose\c[0] as Seekers!
+Luke > COMPLAINING: It other words, it's common sense taken too far.
+Lea > NOD: [nods]
+
+Message 4
+Luke > LAUGH: Luke and Lea!\. Bringing justice to CrossWords, one hedgehag at a time!
+Lea > SMILE: ...
+Apollo > SUSPICIOUS: You missed the message, Triblader.
+Apollo > DOWN: The Path of Justice is not about specifics.
+Apollo > LECTURING: It's about being the change!\. Working on yourself to make the world around you a better place!  # Summary of "The Path of Justice" by Steffron T. James.
+Apollo > SHOUTING: The Path of Justice calls everyone to action!
+Apollo > POINTING: Only by following it's ideas can we propel society into the bright future!
+Luke > WONDERING: Cut the roleplay.\. Do you really believe all this?
+Apollo > CONTENT: I am!\. And I'm proud of it!
+Lea > SCARED: ...?
+
+Message 5
+Apollo > CONTENT: Once again our noble party is victorious!
+Apollo > DEFAULT: With each adversary, we continue honing our skills.
+if newgame.sergey-hax
+    Luke > COMPLAINING: Certainly not honing anything in this party.
+    Lea > INSANE: \c[1]...!!
+    goto postGrind
+endif
+if newgame.lea-must-die
+    Lea > EXHAUSTED: ...!
+    Luke > SKEPTICAL: Can't argue about Lea.\. Hardly applies to me though.
+    goto postGrind
+endif
+if player.level > 75
+    Luke > DEFAULT: If by honing skills you mean grinding \c[3]under-leveled\c[0] mobs.
+else
+    Luke > DEFAULT: If by honing skills you mean grinding mobs.
+endif
+label postGrind
+Apollo > CONTENT: Struggling for survival is but one law of this universe.
+Apollo > DOWN: As Seekers, we must not shy away from the fight.\. No matter, how hard it's going to be.
+Luke > DEFAULT: How any of this is going to help society?
+Apollo > PONDERING: What?
+Luke > TOWARDS: The path of justice...\. Wasn't it about improving society or something?
+Apollo > MOPING: Tribladers...
+
+set cced.apollo-luke.battle-over-1.finished true

@@ -1,0 +1,82 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:DialogueEditor.Avalonia.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="using:DialogueEditor.Avalonia.Controls"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="DialogueEditor.Avalonia.Views.MainView"
+        Height="500"
+        Width="680"
+        Icon="/Resources/ccextradialogue.ico"
+        Title="Expressions Viewer" >
+
+  <Grid Margin="8,4">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition />
+    </Grid.RowDefinitions>
+
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+      <WrapPanel
+          Orientation="Horizontal">
+        <StackPanel Orientation="Horizontal" Margin="4">
+          <TextBlock
+              Text="Character"
+              VerticalAlignment="Center"/>
+          <ComboBox
+              Margin="4,0,0,0"
+              Width="100"
+              Items="{Binding CharactersList}"
+              SelectedItem="{Binding CharacterFilter}" />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="4">
+          <TextBlock
+              Text="Filter"
+              VerticalAlignment="Center"/>
+          <TextBox
+              Margin="4,0,0,0"
+              Width="150"
+              Text="{Binding ExpressionFilter}" />
+        </StackPanel>
+
+        <CheckBox
+            Margin="4"
+            Content="Static"
+            IsChecked="{Binding ShowStatic}" />
+
+        <CheckBox
+            Margin="4"
+            Content="Animations"
+            IsChecked="{Binding ShowAnimations}" />
+      </WrapPanel>
+
+      <Button
+          Grid.Column="1"
+          Margin="2"
+          HorizontalAlignment="Right"
+          VerticalAlignment="Top"
+          ToolTip.Tip="Duplicate View"
+          Command="{Binding OpenNewWindowCommand}">
+        <DrawingPresenter Width="16" Height="16">
+          <DrawingPresenter.Drawing>
+            <GeometryDrawing Brush="#FF000000" Geometry="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
+          </DrawingPresenter.Drawing>
+        </DrawingPresenter>
+      </Button>
+    </Grid>
+
+    <controls:GridOptionsList
+        Grid.Row="1"
+        Margin="0,4,0,0"
+        DataContext="{Binding FilteredOptionsList}"
+        VerticalAlignment="Top"
+        HorizontalAlignment="Stretch"
+        OptionClick="GridOptionsList_OptionClick"/>
+  </Grid>
+</Window>

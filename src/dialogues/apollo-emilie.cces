@@ -1,0 +1,177 @@
+
+# Original idea by el2020
+# by anonymous
+== cced-apollo-emilie-battle-over-1 ==
+
+condition: party.alive.Apollo && party.alive.Emilie
+
+Message 1
+Apollo > CONTENT: Another glorious victory for \c[3]Spheromancers\c[0]!
+Lea > EXCITED: ...!
+Emilie > SUSPICIOUS: I'm right here, grasshead.
+Apollo > MOPING: Oh yes, we are in a party with a \c[3]Pentafist\c[0], aren't we.
+
+Message 2
+Emilie > WATCH_OUT_BADASS: Say... If there were no \c[3]Spheromancer\c[0] class, which one would you pick?
+Apollo > LECTURING: I will \c[1]never\c[0] betray my noble class!
+Emilie > AWAY: No, I meant literally. No spheromancers.
+Emilie > DEFAULT: Only four others are available. Who would you pick then?
+Apollo > SUSPICIOUS: If I am forced to...\. hmmm...
+
+Message 3
+Emilie > TAUNTING: So, monsieur. Have you decided?
+Apollo > LECTURING: It's a tough choice one should not consider lightly.
+Apollo > DEFAULT: Picking right virtue requires thoughtful examination of their strengths and weaknesses.
+Apollo > PONDERING: And there are quite a few of them to consider...
+Emilie > EXHAUSTED: Again with your power gaming.
+
+#Triblader
+#A melee class, focusing equally on offense and defense.
+#Triblader follow the Virtue of Strength. Their focus is on powerful sword attacks. They lack in defense and ranged capabalities but make up for it by having increased strength. The element usually associated with Tribladers is Heat.
+#Tribladers are a Melee-oriented class, analogous to Fighters in a traditional class system. Their combat style focuses heavily on melee combos and multi-target melee slashes. They are also able to use Balls, which are despite the name shaped like small daggers, and somehow still bounce off walls. Their stats are reasonably balanced, although they tend to have slightly higher Attack. Their weapon of choice is the sword.
+#All tribladers wear triangle shoulders and use the color green in their clothes.
+Message 4
+Emilie > SUSPICIOUS: Are you done thinking, grasshead?
+Apollo > LECTURING: Indeed I am, my galling Pentafist companion.
+Emilie > DETERMINED: Is it a \c[3]Triblader\c[0]?!
+Apollo > ANGRY: Tribladers are too straightforward.
+Apollo > SUSPICIOUS: All they do is rush in, swinging their sword.
+Apollo > SHOUTING: No strategy, positioning or thinking required.
+Emilie > CURIOUS: Wow, that's quite harsh. 
+
+Message 5
+Emilie > CURIOUS: But you like honorable things. And swords are weapons of knights.
+Emilie > WATCH_OUT_BADASS: Knights are quite honorable, non?
+Apollo > LECTURING: The weapon alone does not decide what's honorable. 
+Apollo > DOWN: The one, who wields the blade, does.
+Apollo > POINTING: No Triblader will ever match up to the Spheromancers, who follow the Path of Justice!
+Lea > EXHAUSTED: ...
+Emilie > EMBARRASSED: Fine. Triblader is a pass.
+
+#Quadroguard
+#A tank class with high defense.
+#Quadroguards follow the Virtue of Endurance. They have a deficit in attack power and speed but have superior defense in comparison to all other classes. They can survive longer and can even take up multiple enemies at once with ease. Their element of choice is Cold.
+#Quadroguards are a tank Melee class mainly based around absorbing damage. They are designed for a highly defensive playstyle, and are typically used to block enemy attacks and protect their weaker teammates. With both melee and square-shaped VRP, they can land very powerful attacks, but are very slow in doing so.
+#The Stats of Quadroguards are not directly mentioned, but it is likely that they have high Defense and Health when compared to other classes. Their weapon of choice is a mace, which is typically wielded in combination with a shield.
+#Most quadroguards wear square shaped horns in the chin and use the color blue in their clothes.
+Message 6
+Emilie > DETERMINED: How about a \c[3]Quadroguard\c[0]? 
+Emilie > WATCH_OUT_BADASS: Protecting your friends is quite noble.
+Apollo > DEFAULT: The Quadroguards put their lives on the line to shield teammates from harm.
+Apollo > LECTURING: A truly honorable class, that almost rivals the Spheromancer.
+Emilie > SMILE: Oui! A Quadroguard in our party sounds good. Right, Lea?
+Lea > SURPRISED_TOWARD: ...?
+Apollo > ANGRY: I didn't finish.
+
+Message 7
+Apollo > DEFAULT: While Quadroguards are invaluable in team, they are at disadvantage without one.
+Apollo > LECTURING: Mainly due to lack of good offensive capabilities.
+Emilie > CURIOUS: But why? Can't they just face tank all enemies?
+Apollo > ANGRY: Yes. Except killing anything takes twice as much time.
+Apollo > PONDERING: Although some people may actually like that challenge.
+if player.level <= 10
+    Lea > ANNOYED: Whyyyyy...
+endif
+
+Message 8
+Emilie > DETERMINED: Your conclusion on Quadroguards, grasshead?
+Apollo > DEFAULT: I may have considered picking this class. 
+Apollo > CONTENT: It would be an honor to protect Spheromancer Lea.
+if newgame.sergey-hax
+    Apollo > SUSPICIOUS: Not that she really needs any protection...
+    Lea > INSANE_DOWN: \c[1]Hi~
+else
+    Lea > SCARED: ...!
+endif
+Apollo > CONTENT: But we have Joern for that.
+Apollo > DEFAULT: Having two Quadroguards will be suboptimal anyway.
+Emilie > EXHAUSTED: Right, moving on.
+
+
+#Pentafist
+#A melee-focused quick and agile class with high critical hits.
+#Pentafists follow the Virtue of Agility. Speed and quick attacks with their fist are the main tools of a Pentafist player. However their HP is the lowest of all classes which basically makes them glass cannons. Their favored element is Shock.
+#Pentafists are a Melee class focusing primarily on speed. Their attacks are weaker and shorter-range than those of the other Melee classes, but they compensate for this with a very high attack speed and critical hit chance. They are a physically weak class, and are heavily reliant on dodging and Dashing, which are improved by small thrusters built into their class-specific armor. Their pentagon-shaped VRP are similarly weak but fast. In terms of stats, Pentafists have high Focus, but low Defense and HP. Their weapon of choice is "huge fists" - more specifically, illustrations imply that they are vambraces that project energy gauntlets during combat.
+#The Pentafist is a rather difficult class to master, but its flashy appearance makes it very popular among new players, leading experienced players to be very skeptical about the proficiency of newbie Pentafists.
+#All Pentafist characters carry feather-like metal pieces on their ear and use the color orange in their clothes.
+Message 9
+Emilie > DETERMINED: What about \c[3]Pentafist\c[0], huh?
+Apollo > LECTURING: I would never pick them.
+Apollo > POINTING: Just like Tribladers, Pentafists are all about attacking as fast as you can.
+Apollo > SUSPICIOUS: Unlike Tribladers, it's the only thing they are good at. 
+Apollo > LECTURING: They have no range, no damage and too reliant on luck because of their focus on...\. focus.
+Emilie > MOPING: Duh, totally unbiased opinion.
+
+Message 10
+Emilie > DETERMINED: Let me remind you, that Pentafists are the \c[3]most popular\c[0] class in CrossWorlds.
+Emilie > TAUNTING: This should mean something!
+Apollo > MOPING: Because of their flashy appearance... 
+Apollo > MOPING: Three out of five new players pick Pentafist for their looks.
+Apollo > ANGRY: In the end, it throws even more shade on those, who actually put effort into honing their skills.
+Emilie > EXHAUSTED: Said the \c[3]fancy guy\c[0].
+Apollo > CONTENT: Unlike most Pentafists, I'm actually quite competent player.
+if plot.apollo.leaWins >= 2
+    if plot.apollo.leaWins >= 3
+        Lea > SMILE: ...?
+    else
+        Lea > THINKING: ...?
+    endif
+endif
+
+Message 11
+Emilie > SUSPICIOUS: You forgot one crucial detail, grasshead.
+Emilie > MOPING: Pentafists are fragile and so they need to be good at dodging.
+Apollo > ANGRY: And that's exactly, why they are terrible for dueling.
+Apollo > LECTURING: Pentafist duels are less about skill and more of who gets the first hit in.
+Emilie > EXHAUSTED: I could say the same about your duels with Lea.
+Apollo > CONTENT: That's were you're mistaken.
+Lea > SURPRISED_TOWARD: ...?
+
+Message 12
+Apollo > DEFAULT: Truth is, our fights are but a result of a calculated \c[3]mindgame\c[0].
+Apollo > CONTENT: Every move is closely considered and weighted against possible counters.
+Apollo > DEFAULT: We fight not with our fists, but our \c[3]minds\c[0]. Strategy over stats.
+Lea > SHAKE: [shakes head]
+Emilie > SMILE: Oui! Sure thing, grasshead.
+
+#Hexacast
+#A mage class with significant ranged attacks and buffing ability.
+#Hexacast follow the Virtue of Wisdom. This class has the best ranged combat style. Using quick throws and powerful ranged Arts to fend of enemies. They lack critical attack power and fall short in HP to compensate for the benefits. Hexacast primarily use the Wave Element.
+#Hexacasts are CrossWorlds' mage-analogue class. They are weak physical attackers, but excel with special attacks, using them to channel powerful, wide-range damage and nasty status effects. They are able to summon short-lived barriers and autonomous weapons to protect themselves. They fit well with a more defensive playstyle, hanging back from combat and being able to buff teammates.
+#Hexacasts wear very light, clothing-like armor, and throw hexagon-shaped VRP. As their combat style is highly range-based, they are the only class not known to have a weapon of choice.
+#All Hexacast characters carry a hexagon shaped earring and use the color purple in their clothes.
+Message 13
+Emilie > SUSPICIOUS: Only \c[3]Hexacast\c[0] is left.
+Apollo > PONDERING: Truth be told, their homing attacks are interesting.
+Apollo > LECTURING: Not the most honorable way to fight, but certainly a fun one.
+Emilie > SHOCKED: No way! You liked something besides Spheromancer?!
+Apollo > PONDERING: Is that surprising? Hexacast is the closest we get to Spheromancer.
+Apollo > DEFAULT: And it's the only remaining class.
+
+Message 14
+Emilie > CURIOUS: If all hexacast attacks are homing...
+Emilie > SUSPICIOUS: Doesn't it like...\. invalidate the strategy in duels?
+Apollo > PONDERING: Such attacks are predictable and easy to dodge.
+Apollo > DEFAULT: To win in a duel, hexacast must either overpower their enemy...
+Apollo > CONTENT: Or lure them into a trap. As befits their virtue.
+Lea > ASTONISHED: ...!
+Emilie > SUSPICIOUS: Fine...\. You win this one.
+
+Message 15
+Emilie > DEFAULT: Your take on Hexacast in a party?
+Apollo > DEFAULT: They possess a wide range of protective buffs and damaging area of effect abilities.
+Apollo > CONTENT: Which allows them to fit roles of support and damage dealer.
+Emilie > CURIOUS: Wait. Buffs? 
+Emilie > MOPING: I don't remember Tronny ever using any buffs.
+Apollo > PONDERING: Maybe he forgot? 
+Apollo > DEFAULT: Hexacast arts are quite diverse and hard to memorize.
+
+Message 16
+Emilie > DEFAULT: Alright, so what will it be?
+Apollo > DEFAULT: Either \c[3]Quadroguard\c[0] or \c[3]Hexacast\c[0].
+Apollo > CONTENT: I'll have to sleep this over to really make a choice.
+Apollo > PONDERING: What about you? Who would you pick?
+Emilie > SMILE: A Triblader!
+Apollo > MOPING: Obviously...
+
+set cced.apollo-emilie.battle-over-1.finished true
