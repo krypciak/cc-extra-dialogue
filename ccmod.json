@@ -1,11 +1,11 @@
 {
-  "id": "cc-extra-dialogue",
-  "version": "1.0.2",
-  "title": "CrossCode Extra Dialogue",
-  "description": "Adds more lore-friendly dialogue for party members.",
-  "repository": "https://github.com/krypciak/cc-extra-dialogue",
+  "id": "cc-extra-dialogue-plus",
+  "version": "1.0.1",
+  "title": "CrossCode Extra Dialogue+",
+  "description": "Fixes a bunch of typos in cc-extra-dialogue",
+  "repository": "https://github.com/quietype00/cc-extra-dialogue",
   "tags": ["QoL"],
-  "authors": "anonymous",
+  "authors": "anonymous; QuieType",
   "icons": {
     "24": "icon.png"
   },
