@@ -11,7 +11,7 @@ Lea > PROUD: ...!
 C'tron > THOUGHTFUL: Uhm...\. path of... justice?
 
 Message 2
-Apollo > POINTING: The justice has been served once again!
+Apollo > POINTING: Justice has been served once again!
 C'tron > WORRIED: If you call murdering a bunch of animals justice...
 Apollo > DOWN: We must face each and every obstacle put in our way!
 Apollo > POINTING: It is our duty as Seekers!
@@ -43,26 +43,26 @@ Apollo > POINTING: Secretly performed by \c[1]humans\c[0]!
 Lea > ASTONISHED: ...!
 
 Message 6
-C'tron > DEFAULT: Humans behind such experiments must be very smart.
+C'tron > DEFAULT: The humans behind such experiments must be very smart.
 C'tron > SURPRISED: Cybernetics and animal uplifting are complicated concepts.
-Apollo > LECTURING: Not smart enough as it seems.
+Apollo > LECTURING: Not smart enough, as it seems.
 Apollo > DOWN: In the end, animals managed to escape from their laboratory.
-Apollo > LECTURING: We can only theorize, why and how that happened.
+Apollo > LECTURING: We can only theorize why and how that happened.
 C'tron > EMBARRASSED: Intelligent birds with guns. What could possibly go wrong?
 
 Message 7
-C'tron > WORRIED: To bad real world research into uplifting was shut down.
+C'tron > WORRIED: Too bad real world research into cybernetics was shut down.
 C'tron > EXHAUSTED: Scientists never managed to get approval from ACF. # Todo: Unlock ACF lore entry
 Lea > SURPRISED_AWAY: Why?
 if plot.line < 40000
     # Ignorance is bliss
-    C'tron > SMILE: Probably the same reason why they are scared of \c[3]Artificial General Intelligence\c[0].
-    C'tron > EMBARRASSED: Fear that non-human intelligence will go mad with power and destroy humanity.
+    C'tron > SMILE: Probably the same reason why they're scared of \c[3]Artificial General Intelligence\c[0].
+    C'tron > EMBARRASSED: They fear that non-human intelligence will go mad with power and destroy humanity.
     Lea > SAD: ...
 else
     # Compassionate from knowing
-    C'tron > PONDERING: Probably the same reason why they are scared of \c[3]Artificial General Intelligence\c[0].
-    C'tron > SAD: Fear that non-human intelligence will go mad with power and destroy humanity. 
+    C'tron > PONDERING: Probably the same reason why they're scared of \c[3]Artificial General Intelligence\c[0].
+    C'tron > SAD: They fear that non-human intelligence will go mad with power and destroy humanity. 
     Lea > SAD: ...
     Apollo > LECTURING: Do not falter, Spheromancer Lea! Doubt is the root of evil!
     Apollo > DEFAULT: You are the most noble AI I've met to date! 

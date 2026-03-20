@@ -74,7 +74,7 @@ else
     Lea > THINKING: ...?
 endif
 Shizuka > FUNNY_SMILE: Pretty sure it's pure destruction for the purpose of it.
-Shizuka > BRIGHT: An effective way to relief stress, mind you.
+Shizuka > BRIGHT: An effective way to relieve stress, mind you.
 Joern > DEFAULT: What about meditation?
 Shizuka > SMUG: Sure. But where is fun in that?
 Joern > SARCASTIC: You little devils.
@@ -86,7 +86,7 @@ endif
 
 Message 6
 Shizuka > SARCASTIC: On a serious note... what else can we do instead of grinding?
-Shizuka > DENYING: CrossWords story is over and most quests are finished.
+Shizuka > DENYING: CrossWorld's story is over and most quests are finished.
 Joern > DEFAULT: I've heard that \c[3]Team Cups\c[0] in arena can be fun.
 
 if plot.shizuka.cupGot

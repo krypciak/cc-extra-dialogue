@@ -13,7 +13,7 @@ Lea > SMILE: ...
 Luke > DEFAULT: Alright, punching it is.
 
 Message 2
-Emilie > AWAY: Taking awfully many hits, Luke. Aren't you like...\. a \c[3]seasoned player\c[0]?
+Emilie > AWAY: You're taking an aweful lot of hits, Luke. Aren't you like...\. a \c[3]seasoned player\c[0]?
 if area.beach.isCurrent
     Luke > LAUGH: Not used to fighting these enemies.
 else
@@ -51,7 +51,7 @@ Lea > EXHAUSTED: ...
 
 Message 6
 Emilie > CULTURE: Fine. If you won't tell me yourself...
-Emilie > TAUNTING: I will guess, until you talk.
+Emilie > TAUNTING: I'll keep guessing until you give me the answer.
 Lea > ANNOYED: Why?
 Luke > EYES_CLOSED: Why would I answer?
 Emilie > DEFAULT: Because as long as Lea wants it...
@@ -59,7 +59,7 @@ Emilie > DEAD_INSIDE: \c[1]You're trapped here with me.
 Luke > COMPLAINING: Oh Junge...
 
 Message 7
-Emilie > DETERMINED: Did you two \c[3]held hands\c[0]?
+Emilie > DETERMINED: Did you two \c[3]hold hands\c[0]?
 Luke > COMPLAINING: Friends are allowed to do that, right?
 Lea > NOD: [nods]
 Emilie > SMILE: Oui! Friendly cuddles are nice too.
@@ -105,7 +105,7 @@ Lea > ANNOYED: Thanks...
 
 Message 11
 Emilie > MOPING: You know what... I'm sorry.
-Emilie > EMBARRASSED: Your matters are really none of my business.
+Emilie > EMBARRASSED: This is all really none of my business.
 Lea > PROUD: Hi sorry, meet Lea! # If the joke doesn't fit this dialogue, stick it somewhere else.
 Luke > LAUGH: Bwahaha~! Nice one.
 Emilie > SUSPICIOUS: ...

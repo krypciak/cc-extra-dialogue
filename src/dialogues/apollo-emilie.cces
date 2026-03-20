@@ -13,15 +13,15 @@ Apollo > MOPING: Oh yes, we are in a party with a \c[3]Pentafist\c[0], aren't we
 
 Message 2
 Emilie > WATCH_OUT_BADASS: Say... If there were no \c[3]Spheromancer\c[0] class, which one would you pick?
-Apollo > LECTURING: I will \c[1]never\c[0] betray my noble class!
+Apollo > LECTURING: I wouldl \c[1]never\c[0] betray my noble class!
 Emilie > AWAY: No, I meant literally. No spheromancers.
 Emilie > DEFAULT: Only four others are available. Who would you pick then?
 Apollo > SUSPICIOUS: If I am forced to...\. hmmm...
 
 Message 3
 Emilie > TAUNTING: So, monsieur. Have you decided?
-Apollo > LECTURING: It's a tough choice one should not consider lightly.
-Apollo > DEFAULT: Picking right virtue requires thoughtful examination of their strengths and weaknesses.
+Apollo > LECTURING: It's a tough choice that one should not consider lightly.
+Apollo > DEFAULT: Picking the right virtue requires thoughtful examination of its strengths and weaknesses.
 Apollo > PONDERING: And there are quite a few of them to consider...
 Emilie > EXHAUSTED: Again with your power gaming.
 
@@ -43,7 +43,7 @@ Message 5
 Emilie > CURIOUS: But you like honorable things. And swords are weapons of knights.
 Emilie > WATCH_OUT_BADASS: Knights are quite honorable, non?
 Apollo > LECTURING: The weapon alone does not decide what's honorable. 
-Apollo > DOWN: The one, who wields the blade, does.
+Apollo > DOWN: The one who wields the blade does.
 Apollo > POINTING: No Triblader will ever match up to the Spheromancers, who follow the Path of Justice!
 Lea > EXHAUSTED: ...
 Emilie > EMBARRASSED: Fine. Triblader is a pass.
@@ -58,7 +58,7 @@ Message 6
 Emilie > DETERMINED: How about a \c[3]Quadroguard\c[0]? 
 Emilie > WATCH_OUT_BADASS: Protecting your friends is quite noble.
 Apollo > DEFAULT: The Quadroguards put their lives on the line to shield teammates from harm.
-Apollo > LECTURING: A truly honorable class, that almost rivals the Spheromancer.
+Apollo > LECTURING: A truly honorable class that almost rivals the Spheromancer.
 Emilie > SMILE: Oui! A Quadroguard in our party sounds good. Right, Lea?
 Lea > SURPRISED_TOWARD: ...?
 Apollo > ANGRY: I didn't finish.
@@ -107,9 +107,9 @@ Emilie > DETERMINED: Let me remind you, that Pentafists are the \c[3]most popula
 Emilie > TAUNTING: This should mean something!
 Apollo > MOPING: Because of their flashy appearance... 
 Apollo > MOPING: Three out of five new players pick Pentafist for their looks.
-Apollo > ANGRY: In the end, it throws even more shade on those, who actually put effort into honing their skills.
+Apollo > ANGRY: In the end, it throws even more shade on those who actually put effort into honing their skills.
 Emilie > EXHAUSTED: Said the \c[3]fancy guy\c[0].
-Apollo > CONTENT: Unlike most Pentafists, I'm actually quite competent player.
+Apollo > CONTENT: Unlike most Pentafists, I'm actually a quite competent player.
 if plot.apollo.leaWins >= 2
     if plot.apollo.leaWins >= 3
         Lea > SMILE: ...?
@@ -121,7 +121,7 @@ endif
 Message 11
 Emilie > SUSPICIOUS: You forgot one crucial detail, grasshead.
 Emilie > MOPING: Pentafists are fragile and so they need to be good at dodging.
-Apollo > ANGRY: And that's exactly, why they are terrible for dueling.
+Apollo > ANGRY: And that's exactly why they are terrible for dueling.
 Apollo > LECTURING: Pentafist duels are less about skill and more of who gets the first hit in.
 Emilie > EXHAUSTED: I could say the same about your duels with Lea.
 Apollo > CONTENT: That's were you're mistaken.

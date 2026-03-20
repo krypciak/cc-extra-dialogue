@@ -66,7 +66,7 @@ Message 4
 Lukas > SKEPTICAL: Not a fan of protective arts, are you?
 C'tron > EXHAUSTED: It's a lot to keep track of.
 C'tron > SURPRISED: I'm not sure about which elemental protection to cast.
-C'tron > EMBARRASSED: And by the time I've figured it out, Lea already destroyed all enemies.
+C'tron > EMBARRASSED: And by the time I've figured it out, Lea's already destroyed all the enemies.
 Lea > WHISTLING: ...!
 # Better fix the tauthology / repetition in next two lines
 Lukas > LAUGH: Makes sense, if you rarely used them before.
@@ -85,13 +85,13 @@ if newgame.sergey-hax
     Lea > INSANE_DOWN: \c[1]...!
     C'tron > EMBARRASSED: Right...
 else
-    Lukas > WINK: I think, Lea would appreciate such buff. Bigger numbers never hurt.
+    Lukas > WINK: I think Lea would appreciate such a buff. Bigger numbers never hurt.
     Lea > NOD_HAPPY: [nods]
     C'tron > WORRIED: Right...
 endif
 
 Message 6
-Lukas > RANTING: Oh Junge, guess Albert was right.
+Lukas > RANTING: Oh Junge, I guess Albert was right.
 Lukas > SERIOUS: You're just terrible at this game.
 Lea > NOD: [nods]
 C'tron > EXHAUSTED: Sorry.

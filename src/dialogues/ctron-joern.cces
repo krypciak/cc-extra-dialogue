@@ -32,7 +32,7 @@ condition: party.alive.Glasses && party.alive.Joern && area.autumn-fall.isCurren
 
 Message 1
 Joern > AWWW: Seeing all these ruins is so sad.
-Joern > AWWW: Long ago, Every one of them had a family.
+Joern > AWWW: Long ago, every one of them had a family.
 C'tron > DEFAULT: Shadows of civilization long forgotten.
 C'tron > DOWN: Every concrete jungle will eventually be abandoned...
 C'tron > DEFAULT: Doomed to break down under the elements.
@@ -82,7 +82,7 @@ C'tron > EMBARRASSED: So is it a challenge, a view... or a shop?
 Joern > TOWARD: Tronny, that's an obvious question.
 Joern > SMILE: Everybody will tell you the same thing.
 C'tron > DOWN: And that is...
-Joern > SMILE: Souvenir shops of course.
+Joern > SMILE: Souvenir shops, of course.
 if lea.words.why
     Lea > ANNOYED: Why.
 else
@@ -104,7 +104,7 @@ Message 1
 Joern > ANGRY: I don't like Maroon Valley.
 Joern > ANGRY: It's to bright, windy and sand gets everywhere. 
 C'tron > SMILE: That's actually quite accurate climate for a midday desert.
-C'tron > EMBARRASSED: Though I can see, how it can be annoying for some people.
+C'tron > EMBARRASSED: Though I can see how it can be annoying for some people.
 Joern > AWWW: Lea, can we go back to Bergen?
 Lea > SHAKE: [shakes head]
 Joern > SARCASTIC: You're a little devil, you know that?
@@ -132,7 +132,7 @@ Joern > SURPRISED: ...
 
 Message 3
 Joern > DEFAULT: It says \c[1]Realistic Immersion Preset\c[0].
-Joern > SARCASTIC: Think, I'll lower it a little.
+Joern > SARCASTIC: I think I'll lower it a little.
 C'tron > BLANK: Don't tell me you've played all this time with realistic temperature.
 C'tron > BLANK: That's like... \c[1]40 degrees\c[0]!
 Joern > DEFAULT: ...
@@ -160,7 +160,7 @@ Message 2
 C'tron > SMILE: Did you know that some jungles have trees as old as two thousand years?
 C'tron > AWESOME: Some of them existed since when \c[3]Terra\c[0] was still inhabited!
 Lea > ASTONISHED: ...!
-Joern > DEFAULT: Ever wondered, how would it feel to live for a thousand years?
+Joern > DEFAULT: Did you ever wonder how would it feel to live for a thousand years?
 C'tron > EMBARRASSED: As a tree, you won't feel anything at all.
 C'tron > WORRIED: And human will probably end up desensitised to everything in a few centuries.
 if plot.line >= 40000
@@ -180,25 +180,25 @@ condition: party.alive.Glasses && party.alive.Joern && area.forest.isCurrent
 Message 1
 Joern > SMILE: Can't find places like this back at home.
 C'Tron > DEFAULT: Sapphire Ridge... A mysterious forest, permanently shrouded in twilight.
-Joern > SMILE: Peaceful and relaxing, isn't it. 
+Joern > SMILE: Peaceful and relaxing, isn't it? 
 Lea > NOD: [nods]
 
 Message 2
 C'tron > DOWN: Did you know that perpetual dusk is a very rare planetary anomaly?
-C'tron > SURPRISED: For that to be natural, Raritan Gem must have synchronous rotation with the star.
+C'tron > SURPRISED: For that to be natural, Raritan Gem must have synchronous rotation with its star.
 C'tron > WORRIED: But something isn't right...\! The climate should be much more hostile.
 Joern > SMILE: Relax and enjoy the atmosphere, Tronny.
 
 Message 3
-C'tron > DOWN: Almost entirety of this moon is water, yet we never see any storms or waves.
+C'tron > DOWN: Almost the entirety of this moon is water, yet we never see any storms or waves.
 Joern > DEFAULT: Large waves would be disastrous for beach areas.
 C'tron > WORRIED: And to avoid waves, Raritan Gem must be tidally locked...
 Joern > DEFAULT: Sounds plausible.
-C'tron > EXHAUSTED: But then it may orbit behind gas giant, blocking the light...
+C'tron > EXHAUSTED: But then it might orbit behind a gas giant, blocking the light...
 C'tron > BLANK: Unless...
 
 Message 4
-Joern > DEFAULT: Unless it doesn't \c[3]rotate\c[0] nor \c[3]revolve\c[0] around gas giant?
+Joern > DEFAULT: Unless it doesn't \c[3]rotate\c[0] nor \c[3]revolve\c[0] around a gas giant?
 C'tron > EXHAUSTED: No, what a nonsense. That's impossibly rare.
 C'Tron > DOWN: On top of that, perfectly habitable atmosphere and gravity?
 C'tron > WORRIED: The water and illumination are just not real.
