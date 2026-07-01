@@ -22,7 +22,7 @@ if cced.shizuka.lea-similarity-mentions >= 3
     Shizuka > EX2_ANNOYED: ...
     Lea > SMILE: ...
 endif
-Shizuka > EVIL_GRIN: You know, why that's the case, right?
+Shizuka > EVIL_GRIN: You know why that's the case, right?
 C'tron > EMBARRASSED: I've figured it out.
 
 set cced.shizuka.lea-similarity-mentions + 1
@@ -47,7 +47,7 @@ Lea > SMILE: ...
 C'tron > TOWARD: Are you sure about that?
 
 Message 5
-C'tron > SURPRISED: Experiencing major events may cause changes in personality.
+C'tron > SURPRISED: Experiencing major events can cause changes in personality.
 C'tron > SMILE: But your preferences should still be \c[3]99% identical\c[0].
 Shizuka > BADASS: Oh really?
 C'tron > AWESOME: Yes! For example, your tastes remained similar!
@@ -105,7 +105,7 @@ Message 10
 Shizuka > SARCASTIC: Now I get it.
 Lea > SURPRISED_TOWARD: ...?
 Shizuka > SARCASTIC: It was your manner of speech, Tronny.
-Shizuka > DENYING: Reminds me of \c[1]Sidwell\c[0]. The one, who started all this mess.
+Shizuka > DENYING: Reminds me of \c[1]Sidwell\c[0]. The one who started all this mess.
 C'tron > EMBARRASSED: That's not concerning in the slightest.
 Shizuka > DENYING: Don't worry. Just an unlucky coincidence.
 
@@ -120,7 +120,7 @@ Message 12
 Shizuka > CONCERNED: ...
 Lea > SURPRISED_TOWARD: ...?
 C'tron > WORRIED: You may still find him...
-Shizuka > ANGRY: Look, he is gone for good, alright?!
+Shizuka > ANGRY: Look, he's gone for good, alright?!
 Shizuka > STRICT: It's been \c[1]seven months\c[0] already!
 Shizuka > SCREAM: \c[1]He left no records, no traces, nothing!!
 Lea > NERVOUS: ...
@@ -129,7 +129,7 @@ Shizuka > CONCERNED: Wish I could do something about it. I'm tired of being usel
 Message 13
 C'tron > EXHAUSTED: Sorry for bringing this up, Shizuka.
 Shizuka > ANNOYED: No use mulling over it.
-Shizuka > CONFLICTED: Satoshi and Lea are \c[3]safe\c[0]...\! it's all that matters now.
+Shizuka > CONFLICTED: Satoshi and Lea are \c[3]safe\c[0]...\. it's all that matters now.
 
 
 Message 14

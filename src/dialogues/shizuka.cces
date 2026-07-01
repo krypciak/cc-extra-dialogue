@@ -25,7 +25,7 @@ condition: party.alive.Shizuka && party.size == 2 && cced.ctron-shizuka.battle-o
 Message 1
 Shizuka > DENYING: In your place, I wouldn't go anywhere near that \c[3]C'Tron\c[0].
 Lea > SURPRISED: Why?
-Shizuka > DENYING: He is a shady guy, that lies through his teeth.
+Shizuka > DENYING: He is a shady guy that lies through his teeth.
 Shizuka > EX2_PISSED: Dealing with that type always ends up in trouble.
 Shizuka > CONCERNED: I've seen it...
 Lea > NERVOUS: ...

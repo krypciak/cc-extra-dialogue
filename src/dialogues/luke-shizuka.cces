@@ -4,7 +4,7 @@
 condition: party.alive.Luke && party.alive.Shizuka && plot.line >= 48000
 
 Message 1
-Luke >WONDERING: Hey, Shizuka. Are you the one, who Lea was based on?
+Luke >WONDERING: Hey, Shizuka. Are you the one who Lea was based on?
 Shizuka > DEFAULT: Yeah.
 Luke > WORRIED: I have this strange feeling when playing with you.
 Luke > NORM_SERIOUS: You know... since both Lea and I are evotars...

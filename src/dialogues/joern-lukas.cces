@@ -9,7 +9,7 @@ Message 1
 Lukas > COMPLAINING: Aw, man. I think, I need a break.
 Joern > TOWARD: Are you tired?
 Lukas > PONDERING: No.\. Just my stomach acting up.
-Lukas > PISSED: Snacked a spoiled pizza.\! Should've guessed by it's color.
+Lukas > PISSED: Snacked on a spoiled pizza.\! Should've guessed by its color.
 Joern > SARCASTIC: Green bread is very bad.
 Lea > NOD: [nods]
 Lukas > COMPLAINING: Yeah, thanks for advice, chief.
@@ -62,12 +62,12 @@ Lukas > WHISTLING: But that's the thing, Joern.
 Lukas > SKEPTICAL: They are not missing, just disabled.
 Lea > SURPRISED: Why?
 Joern > DEFAULT: Safety precaution?
-Lukas > LAUGH: Most likely they decided that designing hedgehags taste was to much effort.
+Lukas > LAUGH: Most likely they decided that designing hedgehag's taste was to much effort.
 
 Message 2
 Joern > DEFAULT: How do you know they are actually disabled?
 Joern > TOWARD: Maybe CrossGear can't physically support them.
-Lukas > SKEPTICAL: We have \c[3]touch\c[0]. How different is it from taste anyway.
+Lukas > SKEPTICAL: We have \c[3]touch\c[0]. How different is it from taste anyway?
 Joern > SARCASTIC: Enough to be considered a separate sense.
 
 Message 3
@@ -87,7 +87,7 @@ Lea > THINKING: ...
 Lea > SHAKE: [shakes head]
 Joern > AWWW: Poor little girl.
 Lea > SURPRISED_TOWARD: Why?
-Lukas > COMPLAINING: Well... until you ate a burger, you'll never know what you're missing out on.
+Lukas > COMPLAINING: Well... until you eat a burger, you'll never know what you're missing out on.
 
 Message 5
 Lukas > SURPRISED: I just had the best idea ever...
@@ -101,7 +101,7 @@ Sergey > ROLL_EYES: We read these kinds of suggestions every day.
 Sergey > SERIOUS: Satoshi left before finishing the \c[3]taste buds\c[0] module. 
 Sergey > WORRIED: And people who can improve CrossGear are not that common.
 Lea > SAD: ...
-Sergey > THINKING: But since he is back...\! Guess, I'll ask him about it.
+Sergey > THINKING: But since he is back...\! Guess I'll ask him about it.
 Lea > EXCITED: ...!
 
 set cced.joern-lukas.battle-over-2.finished true

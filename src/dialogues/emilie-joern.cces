@@ -8,7 +8,7 @@ Emilie > DEFAULT: So strange seeing you without Apollo.
 Joern > DEFAULT: Why?
 Emilie > CURIOUS: Every time we saw you, he was somewhere close by.
 Joern > DEFAULT: Not that.
-Joern > TOWARD: Who said, he is not there?
+Joern > TOWARD: Who said he isn't here?
 Emilie > SUSPICIOUS: We're in a party of \c[3]three\c[0], non?
 
 Message 2
@@ -17,7 +17,7 @@ Emilie > SUSPICIOUS: You must be joking.
 Lea > SURPRISED_AWAY: ...?!
 Lea > SHOCKED: ...!!
 Emilie > SHOCKED: W-What happened?!!\!
-Emilie > MOPING: Hold up...\! nobody is following you.
+Emilie > MOPING: Hold up...\! Nobody is following you.
 if lea.words.sorry
     Lea > SMILE: Sorry.
 else
@@ -42,8 +42,8 @@ endif
 Message 4
 Joern > DEFAULT: It's a nice change of pace from Apollo.
 Joern > SMILE: Plenty of time to take in the view.
-Emilie > CURIOUS: How Monsieur grasshead is so quick when it comes to speeding ahead of us?
-Joern > SARCASTIC: Skips everything in a rush to next landmark.
+Emilie > CURIOUS: How is Monsieur grasshead so quick when it comes to speeding ahead of us?
+Joern > SARCASTIC: Skips everything in a rush to the next landmark.
 Joern > SARCASTIC: Except \c[3]certain\c[0] chests.
 Joern > ANGRY: I hardly have the time to figure out a quest with him.
 Emilie > EMBARRASSED: Somehow reminds me of Lea...
@@ -102,7 +102,7 @@ condition: party.alive.Emilie && party.alive.Joern && plot.line >= 18700 && cced
 Message 1
 Emilie > DEFAULT: How did you get into CrossWords?
 Joern > DEFAULT: Apollo was playing it a lot.
-Joern > DEFAULT: I wanted to see for myself, what was it all about.
+Joern > DEFAULT: I wanted to see what was it all about for myself.
 Emilie > CURIOUS: And he rolled up a \c[3]new character\c[0] to join you?
 Joern > SMILE: Indeed.
 Emilie > MOPING: Bummer! Lukas decided to show me around Rookie Harbor and then disappeared into his guild.
@@ -122,7 +122,7 @@ Message 3
 Emilie > DEFAULT: Playing with you is fun, Joern.
 Emilie > DETERMINED: Since you watch my back, I can focus on punching them things.
 Joern > SMILE: Thanks. I like my job.
-Joern > SMILE: Always a pleasure, when people acknowledge their tanks.
+Joern > SMILE: Always a pleasure when people acknowledge their tanks.
 Emilie > AWAY: You play tanks often?
 Joern > UP: I like to help other people.
 Joern > DEFAULT: Tanks are my go-to class in any RPG.
