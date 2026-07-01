@@ -24,12 +24,12 @@ jobs:
         run: sudo apt update; sudo apt install zip
 
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.10-dev'
+          python-version: '3.13'
 
       - name: Compile CCES files
-        run: python3.10 parser/cc_eventscript_parser.py -r src/dialogues/
+        run: python parser/cc_eventscript_parser.py -r src/dialogues/
 
       - name: Create CCED archives
         run: |
