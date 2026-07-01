@@ -53,7 +53,7 @@ set cced.ctron-luke.battle-over-1.finished true
 
 
 == cced-ctron-luke-battle-over-2 ==
-# Surveilance
+# Surveillance
 condition: party.alive.Glasses && party.alive.Luke && cced.ctron-luke.battle-over-1.finished && plot.line >= 40000
 
 Message 1

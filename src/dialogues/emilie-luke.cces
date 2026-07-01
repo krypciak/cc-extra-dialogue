@@ -13,7 +13,7 @@ Lea > SMILE: ...
 Luke > DEFAULT: Alright, punching it is.
 
 Message 2
-Emilie > AWAY: You're taking an aweful lot of hits, Luke. Aren't you like...\. a \c[3]seasoned player\c[0]?
+Emilie > AWAY: You're taking an awful lot of hits, Luke. Aren't you like...\. a \c[3]seasoned player\c[0]?
 if area.beach.isCurrent
     Luke > LAUGH: Not used to fighting these enemies.
 else

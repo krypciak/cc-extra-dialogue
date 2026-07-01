@@ -70,7 +70,7 @@ if plot.apollo.leaWins >= 3
     if plot.line >= 18700
         Emilie > EMBARRASSED: Beating CrossWorlds before didn't help him too much, non.
     else
-        Emilie > DETERMINED: As long as he keeps getting his ass kicked, its fine by me!
+        Emilie > DETERMINED: As long as he keeps getting his ass kicked, it's fine by me!
     endif
     Lea > SMUG: Lea!
     Joern > SMILE: About time he met a \c[3]superior\c[0] opponent.
@@ -126,7 +126,7 @@ Joern > SMILE: Always a pleasure when people acknowledge their tanks.
 Emilie > AWAY: You play tanks often?
 Joern > UP: I like to help other people.
 Joern > DEFAULT: Tanks are my go-to class in any RPG.
-Emilie > DETERMINED: And I like to punch things out of existance before they even attack us.
+Emilie > DETERMINED: And I like to punch things out of existence before they even attack us.
 if newgame.sergey-hax
     Emilie > DEAD_INSIDE: At least, I used to...
     Lea > INSANE_DOWN: \c[1]...!!

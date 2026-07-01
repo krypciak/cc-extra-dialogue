@@ -102,7 +102,7 @@ condition: party.alive.Glasses && party.alive.Joern && area.heat-area.isCurrent
 
 Message 1
 Joern > ANGRY: I don't like Maroon Valley.
-Joern > ANGRY: It's to bright, windy and sand gets everywhere. 
+Joern > ANGRY: It's too bright, windy and sand gets everywhere. 
 C'tron > SMILE: That's actually quite accurate climate for a midday desert.
 C'tron > EMBARRASSED: Though I can see how it can be annoying for some people.
 Joern > AWWW: Lea, can we go back to Bergen?
